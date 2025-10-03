@@ -1,0 +1,21 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { AstroSeoProps } from "@astrolib/seo";
+
+const seo: AstroSeoProps = {
+	title: "404 Error: Page Not Found - Majestico Studio",
+	description:
+		"Oops! The page you're looking for doesn't exist. Navigate back to Majestico Studio's homepage for our full range of web design and SEO services.",
+	canonical: "https://mintaka.co/es/404/",
+};
+---
+
+<BaseLayout seo={seo}>
+	<section class="section min-h-screen flex items-center justify-center">
+		<div class="text-center">
+			<h1 class="text-6xl font-bold text-white mb-4">404</h1>
+			<p class="text-xl text-gray-400 mb-8">Página no encontrada</p>
+			<a href="/es/" class="text-blue-400 hover:text-blue-300">Volver al inicio</a>
+		</div>
+	</section>
+</BaseLayout>

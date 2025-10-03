@@ -1,5 +1,4 @@
 ---
-import Newsletter from "@components/blog/Newsletter.astro";
 import { getLangFromUrl, useTranslatedPath, useTranslations } from "@i18n/utils";
 import { Icon } from "astro-icon/components";
 
@@ -21,12 +20,7 @@ const translatePath = useTranslatedPath(lang);
 			<div class="col-span-3 row-start-1 lg:col-span-2 lg:col-start-4 lg:row-start-auto">
 				<div class="flex flex-col gap-2">
 					<a href={translatePath("/")}>Home</a>
-					<a href={translatePath("/blog/")}>Blog</a>
-					<a href={translatePath("/tags/")}>Tags</a>
 					<a href={translatePath("/contact/")}>{t("contacts")}</a>
-					<a href={translatePath("/terms/")}>Terms</a>
-					<a href={translatePath("/privacy/")}>Privacy Policy</a>
-					<a href={translatePath("/rss.xml")}>RSS</a>
 				</div>
 			</div>
 			<div class="col-span-3 mt-10 lg:col-start-4">
@@ -37,10 +31,9 @@ const translatePath = useTranslatedPath(lang);
 			</div>
 		</div>
 		<div class="col-span-6 row-start-1 text-5xl leading-tight lg:col-span-4 lg:row-start-auto lg:text-6xl">
-			<!-- Newsletter Section -->
+			<!-- Contact Section -->
 			<div>{t("footer.newsletter")}</div>
 			<div>{t("footer.newsletter2")}</div>
-			<Newsletter />
 		</div>
 	</div>
 	<div class="relative mt-4 flex w-full items-end justify-between gap-y-4 text-sm lg:text-xl lg:font-normal">

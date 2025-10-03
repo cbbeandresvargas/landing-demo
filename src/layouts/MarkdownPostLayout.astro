@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Cta from "@/components/blog/Cta.astro";
 import type { AstroSeoProps } from "@astrolib/seo";
-import Comments from "@components/blog/Comments.astro";
 import Title from "@components/global/Title.astro";
 import { getLangFromUrl, useTranslatedPath, useTranslations } from "@i18n/utils";
 import { Icon } from "astro-icon/components";
@@ -38,7 +36,7 @@ const readingTime = getArticleReadingTime(body);
 			<div class="flex flex-col gap-6 pt-20">
 				<Title
 					title={frontmatter.title}
-					subtitle={`Written by: <a href="${frontmatter.author.link}" rel="author">${frontmatter.author.name}</a> on ${frontmatter.pubDate
+					subtitle={`Published on ${frontmatter.pubDate
 						.toString()
 						.slice(0, 10)}`}
 				/>
@@ -50,7 +48,7 @@ const readingTime = getArticleReadingTime(body);
 				{
 					frontmatter?.link && (
 						<a class="font-mono text-xl font-bold" href={frontmatter?.link} target="_blank">
-							<Icon name="iconamoon:link-external-thin" class="inline" /> {t("blog.gotoproject")}
+							<Icon name="iconamoon:link-external-thin" class="inline" /> Ver proyecto
 						</a>
 					)
 				}
@@ -59,24 +57,12 @@ const readingTime = getArticleReadingTime(body);
 				<Image class="mt-12 w-full rounded-lg object-cover" src={frontmatter.image.source} alt={frontmatter.image.alt} />
 				<div class="flex justify-between px-2 pt-4 font-mono text-sm">
 					<div class="flex flex-wrap gap-1">
-						{frontmatter?.tags?.length > 0 && <span class="py-3">TAGS:</span>}
-						<ul class="flex flex-wrap justify-center">
-							{
-								frontmatter?.tags?.map((tag: string) => (
-									<li class="inline-flex items-center rounded-full px-1 py-3 font-medium uppercase tracking-widest">
-										<a href={`/tags/${tag}`}>{tag}</a>
-									</li>
-								))
-							}
-						</ul>
+						<span class="py-3">~{readingTime} MIN</span>
 					</div>
-					<span class="py-3">~{readingTime} MIN</span>
 				</div>
 
 				<div class="prose-styles mt-12"><slot /></div>
 			</div>
-			<Comments />
 		</div>
 	</section>
-	<Cta />
 </BaseLayout>

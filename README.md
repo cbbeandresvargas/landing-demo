@@ -1,45 +1,61 @@
-# [Mintaka](https://mintaka.majestico.co)
+# Portfolio Template
 
-> [!IMPORTANT]
-> Currently this theme only works with the premium version of GSAP, the steps to use the standard version will be available in the future.
+A clean, modern portfolio template built with Astro, Tailwind CSS, and GSAP.
 
-<a href="https://astro.build/">![Astro](.github/images/astro-icon.png)</a>
-<a href="https://tailwindcss.com/">![Tailwind](.github/images/tailwind-icon.png)</a>
-<a href="https://gsap.com/">![Gsap](.github/images/gsap.png)</a>
+## Features
 
-Mintaka is a template made with [Astro](https://astro.build), [Tailwind](https://tailwindcss.com/) and [Gsap](https://gsap.com/)
+- 🌐 **Bilingual** - English and Spanish support
+- 📱 **Responsive** - Works on all devices
+- ⚡ **Fast** - Built with Astro for optimal performance
+- 🎨 **Modern Design** - Clean and professional
+- 📝 **Easy to customize** - Simple project management
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/majesticooss/mintaka)
+## Getting Started
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/majesticooss/mintaka)
+### Prerequisites
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/majesticooss/mintaka)
+- Node.js 18+ 
+- npm or yarn
 
+### Installation
 
-### [🧪 Site preview →](https://mintaka.majestico.co)
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### [🧑‍🚀 Astro website →](https://astro.build/)
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-### [🕮 Astro docs →](https://docs.astro.build/en/getting-started/)
+4. Open [http://localhost:4321](http://localhost:4321) in your browser
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## Adding Projects
+
+See `PROJECTS_README.md` for detailed instructions on how to add your own projects.
+
+## Tech Stack
+
+- **Astro** - Web framework
+- **Tailwind CSS** - Styling
+- **GSAP** - Animations
+- **TypeScript** - Type safety
 
 ---
 
-## Preview
+## 📋 To-Do List
 
-![Mintaka Preview](.github/images/majestico_share.gif)
-
-## 🧪 Test
-
-On the folder run
-
-1. `bun install`  <small>(or `yarn` or `pnpm i`)</small>
-2. `bun run dev`  <small>(or `yarn dev` or `pnpm dev`)</small>
-
-## ✅ Features
-
-- [x] Localization
-- [x] Blog
-
----
-
-<p align="right"><a href="https://majestico.co" target="_blank">majestico.co</p>
+### tasks
+* about page
+* projects page
+* db
+* portfolio page (gallery)
+* cleaning of the project
