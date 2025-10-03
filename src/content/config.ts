@@ -1,19 +1,2 @@
-import { defineCollection, z } from "astro:content";
-
-const projectsCollection = defineCollection({
-	schema: ({ image }) =>
-		z.object({
-			title: z.string(),
-			pubDate: z.date(),
-			description: z.string(),
-			link: z.string(),
-			image: z.object({
-				source: image(),
-				alt: z.string(),
-			}),
-		}),
-});
-
-export const collections = {
-	projects: projectsCollection,
-};
+// No content collections needed - using JSON data instead
+export const collections = {};

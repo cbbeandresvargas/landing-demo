@@ -12,6 +12,9 @@ export const ui = {
 		contacts: "Contacts",
 		contactus: "Contact us",
 		projects: "Projects",
+		about: "About",
+		portfolio: "Portfolio",
+		experience: "Experience",
 		services: "Services",
 		homepage: "Homepage",
 		tagline:
@@ -90,6 +93,9 @@ export const ui = {
 		contacts: "Contactos",
 		contactus: "Contáctanos",
 		projects: "Proyectos",
+		about: "Sobre Mí",
+		portfolio: "Portfolio",
+		experience: "Experiencia",
 		services: "Servicios",
 		homepage: "Inicio",
 		tagline:

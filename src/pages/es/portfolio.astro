@@ -1,0 +1,156 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { AstroSeoProps } from "@astrolib/seo";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const seo: AstroSeoProps = {
+	title: "Portfolio - Andres Vargas",
+	description: "Sección de Portfolio - Próximamente con exhibiciones detalladas de proyectos y estudios de caso.",
+	canonical: "https://mintaka.co/es/portfolio/",
+	openGraph: {
+		url: "/es/portfolio/",
+		title: "Portfolio - Andres Vargas",
+		description: "Sección de Portfolio - Próximamente con exhibiciones detalladas de proyectos y estudios de caso.",
+		images: [
+			{
+				url: "https://mintaka.co/_astro/project-template.su4WbnfU_78HXv.webp",
+				width: 1200,
+				height: 630,
+				alt: "Portfolio Próximamente",
+				type: "image/jpeg",
+			},
+		],
+		site_name: "Majestico",
+	},
+};
+---
+
+<BaseLayout seo={seo}>
+	<!-- Hero Section -->
+	<section class="section home-dark-section min-h-screen flex items-center">
+		<div class="col-span-12">
+			<div class="text-center mb-16">
+				<h1 class="portfolio-hero-title font-display text-6xl font-extrabold uppercase mb-6 sm:text-7xl md:text-8xl lg:text-9xl">
+					<span class="portfolio-title-line">Portfolio</span>
+				</h1>
+				<p class="portfolio-subtitle text-xl text-gray-400 max-w-3xl mx-auto font-mono">
+					Próximamente - Exhibiciones detalladas de proyectos y estudios de caso
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Coming Soon Section -->
+	<section class="section py-20">
+		<div class="col-span-12">
+			<div class="max-w-4xl mx-auto text-center">
+				<div class="coming-soon-content">
+					<div class="coming-soon-icon mb-8">
+						<svg class="w-24 h-24 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+						</svg>
+					</div>
+					<h2 class="text-4xl font-bold mb-8">Sección de Portfolio</h2>
+					<p class="text-xl text-gray-600 mb-12">
+						Esta sección está actualmente en desarrollo. Pronto encontrarás exhibiciones detalladas de proyectos, 
+						estudios de caso y análisis en profundidad de mi trabajo aquí.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+						<a href={translatePath("/projects/")} class="squircle-bg rounded-lg bg-zinc-900 hover:bg-zinc-800 transition-colors px-8 py-4 text-xl font-semibold text-white" data-cursor-hover data-cursor-parallax>
+							Ver Proyectos
+						</a>
+						<a href={translatePath("/about/")} class="squircle-bg rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors px-8 py-4 text-xl font-semibold text-white" data-cursor-hover data-cursor-parallax>
+							Sobre Mí
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.portfolio-hero-title {
+		overflow: hidden;
+	}
+	
+	.portfolio-title-line {
+		display: block;
+		transform: translateY(100%);
+	}
+	
+	.portfolio-subtitle {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	
+	.coming-soon-content {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	
+	.coming-soon-icon {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+</style>
+
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+	import { SplitText } from "gsap/SplitText";
+
+	gsap.registerPlugin(ScrollTrigger, SplitText);
+
+	function init() {
+		// Hero title animation
+		const titleLines = document.querySelectorAll('.portfolio-title-line');
+		gsap.from(titleLines, {
+			duration: 1.2,
+			y: "100%",
+			ease: "power4.out",
+			stagger: 0.2,
+		});
+
+		// Subtitle animation
+		gsap.from('.portfolio-subtitle', {
+			duration: 1,
+			y: 30,
+			opacity: 0,
+			ease: "power3.out",
+			delay: 0.5,
+		});
+
+		// Coming soon content animation
+		gsap.from('.coming-soon-content', {
+			duration: 1,
+			y: 50,
+			opacity: 0,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: '.coming-soon-content',
+				start: "top 80%",
+			},
+		});
+
+		// Icon animation
+		gsap.from('.coming-soon-icon', {
+			duration: 0.8,
+			scale: 0.8,
+			opacity: 0,
+			ease: "back.out(1.7)",
+			delay: 0.3,
+			scrollTrigger: {
+				trigger: '.coming-soon-icon',
+				start: "top 85%",
+			},
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>

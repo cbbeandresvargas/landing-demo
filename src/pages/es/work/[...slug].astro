@@ -1,49 +1,38 @@
 ---
-import { getCollection } from "astro:content";
+import { getProjects, getProjectById } from "@utils/projects";
 import type { AstroSeoProps } from "@astrolib/seo";
 import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
+import projectTemplateImage from "@assets/images/projects/project-template.jpg";
 
 export async function getStaticPaths() {
-	const projectsEntries = await getCollection("projects");
-
-	return projectsEntries
-		.map((entry) => {
-			const [lang, ...slug] = entry.slug.split("/");
-			return { params: { lang, slug: slug.join("/") || undefined }, props: entry };
-		})
-		.filter((entry) => entry.params.lang === "es");
+	const projects = getProjects("es");
+	
+	return projects.map((project) => ({
+		params: { slug: project.id },
+		props: { project },
+	}));
 }
 
-const entry = Astro.props;
-const { Content } = await entry.render();
+const { project } = Astro.props;
 
 const seo: AstroSeoProps = {
-	title: `Project ${entry.data.title} - Majestico`,
-	description: entry.data.description,
-	canonical: `https://mintaka.co/es/work/${entry.slug}/`,
+	title: `Proyecto ${project.title} - Majestico`,
+	description: project.description,
+	canonical: `https://mintaka.co/es/work/${project.id}/`,
 	openGraph: {
-		url: entry.slug,
-		title: entry.data.title,
-		description: "{frontmatter.description}",
+		url: project.id,
+		title: project.title,
+		description: project.description,
 		images: [
 			{
-				url: "https://mintaka.co/opengraph/social-og.jpg",
+				url: `https://mintaka.co/_astro/${project.image}`,
 				width: 1200,
 				height: 630,
-				alt: "Social open graph",
+				alt: project.title,
 				type: "image/jpeg",
 			},
-			{
-				url: "https://mintaka.co/opengraph/twitter-og.jpg",
-				width: 4096,
-				height: 4096,
-				alt: "Twitter open graph",
-				type: "image/jpeg",
-			},
-			{ url: "https://mintaka.co/opengraph/social-og.jpg" },
-			{ url: "https://mintaka.co/opengraph/twitter-og.jpg" },
 		],
-		site_name: "YourSitesName",
+		site_name: "Majestico",
 	},
 	twitter: {
 		handle: "@TwitterHandle",
@@ -51,8 +40,26 @@ const seo: AstroSeoProps = {
 		cardType: "summary_large_image",
 	},
 };
+
+// Convert content to markdown-like format for the layout
+const frontmatter = {
+	title: project.title,
+	description: project.description,
+	pubDate: new Date(project.pubDate),
+	link: project.link,
+	image: {
+		source: projectTemplateImage,
+		alt: project.title,
+	},
+};
+
+const body = project.content;
 ---
 
-<MarkdownPostLayout frontmatter={entry.data} body={entry.body} seo={seo}>
-	<Content />
+<MarkdownPostLayout frontmatter={frontmatter} body={body} seo={seo}>
+	<div class="prose prose-invert max-w-none">
+		{project.content.split('\n').map(paragraph => 
+			paragraph.trim() ? `<p>${paragraph}</p>` : ''
+		).join('')}
+	</div>
 </MarkdownPostLayout>

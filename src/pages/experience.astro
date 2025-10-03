@@ -1,0 +1,278 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { AstroSeoProps } from "@astrolib/seo";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const seo: AstroSeoProps = {
+	title: "Work Experience - Andres Vargas",
+	description: "My professional journey in technology and leadership, showcasing key roles and achievements in Full-Stack development and IT management.",
+	canonical: "https://mintaka.co/experience/",
+	openGraph: {
+		url: "/experience/",
+		title: "Work Experience - Andres Vargas",
+		description: "My professional journey in technology and leadership, showcasing key roles and achievements in Full-Stack development and IT management.",
+		images: [
+			{
+				url: "https://mintaka.co/_astro/experience-og.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Andres Vargas - Work Experience",
+				type: "image/jpeg",
+			},
+		],
+		site_name: "Majestico",
+	},
+	twitter: {
+		handle: "@TwitterHandle",
+		site: "@site",
+		cardType: "summary_large_image",
+	},
+};
+
+---
+
+<BaseLayout seo={seo}>
+	<!-- Hero Section -->
+	<section class="section home-dark-section min-h-screen flex items-center">
+		<div class="col-span-12">
+			<div class="text-center mb-16">
+				<h1 class="font-display text-6xl font-extrabold uppercase mb-6 sm:text-7xl md:text-8xl lg:text-9xl">
+					<span class="experience-title-line">Work</span>
+					<span class="experience-title-line">Experience</span>
+				</h1>
+				<p class="text-xl text-slate-400 max-w-3xl mx-auto font-mono">
+					My professional journey in technology and leadership
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience Timeline -->
+	<section class="section py-20">
+		<div class="col-span-12">
+			<div class="max-w-4xl mx-auto">
+				<div class="space-y-16">
+					<!-- Current Role -->
+					<div class="border-l-2 border-slate-300 pl-8 relative">
+						<div class="absolute -left-2 top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+						<div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
+							<div class="flex items-center justify-between mb-4">
+								<h3 class="text-2xl font-bold">Fullstack Software Developer</h3>
+								<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Current</span>
+							</div>
+							<p class="text-lg text-slate-600 mb-2">Kiev Line, Zurich-Seitanilm</p>
+							<p class="text-sm text-slate-500 mb-4">May 2024 - Present</p>
+							<p class="text-slate-700 mb-6">Leading development of enterprise-level applications using modern web technologies.</p>
+							<div class="space-y-2">
+								<h4 class="font-semibold text-slate-900">Key Achievements:</h4>
+								<ul class="list-disc list-inside text-slate-600 space-y-1">
+									<li>Led development of 3+ enterprise applications</li>
+									<li>Improved system performance by 40%</li>
+									<li>Mentored junior developers</li>
+								</ul>
+							</div>
+							<div class="mt-4">
+								<h4 class="font-semibold text-slate-900 mb-2">Technologies:</h4>
+								<div class="flex flex-wrap gap-2">
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">Python</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">Django</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">React</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">PostgreSQL</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">AWS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Head of IT -->
+					<div class="border-l-2 border-slate-300 pl-8 relative">
+						<div class="absolute -left-2 top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+						<div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
+							<h3 class="text-2xl font-bold mb-2">Head of IT Department</h3>
+							<p class="text-lg text-slate-600 mb-2">Reborn Developments</p>
+							<p class="text-sm text-slate-500 mb-4">Dec 2022 - Present</p>
+							<p class="text-slate-700 mb-6">Leading IT infrastructure and team management for innovative development projects.</p>
+							<div class="space-y-2">
+								<h4 class="font-semibold text-slate-900">Key Achievements:</h4>
+								<ul class="list-disc list-inside text-slate-600 space-y-1">
+									<li>Managed team of 8+ developers</li>
+									<li>Reduced infrastructure costs by 25%</li>
+									<li>Implemented CI/CD pipelines</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pusaq 8 -->
+					<div class="border-l-2 border-slate-300 pl-8 relative">
+						<div class="absolute -left-2 top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+						<div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
+							<h3 class="text-2xl font-bold mb-2">Fullstack Software Developer</h3>
+							<p class="text-lg text-slate-600 mb-2">Pusaq 8 Innovations</p>
+							<p class="text-sm text-slate-500 mb-4">2022 - May 2024</p>
+							<p class="text-slate-700 mb-6">Developed cutting-edge mobile and web applications using Flutter and modern backend technologies.</p>
+							<div class="space-y-2">
+								<h4 class="font-semibold text-slate-900">Key Achievements:</h4>
+								<ul class="list-disc list-inside text-slate-600 space-y-1">
+									<li>Built 5+ mobile applications</li>
+									<li>Increased user engagement by 60%</li>
+									<li>Led cross-platform development</li>
+								</ul>
+							</div>
+							<div class="mt-4">
+								<h4 class="font-semibold text-slate-900 mb-2">Technologies:</h4>
+								<div class="flex flex-wrap gap-2">
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">Flutter</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">Dart</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">Node.js</span>
+									<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">MongoDB</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Nuclea Solutions -->
+					<div class="border-l-2 border-slate-300 pl-8 relative">
+						<div class="absolute -left-2 top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+						<div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
+							<h3 class="text-2xl font-bold mb-2">Software Engineer</h3>
+							<p class="text-lg text-slate-600 mb-2">Nuclea Solutions</p>
+							<p class="text-sm text-slate-500 mb-4">Jan 2019 - Present</p>
+							<p class="text-slate-700 mb-6">Building robust software solutions with focus on scalability and performance optimization.</p>
+							<div class="space-y-2">
+								<h4 class="font-semibold text-slate-900">Key Achievements:</h4>
+								<ul class="list-disc list-inside text-slate-600 space-y-1">
+									<li>Developed 10+ web applications</li>
+									<li>Improved system scalability by 80%</li>
+									<li>Implemented security best practices</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Progress -->
+	<section class="section home-dark-section py-20">
+		<div class="col-span-12">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold mb-16 text-center font-display">
+					Technical Expertise
+				</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div class="space-y-6">
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Full-Stack Development</span>
+								<span class="text-slate-400">95%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 95%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Mobile Development</span>
+								<span class="text-slate-400">90%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 90%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Cloud Architecture</span>
+								<span class="text-slate-400">85%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 85%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Cybersecurity</span>
+								<span class="text-slate-400">80%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 80%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="space-y-6">
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Team Leadership</span>
+								<span class="text-slate-400">88%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 88%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Project Management</span>
+								<span class="text-slate-400">85%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 85%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">DevOps & CI/CD</span>
+								<span class="text-slate-400">82%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 82%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-2">
+								<span class="text-white font-medium">Database Design</span>
+								<span class="text-slate-400">90%</span>
+							</div>
+							<div class="w-full bg-slate-700 rounded-full h-2">
+								<div class="bg-white h-2 rounded-full" style="width: 90%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="section py-20">
+		<div class="col-span-12">
+			<div class="max-w-4xl mx-auto text-center">
+				<h2 class="text-4xl font-bold mb-8 font-display">Ready to Work Together?</h2>
+				<p class="text-xl text-slate-600 mb-12">
+					Let's discuss how my experience can help bring your next project to life.
+				</p>
+				<div class="squircle-bg rounded-lg bg-zinc-900 inline-block" data-cursor-hover data-cursor-parallax>
+					<a
+						class="flex h-12 w-full max-w-52 flex-1 items-center justify-center px-6 py-3 text-xl text-slate-200 transition-all hover:text-white sm:w-auto md:font-bold"
+						aria-label="Contact Page"
+						href={translatePath("/contact/")}>
+						{t("contact")}
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.experience-title-line {
+		display: block;
+		transform: translateY(100%);
+	}
+</style>
+
+<!-- GSAP animations temporarily disabled for content review -->
