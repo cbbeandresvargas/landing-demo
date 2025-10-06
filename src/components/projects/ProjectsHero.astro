@@ -1,0 +1,78 @@
+---
+// ProjectsHero.astro - Hero section for Projects page
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<!-- Hero Section -->
+<section class="projects-hero section home-dark-section min-h-screen flex items-center">
+	<div class="col-span-12">
+		<div class="text-center mb-16">
+			<h1 class="font-display text-6xl font-extrabold uppercase mb-6 sm:text-7xl md:text-8xl lg:text-9xl">
+				<span class="projects-title-line">
+					{lang === 'es' ? 'Mis' : 'My'}
+				</span>
+				<span class="projects-title-line">
+					{lang === 'es' ? 'Proyectos' : 'Projects'}
+				</span>
+			</h1>
+			<p class="projects-hero-subtitle text-xl text-slate-400 max-w-3xl mx-auto font-mono">
+				{lang === 'es' 
+					? 'Transformando ideas en soluciones digitales que marcan la diferencia'
+					: 'Transforming ideas into digital solutions that make a difference'
+				}
+			</p>
+		</div>
+	</div>
+</section>
+
+<script>
+	import { gsap } from "gsap";
+	import { SplitText } from "gsap/SplitText";
+
+	gsap.registerPlugin(SplitText);
+
+	function init() {
+		// Split text for animation
+		const childSplit = new SplitText(".projects-title-line", {
+			type: "lines",
+			linesClass: "split-child",
+		});
+		const parentSplit = new SplitText(".projects-title-line", {
+			linesClass: "split-parent",
+		});
+
+		// Animate title lines
+		gsap.timeline()
+			.from(childSplit.lines, {
+				duration: 1.2,
+				yPercent: 100,
+				ease: "power3.out",
+				stagger: 0.1,
+				delay: 0.3
+			})
+			.from(".projects-hero-subtitle", {
+				duration: 0.8,
+				y: 50,
+				opacity: 0,
+				ease: "power2.out"
+			}, "-=0.6");
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>
+
+<style>
+	.projects-title-line {
+		display: block;
+		overflow: hidden;
+	}
+	.projects-title-line :global(.split-parent) {
+		overflow: hidden;
+	}
+	.projects-title-line :global(.split-child) {
+		display: inline-block;
+	}
+</style>

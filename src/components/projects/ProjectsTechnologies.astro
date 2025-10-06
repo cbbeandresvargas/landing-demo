@@ -1,0 +1,110 @@
+---
+// ProjectsTechnologies.astro - Technologies section for Projects page
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+// Technologies data
+const technologiesData = [
+	{
+		id: 1,
+		category: {
+			en: "Backend",
+			es: "Backend"
+		},
+		skills: ["Python", "Django", "Fast API", "Java", "Spring Boot", "Node.js"]
+	},
+	{
+		id: 2,
+		category: {
+			en: "Frontend",
+			es: "Frontend"
+		},
+		skills: ["React", "Flutter", "Dart", "JavaScript", "TypeScript", "Tailwind CSS"]
+	},
+	{
+		id: 3,
+		category: {
+			en: "Databases",
+			es: "Bases de Datos"
+		},
+		skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
+	},
+	{
+		id: 4,
+		category: {
+			en: "Tools & Others",
+			es: "Herramientas y Otros"
+		},
+		skills: ["Docker", "AWS", "Git", "Figma", "Linux", "Fortinet"]
+	}
+];
+---
+
+<!-- Technologies Section -->
+<section class="projects-technologies section home-dark-section py-20">
+	<div class="col-span-12">
+		<div class="max-w-4xl mx-auto">
+			<h2 class="text-4xl font-bold mb-16 text-center font-display">
+				{lang === 'es' ? 'Tecnologías con las que Trabajo' : 'Technologies I Work With'}
+			</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				{technologiesData.map((category) => (
+					<div class="tech-category text-center">
+						<h3 class="text-xl font-bold mb-6 text-black">
+							{category.category[lang]}
+						</h3>
+						<div class="space-y-3">
+							{category.skills.map((skill) => (
+								<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">
+									{skill}
+								</span>
+							))}
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	function init() {
+		// Animate title
+		gsap.from('.projects-technologies h2', {
+			scrollTrigger: {
+				trigger: '.projects-technologies',
+				start: "top 80%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out"
+		});
+
+		// Animate tech categories
+		gsap.from('.projects-technologies .tech-category', {
+			scrollTrigger: {
+				trigger: '.projects-technologies',
+				start: "top 70%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out",
+			stagger: 0.2
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>

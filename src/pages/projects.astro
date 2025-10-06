@@ -1,15 +1,9 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { AstroSeoProps } from "@astrolib/seo";
-import { getLangFromUrl, useTranslations, useTranslatedPath } from "@i18n/utils";
-import { getProjects } from "@utils/projects";
-import projectTemplateImage from "@assets/images/projects/project-template.jpg";
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
-
-const projects = getProjects(lang).sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+import ProjectsHero from "@/components/projects/ProjectsHero.astro";
+import ProjectsGrid from "@/components/projects/ProjectsGrid.astro";
+import ProjectsTechnologies from "@/components/projects/ProjectsTechnologies.astro";
 
 const seo: AstroSeoProps = {
 	title: "Projects - Andres Vargas Portfolio",
@@ -36,136 +30,10 @@ const seo: AstroSeoProps = {
 		cardType: "summary_large_image",
 	},
 };
-
 ---
 
 <BaseLayout seo={seo}>
-	<!-- Hero Section -->
-	<section class="section home-dark-section min-h-screen flex items-center">
-		<div class="col-span-12">
-			<div class="text-center mb-16">
-				<h1 class="font-display text-6xl font-extrabold uppercase mb-6 sm:text-7xl md:text-8xl lg:text-9xl">
-					<span class="projects-title-line">My</span>
-					<span class="projects-title-line">Projects</span>
-				</h1>
-				<p class="text-xl text-slate-400 max-w-3xl mx-auto font-mono">
-					Transforming ideas into digital solutions that make a difference
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Projects Grid -->
-	<section class="section py-20">
-		<div class="col-span-12">
-			<div class="max-w-7xl mx-auto">
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{projects.map((project, index) => (
-						<div class="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden group">
-							<div class="aspect-video overflow-hidden">
-								<img src={projectTemplateImage.src} alt={project.title as string} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-							</div>
-							<div class="p-6">
-								<h3 class="text-xl font-bold mb-2 font-mono">{project.title}</h3>
-								<p class="text-slate-600 mb-4 line-clamp-2">{project.description}</p>
-								<div class="flex items-center justify-between">
-									<a 
-										href={`/work/${project.id}`} 
-										class="text-slate-500 hover:text-slate-900 font-mono text-sm uppercase tracking-wide transition-colors"
-									>
-										View Project →
-									</a>
-									<span class="text-xs text-slate-400">{project.pubDate}</span>
-								</div>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Technologies Section -->
-	<section class="section home-dark-section py-20">
-		<div class="col-span-12">
-			<div class="max-w-4xl mx-auto">
-				<h2 class="text-4xl font-bold mb-16 text-center font-display">
-					Technologies I Work With
-				</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-					<div class="text-center">
-						<h3 class="text-xl font-bold mb-6 text-white">Backend</h3>
-						<div class="space-y-3">
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Python</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Django</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Fast API</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Java</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Spring Boot</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Node.js</span>
-						</div>
-					</div>
-					<div class="text-center">
-						<h3 class="text-xl font-bold mb-6 text-white">Frontend</h3>
-						<div class="space-y-3">
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">React</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Flutter</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Dart</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">JavaScript</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">TypeScript</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Tailwind CSS</span>
-						</div>
-					</div>
-					<div class="text-center">
-						<h3 class="text-xl font-bold mb-6 text-white">Databases</h3>
-						<div class="space-y-3">
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">PostgreSQL</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">MySQL</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">MongoDB</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Redis</span>
-						</div>
-					</div>
-					<div class="text-center">
-						<h3 class="text-xl font-bold mb-6 text-white">Tools & Others</h3>
-						<div class="space-y-3">
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Docker</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">AWS</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Git</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Figma</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Linux</span>
-							<span class="block bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm">Fortinet</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- CTA Section -->
-	<section class="section py-20">
-		<div class="col-span-12">
-			<div class="max-w-4xl mx-auto text-center">
-				<h2 class="text-4xl font-bold mb-8 font-display">Ready to Start Your Project?</h2>
-				<p class="text-xl text-slate-600 mb-12">
-					Let's collaborate to bring your vision to life with cutting-edge technology and innovative solutions.
-				</p>
-				<div class="squircle-bg rounded-lg bg-zinc-900 inline-block" data-cursor-hover data-cursor-parallax>
-					<a
-						class="flex h-12 w-full max-w-52 flex-1 items-center justify-center px-6 py-3 text-xl text-slate-200 transition-all hover:text-white sm:w-auto md:font-bold"
-						aria-label="Contact Page"
-						href={translatePath("/contact/")}>
-						{t("contact")}
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+	<ProjectsHero />
+	<ProjectsGrid />
+	<ProjectsTechnologies />
 </BaseLayout>
-
-<style>
-	.projects-title-line {
-		display: block;
-		transform: translateY(100%);
-	}
-</style>
-
-<!-- GSAP animations temporarily disabled for content review -->
