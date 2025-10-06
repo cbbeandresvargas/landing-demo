@@ -1,0 +1,172 @@
+---
+// ExperienceSkills.astro - Skills progress section for Experience page
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+// Skills data
+const skillsData = [
+	{
+		id: 1,
+		name: {
+			en: "Full-Stack Development",
+			es: "Desarrollo Full-Stack"
+		},
+		percentage: 95
+	},
+	{
+		id: 2,
+		name: {
+			en: "Mobile Development",
+			es: "Desarrollo Móvil"
+		},
+		percentage: 90
+	},
+	{
+		id: 3,
+		name: {
+			en: "Cloud Architecture",
+			es: "Arquitectura en la Nube"
+		},
+		percentage: 85
+	},
+	{
+		id: 4,
+		name: {
+			en: "Cybersecurity",
+			es: "Ciberseguridad"
+		},
+		percentage: 80
+	},
+	{
+		id: 5,
+		name: {
+			en: "Team Leadership",
+			es: "Liderazgo de Equipos"
+		},
+		percentage: 88
+	},
+	{
+		id: 6,
+		name: {
+			en: "Project Management",
+			es: "Gestión de Proyectos"
+		},
+		percentage: 85
+	},
+	{
+		id: 7,
+		name: {
+			en: "DevOps & CI/CD",
+			es: "DevOps y CI/CD"
+		},
+		percentage: 82
+	},
+	{
+		id: 8,
+		name: {
+			en: "Database Design",
+			es: "Diseño de Bases de Datos"
+		},
+		percentage: 90
+	}
+];
+---
+
+<!-- Skills Progress -->
+<section class="experience-skills section py-20">
+	<div class="col-span-12">
+		<div class="max-w-4xl mx-auto">
+			<h2 class="text-4xl font-bold mb-16 text-center font-display">
+				{lang === 'es' ? 'Experiencia Técnica' : 'Technical Expertise'}
+			</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				{skillsData.slice(0, 4).map((skill) => (
+					<div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-900 font-medium">{skill.name[lang]}</span>
+                            <span class="text-slate-600">{skill.percentage}%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div 
+                                class="skill-progress bg-slate-900 h-2 rounded-full" 
+                                style={`width: ${skill.percentage}%`}
+                            ></div>
+                        </div>
+					</div>
+				))}
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+				{skillsData.slice(4).map((skill) => (
+					<div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-900 font-medium">{skill.name[lang]}</span>
+                            <span class="text-slate-600">{skill.percentage}%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div 
+                                class="skill-progress bg-slate-900 h-2 rounded-full" 
+                                style={`width: ${skill.percentage}%`}
+                            ></div>
+                        </div>
+					</div>
+				))}
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	function init() {
+		// Animate title
+		gsap.from('.experience-skills h2', {
+			scrollTrigger: {
+				trigger: '.experience-skills',
+				start: "top 80%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out"
+		});
+
+		// Animate skill items
+		gsap.from('.experience-skills .skill-item', {
+			scrollTrigger: {
+				trigger: '.experience-skills',
+				start: "top 70%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out",
+			stagger: 0.1
+		});
+
+		// Animate progress bars
+		gsap.from('.experience-skills .skill-progress', {
+			scrollTrigger: {
+				trigger: '.experience-skills',
+				start: "top 60%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 1.5,
+			width: "0%",
+			ease: "power2.out",
+			stagger: 0.1
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>

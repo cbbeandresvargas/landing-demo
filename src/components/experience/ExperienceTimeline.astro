@@ -1,0 +1,207 @@
+---
+// ExperienceTimeline.astro - Experience timeline section for Experience page
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+// Experience data
+const experienceData = [
+	{
+		id: 1,
+		title: {
+			en: "Fullstack Software Developer",
+			es: "Desarrollador Full-Stack"
+		},
+		company: "Kiev Line, Zurich-Seitanilm",
+		period: {
+			en: "May 2024 - Present",
+			es: "Mayo 2024 - Presente"
+		},
+		description: {
+			en: "Leading development of enterprise-level applications using modern web technologies.",
+			es: "Liderando el desarrollo de aplicaciones empresariales usando tecnologías web modernas."
+		},
+		achievements: {
+			en: [
+				"Led development of 3+ enterprise applications",
+				"Improved system performance by 40%",
+				"Mentored junior developers"
+			],
+			es: [
+				"Lideré el desarrollo de 3+ aplicaciones empresariales",
+				"Mejoré el rendimiento del sistema en un 40%",
+				"Guié a desarrolladores junior"
+			]
+		},
+		technologies: ["Python", "Django", "React", "PostgreSQL", "AWS"],
+		isCurrent: true
+	},
+	{
+		id: 2,
+		title: {
+			en: "Head of IT Department",
+			es: "Jefe del Departamento de TI"
+		},
+		company: "Reborn Developments",
+		period: {
+			en: "Dec 2022 - Present",
+			es: "Dic 2022 - Presente"
+		},
+		description: {
+			en: "Leading IT infrastructure and team management for innovative development projects.",
+			es: "Liderando la infraestructura de TI y gestión de equipos para proyectos de desarrollo innovadores."
+		},
+		achievements: {
+			en: [
+				"Managed team of 8+ developers",
+				"Reduced infrastructure costs by 25%",
+				"Implemented CI/CD pipelines"
+			],
+			es: [
+				"Gestioné un equipo de 8+ desarrolladores",
+				"Reduje los costos de infraestructura en un 25%",
+				"Implementé pipelines de CI/CD"
+			]
+		},
+		technologies: [],
+		isCurrent: false
+	},
+	{
+		id: 3,
+		title: {
+			en: "Fullstack Software Developer",
+			es: "Desarrollador Full-Stack"
+		},
+		company: "Pusaq 8 Innovations",
+		period: {
+			en: "2022 - May 2024",
+			es: "2022 - Mayo 2024"
+		},
+		description: {
+			en: "Developed cutting-edge mobile and web applications using Flutter and modern backend technologies.",
+			es: "Desarrollé aplicaciones móviles y web de vanguardia usando Flutter y tecnologías backend modernas."
+		},
+		achievements: {
+			en: [
+				"Built 5+ mobile applications",
+				"Increased user engagement by 60%",
+				"Led cross-platform development"
+			],
+			es: [
+				"Construí 5+ aplicaciones móviles",
+				"Aumenté el compromiso del usuario en un 60%",
+				"Lideré el desarrollo multiplataforma"
+			]
+		},
+		technologies: ["Flutter", "Dart", "Node.js", "MongoDB"],
+		isCurrent: false
+	},
+	{
+		id: 4,
+		title: {
+			en: "Software Engineer",
+			es: "Ingeniero de Software"
+		},
+		company: "Nuclea Solutions",
+		period: {
+			en: "Jan 2019 - Present",
+			es: "Ene 2019 - Presente"
+		},
+		description: {
+			en: "Building robust software solutions with focus on scalability and performance optimization.",
+			es: "Construyendo soluciones de software robustas con enfoque en escalabilidad y optimización de rendimiento."
+		},
+		achievements: {
+			en: [
+				"Developed 10+ web applications",
+				"Improved system scalability by 80%",
+				"Implemented security best practices"
+			],
+			es: [
+				"Desarrollé 10+ aplicaciones web",
+				"Mejoré la escalabilidad del sistema en un 80%",
+				"Implementé mejores prácticas de seguridad"
+			]
+		},
+		technologies: [],
+		isCurrent: false
+	}
+];
+---
+
+<!-- Experience Timeline -->
+<section class="experience-timeline section py-20">
+	<div class="col-span-12">
+		<div class="max-w-4xl mx-auto">
+			<div class="space-y-16">
+				{experienceData.map((experience) => (
+					<div class="experience-item border-l-2 border-slate-300 pl-8 relative">
+						<div class="absolute -left-2 top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
+						<div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200">
+							<div class="flex items-center justify-between mb-4">
+								<h3 class="text-2xl font-bold text-black">{experience.title[lang]}</h3>
+								{experience.isCurrent && (
+									<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+										{lang === 'es' ? 'Actual' : 'Current'}
+									</span>
+								)}
+							</div>
+							<p class="text-lg text-slate-600 mb-2">{experience.company}</p>
+							<p class="text-sm text-slate-500 mb-4">{experience.period[lang]}</p>
+							<p class="text-slate-700 mb-6">{experience.description[lang]}</p>
+							<div class="space-y-2">
+								<h4 class="font-semibold text-slate-900">
+									{lang === 'es' ? 'Logros Clave:' : 'Key Achievements:'}
+								</h4>
+								<ul class="list-disc list-inside text-slate-600 space-y-1">
+									{experience.achievements[lang].map((achievement) => (
+										<li>{achievement}</li>
+									))}
+								</ul>
+							</div>
+							{experience.technologies.length > 0 && (
+								<div class="mt-4">
+									<h4 class="font-semibold text-slate-900 mb-2">
+										{lang === 'es' ? 'Tecnologías:' : 'Technologies:'}
+									</h4>
+									<div class="flex flex-wrap gap-2">
+										{experience.technologies.map((tech) => (
+											<span class="bg-slate-100 text-slate-700 px-3 py-1 rounded text-sm">{tech}</span>
+										))}
+									</div>
+								</div>
+							)}
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	function init() {
+		// Animate experience items
+		gsap.from('.experience-timeline .experience-item', {
+			scrollTrigger: {
+				trigger: '.experience-timeline',
+				start: "top 80%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out",
+			stagger: 0.2
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>
