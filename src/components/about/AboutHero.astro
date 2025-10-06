@@ -1,0 +1,34 @@
+---
+// AboutHero.astro - Hero section for About page
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!-- Hero Section -->
+<section class="section home-dark-section min-h-screen flex items-center">
+	<div class="col-span-12">
+		<div class="text-center mb-16">
+			<h1 class="font-display text-6xl font-extrabold uppercase mb-6 sm:text-7xl md:text-8xl lg:text-9xl">
+				<span class="about-title-line">{lang === 'es' ? 'Sobre' : 'About'}</span>
+				<span class="about-title-line">{lang === 'es' ? 'Mí' : 'Me'}</span>
+			</h1>
+			<p class="text-xl text-slate-400 max-w-3xl mx-auto font-mono">
+				{lang === 'es' 
+					? 'Desarrollador Full-Stack y Especialista en Seguridad con más de 5 años de experiencia'
+					: 'Full-Stack Developer & Security Specialist with 5+ years of experience'
+				}
+			</p>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about-title-line {
+		display: block;
+		/* transform: translateY(100%); - Disabled for debugging */
+	}
+</style>
+
+<!-- GSAP animations temporarily disabled for debugging -->

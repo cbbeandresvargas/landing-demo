@@ -1,0 +1,42 @@
+---
+// AboutIntro.astro - Introduction section for About page
+import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<!-- Introduction Section -->
+<section class="section py-20">
+	<div class="col-span-12">
+		<div class="max-w-4xl mx-auto text-center">
+			<h2 class="text-4xl font-bold mb-8 font-display">
+				{lang === 'es' ? 'Apasionado por la Tecnología' : 'Passionate About Technology'}
+			</h2>
+			<div class="space-y-6 text-lg text-slate-600">
+				{lang === 'es' ? (
+					<>
+						<p>
+							Soy <strong>Andres Vargas</strong>, un Desarrollador Full-Stack y Especialista en Seguridad con sede en <strong>Cochabamba, Bolivia</strong>. 
+							Con más de 5 años de experiencia, me especializo en crear aplicaciones web robustas y escalables que generan un impacto real.
+						</p>
+						<p>
+							Mi trayectoria en tecnología ha sido impulsada por la pasión por resolver problemas complejos y construir soluciones que conecten la excelencia técnica con el valor empresarial. Me considero un profesional versátil con experiencia en marketing digital, análisis de datos y seguridad de la información.
+						</p>
+					</>
+				) : (
+					<>
+						<p>
+							I'm <strong>Andres Vargas</strong>, a dedicated Full-Stack Developer and Security Specialist based in <strong>Cochabamba, Bolivia</strong>. 
+							With over 5 years of experience, I specialize in creating robust, scalable web applications that make a real impact.
+						</p>
+						<p>
+							My journey in technology has been driven by a passion for solving complex problems and building solutions that bridge the gap between technical excellence and business value. I consider myself a versatile professional with experience in digital marketing, data analysis, and information security.
+						</p>
+					</>
+				)}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- GSAP animations temporarily disabled for debugging -->
