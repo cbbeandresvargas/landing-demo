@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": {
-        "en": "Full-Stack Developer",
-        "es": "Desarrollador Full-Stack"
+        "en": "Fullstack Software Developer",
+        "es": "Desarrollador de Software Fullstack"
       },
       "company": "Kiev Line, Zurich-Seitanilm",
       "period": {
@@ -12,22 +12,22 @@
         "es": "Mayo 2024 - Presente"
       },
       "description": {
-        "en": "Leading development of enterprise-level applications using modern web technologies.",
-        "es": "Liderando el desarrollo de aplicaciones empresariales usando tecnologías web modernas."
+        "en": "Developing robust and scalable web solutions as a Fullstack Developer, focusing on high-performance backend architecture and secure API design.",
+        "es": "Desarrollo de soluciones web robustas y escalables como Fullstack Developer, centrado en la arquitectura de backend de alto rendimiento y el diseño seguro de APIs."
       },
       "achievements": {
         "en": [
-          "Led development of 3+ enterprise applications",
-          "Improved system performance by 40%",
-          "Mentored junior developers"
+          "Led the migration of the main platform to a Python microservice, improving latency by 35%.",
+          "Designed and implemented secure RESTful APIs to integrate critical third-party services.",
+          "Implemented unit and integration tests that resulted in a 90% reduction of production failures."
         ],
         "es": [
-          "Lideré el desarrollo de 3+ aplicaciones empresariales",
-          "Mejoré el rendimiento del sistema en un 40%",
-          "Guié a desarrolladores junior"
+          "Lideré la migración de la plataforma principal a un microservicio en Python, mejorando la latencia en un 35%.",
+          "Diseñé e implementé APIs RESTful seguras para integrar servicios críticos de terceros.",
+          "Implementé pruebas unitarias y de integración que resultaron en una reducción del 90% de fallos en producción."
         ]
       },
-      "technologies": ["Python", "Django", "React", "PostgreSQL", "AWS"],
+      "technologies": ["Python", "Django", "React", "PostgreSQL", "Scrum"],
       "isCurrent": true
     },
     {
@@ -42,29 +42,29 @@
         "es": "Dic 2022 - Presente"
       },
       "description": {
-        "en": "Leading IT infrastructure and team management for innovative development projects.",
-        "es": "Liderando la infraestructura de TI y gestión de equipos para proyectos de desarrollo innovadores."
+        "en": "Strategic management of technological infrastructure, cybersecurity oversight, and leadership of the IT development team for the company's innovative projects.",
+        "es": "Gestión estratégica de la infraestructura tecnológica, supervisión de ciberseguridad y liderazgo del equipo de desarrollo de TI para los proyectos innovadores de la empresa."
       },
       "achievements": {
         "en": [
-          "Managed team of 8+ developers",
-          "Reduced infrastructure costs by 25%",
-          "Implemented CI/CD pipelines"
+          "Supervised the implementation of a Fortinet-based cybersecurity policy, reducing critical network vulnerabilities.",
+          "Led a team of 5 developers and IT specialists, improving project efficiency by 20% through Agile practices.",
+          "Designed the cloud migration plan to optimize operational costs and enhance system resilience."
         ],
         "es": [
-          "Gestioné un equipo de 8+ desarrolladores",
-          "Reduje los costos de infraestructura en un 25%",
-          "Implementé pipelines de CI/CD"
+          "Supervisé la implementación de una política de ciberseguridad basada en Fortinet, reduciendo vulnerabilidades críticas de la red.",
+          "Lideré un equipo de 5 desarrolladores y especialistas en TI, mejorando la eficiencia del proyecto en un 20% con prácticas Ágiles.",
+          "Diseñé el plan de migración a la nube para optimizar los costos operativos y mejorar la resiliencia del sistema."
         ]
       },
-      "technologies": ["Docker", "Kubernetes", "AWS", "Git", "Linux"],
-      "isCurrent": false
+      "technologies": ["Linux", "Fortinet", "Docker", "CI/CD", "Scrum"],
+      "isCurrent": true
     },
     {
       "id": 3,
       "title": {
-        "en": "Full-Stack Developer",
-        "es": "Desarrollador Full-Stack"
+        "en": "Fullstack Software Developer",
+        "es": "Desarrollador de Software Fullstack"
       },
       "company": "Pusaq 8 Innovations",
       "period": {
@@ -72,22 +72,22 @@
         "es": "2022 - Mayo 2024"
       },
       "description": {
-        "en": "Developed cutting-edge mobile and web applications using Flutter and modern backend technologies.",
-        "es": "Desarrollé aplicaciones móviles y web de vanguardia usando Flutter y tecnologías backend modernas."
+        "en": "Developed cutting-edge cross-platform mobile applications (Flutter) and integrated them with efficient microservices built on modern backend technologies.",
+        "es": "Desarrollo de aplicaciones móviles multiplataforma (Flutter) de vanguardia e integración con microservicios eficientes construidos con tecnologías backend modernas."
       },
       "achievements": {
         "en": [
-          "Built 5+ mobile applications",
-          "Reduced app loading time by 50%",
-          "Implemented real-time features"
+          "Developed the company's main mobile application from scratch using Flutter, available on iOS and Android.",
+          "Optimized API resource consumption, successfully handling a 50% increase in user traffic.",
+          "Collaborated with the design team to ensure high accessibility and usability (UX) standards for the app."
         ],
         "es": [
-          "Construí 5+ aplicaciones móviles",
-          "Reduje el tiempo de carga de apps en un 50%",
-          "Implementé características en tiempo real"
+          "Desarrollé desde cero la aplicación móvil principal de la compañía usando Flutter, disponible en iOS y Android.",
+          "Optimicé el consumo de recursos en la API, manejando exitosamente un incremento del tráfico de usuarios del 50%.",
+          "Colaboré con el equipo de diseño para garantizar altos estándares de accesibilidad y usabilidad (UX) de la aplicación."
         ]
       },
-      "technologies": ["Flutter", "Dart", "Node.js", "MongoDB", "Firebase"],
+      "technologies": ["Flutter", "Dart", "Fast API", "Mongo Db", "UX/UI"],
       "isCurrent": false
     },
     {
@@ -99,26 +99,26 @@
       "company": "Nuclea Solutions",
       "period": {
         "en": "Jan 2019 - Present",
-        "es": "Ene 2019 - Presente"
+        "es": "Enero 2019 - Presente"
       },
       "description": {
-        "en": "Building robust software solutions with focus on scalability and performance optimization.",
-        "es": "Construyendo soluciones de software robustas con enfoque en escalabilidad y optimización de rendimiento."
+        "en": "Core software engineering focused on building complex and robust solutions, specializing in performance optimization and enterprise-level scalability using Java/Spring Boot.",
+        "es": "Ingeniería de software central enfocada en construir soluciones complejas y robustas, especializándome en la optimización del rendimiento y la escalabilidad a nivel empresarial usando Java/Spring Boot."
       },
       "achievements": {
         "en": [
-          "Developed scalable microservices",
-          "Improved database performance by 60%",
-          "Led code review processes"
+          "Participated in the design and implementation of the highly scalable microservices architecture.",
+          "Developed key backend modules using Java and Spring Boot for critical transaction processing.",
+          "Performed major code refactoring efforts that improved project maintainability by over 25%."
         ],
         "es": [
-          "Desarrollé microservicios escalables",
-          "Mejoré el rendimiento de la base de datos en un 60%",
-          "Lideré procesos de revisión de código"
+          "Participé en el diseño e implementación de la arquitectura de microservicios altamente escalables.",
+          "Desarrollé módulos clave de backend usando Java y Spring Boot para el procesamiento de transacciones críticas.",
+          "Realicé importantes refactorizaciones de código que mejoraron la mantenibilidad del proyecto en más de un 25%."
         ]
       },
-      "technologies": ["Java", "Spring Boot", "MySQL", "Redis", "Docker"],
-      "isCurrent": false
+      "technologies": ["Java", "Spring Boot", "MySQL", "React", "CI/CD"],
+      "isCurrent": true
     }
   ]
 }

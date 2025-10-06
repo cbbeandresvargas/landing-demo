@@ -5,23 +5,23 @@
       "es": "Andres Vargas"
     },
     "title": {
-      "en": "Full-Stack Developer & Security Specialist",
-      "es": "Desarrollador Full-Stack y Especialista en Seguridad"
+      "en": "Full-Stack Developer, Cybersecurity & UX/UI Specialist",
+      "es": "Desarrollador Full-Stack, Ciberseguridad y Especialista UX/UI"
     },
     "location": {
       "en": "Cochabamba, Bolivia",
       "es": "Cochabamba, Bolivia"
     },
-    "email": "andresvm10@gmail.com",
-    "phone": "+591 000 00000",
+    "email": "andres83610@gmail.com",
+    "phone": "+591 70795878",
     "timezone": "GMT-4",
     "bio": {
-      "en": "I'm a passionate Full-Stack Developer with over 5 years of experience building robust, scalable applications. I specialize in modern web technologies, mobile development, and cybersecurity. My goal is to create innovative solutions that solve real-world problems while maintaining the highest standards of code quality and security.",
-      "es": "Soy un Desarrollador Full-Stack apasionado con más de 5 años de experiencia construyendo aplicaciones robustas y escalables. Me especializo en tecnologías web modernas, desarrollo móvil y ciberseguridad. Mi objetivo es crear soluciones innovadoras que resuelvan problemas del mundo real mientras mantengo los más altos estándares de calidad de código y seguridad."
+      "en": "I'm a seasoned Full-Stack Developer with over 5 years of experience building secure, scalable, and high-performance digital products. My expertise covers the full spectrum of development, from Python back-end architecture to cross-platform mobile apps (Flutter), complemented by strategic specialization in Network Security (Fortinet) and user-centric design (MIT). My mission is to deliver complete solutions that excel in technology, usability, and strategic growth.",
+      "es": "Soy un Desarrollador Full-Stack experimentado con más de 5 años creando productos digitales seguros, escalables y de alto rendimiento. Mi experiencia abarca todo el espectro del desarrollo, desde la arquitectura de backend en Python hasta aplicaciones móviles multiplataforma (Flutter), complementado con especialización estratégica en Seguridad de Red (Fortinet) y diseño centrado en el usuario (MIT). Mi misión es entregar soluciones completas que destaquen en tecnología, usabilidad y crecimiento estratégico."
     },
     "shortBio": {
-      "en": "Passionate about creating innovative software solutions that solve real-world problems. Let's discuss how I can help bring your ideas to life with cutting-edge technology.",
-      "es": "Apasionado por crear soluciones de software innovadoras que resuelven problemas del mundo real. Hablemos sobre cómo puedo ayudar a dar vida a tus ideas con tecnología de vanguardia."
+      "en": "Full-Stack Developer focused on security, performance, and strategic growth. Let's build your next digital product.",
+      "es": "Desarrollador Full-Stack enfocado en seguridad, rendimiento y crecimiento estratégico. Construyamos tu próximo producto digital."
     },
     "social": {
       "github": "https://github.com/cbbeandresvargas",
@@ -30,8 +30,8 @@
       "email": "andresvm10@gmail.com"
     },
     "yearsOfExperience": 5,
-    "projectsCompleted": 50,
-    "happyClients": 25,
-    "technologiesUsed": 30
+    "projectsCompleted": 15,
+    "happyClients": 7,
+    "technologiesUsed": 10
   }
 }

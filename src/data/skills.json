@@ -3,8 +3,8 @@
     {
       "id": 1,
       "category": {
-        "en": "Backend",
-        "es": "Backend"
+        "en": "Backend & Server-Side",
+        "es": "Backend y Lado del Servidor"
       },
       "skills": [
         {
@@ -16,7 +16,11 @@
           "level": 90
         },
         {
-          "name": "FastAPI",
+          "name": "Flask",
+          "level": 85
+        },
+        {
+          "name": "Fast API",
           "level": 85
         },
         {
@@ -28,49 +32,49 @@
           "level": 75
         },
         {
-          "name": "Node.js",
-          "level": 85
+          "name": "PHP",
+          "level": 70
         }
       ]
     },
     {
       "id": 2,
       "category": {
-        "en": "Frontend",
-        "es": "Frontend"
+        "en": "Frontend & Mobile",
+        "es": "Frontend y Móvil"
       },
       "skills": [
         {
-          "name": "React",
-          "level": 90
-        },
-        {
           "name": "Flutter",
-          "level": 85
+          "level": 90
         },
         {
           "name": "Dart",
-          "level": 85
-        },
-        {
-          "name": "JavaScript",
-          "level": 95
-        },
-        {
-          "name": "TypeScript",
           "level": 90
         },
         {
-          "name": "Tailwind CSS",
-          "level": 80
+          "name": "React",
+          "level": 85
+        },
+        {
+          "name": "JavaScript/HTML/CSS",
+          "level": 90
+        },
+        {
+          "name": "Flutterflow (No-Code)",
+          "level": 75
+        },
+        {
+          "name": "Figma (UX/UI)",
+          "level": 70
         }
       ]
     },
     {
       "id": 3,
       "category": {
-        "en": "Databases",
-        "es": "Bases de Datos"
+        "en": "Databases & DevOps",
+        "es": "Bases de Datos y Operaciones"
       },
       "skills": [
         {
@@ -82,11 +86,19 @@
           "level": 85
         },
         {
-          "name": "MongoDB",
+          "name": "Mongo Db",
           "level": 80
         },
         {
-          "name": "Redis",
+          "name": "Linux",
+          "level": 85
+        },
+        {
+          "name": "Git / GitHub",
+          "level": 95
+        },
+        {
+          "name": "Docker",
           "level": 75
         }
       ]
@@ -94,33 +106,33 @@
     {
       "id": 4,
       "category": {
-        "en": "Tools & Others",
-        "es": "Herramientas y Otros"
+        "en": "Specialized & Security",
+        "es": "Especializadas y Seguridad"
       },
       "skills": [
         {
-          "name": "Docker",
-          "level": 85
-        },
-        {
-          "name": "AWS",
+          "name": "Fortinet (Network Security)",
           "level": 80
         },
         {
-          "name": "Git",
-          "level": 95
+          "name": "Data Science / Analytics",
+          "level": 75
         },
         {
-          "name": "Figma",
+          "name": "C/C++/C#",
           "level": 70
         },
         {
-          "name": "Linux",
-          "level": 85
+          "name": "Scrum / Metodologías Ágiles",
+          "level": 90
         },
         {
-          "name": "Fortinet",
-          "level": 75
+          "name": "Google Analytics",
+          "level": 70
+        },
+        {
+          "name": "Digital Marketing",
+          "level": 70
         }
       ]
     }

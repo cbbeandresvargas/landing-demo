@@ -3,82 +3,162 @@
     {
       "id": 1,
       "degree": {
-        "en": "Bachelor's in Computer Science",
-        "es": "Licenciatura en Ciencias de la Computación"
+        "en": "Systems Engineering (In Progress)",
+        "es": "Ingeniería de Sistemas (En Curso)"
       },
       "institution": {
-        "en": "Universidad Mayor de San Andrés",
-        "es": "Universidad Mayor de San Andrés"
+        "en": "UNIFRANZ University Unifranz",
+        "es": "Universidad UNIFRANZ Unifranz"
       },
       "period": {
-        "en": "2015 - 2019",
-        "es": "2015 - 2019"
+        "en": "In Progress",
+        "es": "En Curso"
       },
       "description": {
-        "en": "Specialized in software engineering and system architecture",
-        "es": "Especializado en ingeniería de software y arquitectura de sistemas"
+        "en": "Advanced studies focused on software architecture and system design.",
+        "es": "Estudios avanzados enfocados en arquitectura de software y diseño de sistemas."
       },
       "icon": "graduation-cap"
     },
     {
       "id": 2,
       "degree": {
-        "en": "AWS Certified Solutions Architect",
-        "es": "Arquitecto de Soluciones Certificado AWS"
+        "en": "Computer Science",
+        "es": "Ciencias de la Computación"
       },
       "institution": {
-        "en": "Amazon Web Services",
-        "es": "Amazon Web Services"
+        "en": "HarvardX",
+        "es": "HarvardX"
       },
       "period": {
-        "en": "2023",
-        "es": "2023"
+        "en": "Dec 201?",
+        "es": "Dic 201?"
       },
       "description": {
-        "en": "Professional certification in cloud architecture and services",
-        "es": "Certificación profesional en arquitectura de nube y servicios"
+        "en": "Foundational course in Computer Science principles and algorithms.",
+        "es": "Curso fundamental en principios y algoritmos de Ciencias de la Computación."
       },
-      "icon": "shield-check"
+      "icon": "academic-cap"
     },
     {
       "id": 3,
       "degree": {
-        "en": "Certified Ethical Hacker (CEH)",
-        "es": "Hacker Ético Certificado (CEH)"
+        "en": "Network Security Specialist 3",
+        "es": "Especialista en Seguridad de Red Nivel 3"
       },
       "institution": {
-        "en": "EC-Council",
-        "es": "EC-Council"
+        "en": "Fortinet",
+        "es": "Fortinet"
+      },
+      "period": {
+        "en": "Jan 202?",
+        "es": "Ene 202?"
+      },
+      "description": {
+        "en": "Professional certification focused on network security and threat management.",
+        "es": "Certificación profesional enfocada en seguridad de red y gestión de amenazas."
+      },
+      "icon": "shield-check"
+    },
+    {
+      "id": 4,
+      "degree": {
+        "en": "UX & UI (In Progress)",
+        "es": "UX & UI (En Curso)"
+      },
+      "institution": {
+        "en": "MIT",
+        "es": "MIT"
+      },
+      "period": {
+        "en": "In Progress",
+        "es": "En Curso"
+      },
+      "description": {
+        "en": "Specialization in user experience and interface design principles.",
+        "es": "Especialización en experiencia de usuario y principios de diseño de interfaz."
+      },
+      "icon": "device-tablet"
+    },
+    {
+      "id": 5,
+      "degree": {
+        "en": "Data Science",
+        "es": "Ciencia de Datos"
+      },
+      "institution": {
+        "en": "Tecnologico de monterey",
+        "es": "Tecnológico de Monterrey"
       },
       "period": {
         "en": "2022",
         "es": "2022"
       },
       "description": {
-        "en": "Specialized in cybersecurity and ethical hacking techniques",
-        "es": "Especializado en ciberseguridad y técnicas de hacking ético"
+        "en": "Training in data analysis, interpretation, and decision-making.",
+        "es": "Formación en análisis de datos, interpretación y toma de decisiones."
       },
-      "icon": "lock-closed"
+      "icon": "chart-bar"
     },
     {
-      "id": 4,
+      "id": 6,
       "degree": {
-        "en": "Flutter Development Bootcamp",
-        "es": "Bootcamp de Desarrollo Flutter"
+        "en": "Backend Specialization",
+        "es": "Especialización Backend"
       },
       "institution": {
-        "en": "Google Developers",
-        "es": "Google Developers"
+        "en": "Oracle/Alura Latam",
+        "es": "Oracle/Alura Latam"
       },
       "period": {
-        "en": "2021",
-        "es": "2021"
+        "en": "202?",
+        "es": "202?"
       },
       "description": {
-        "en": "Intensive course on cross-platform mobile development",
-        "es": "Curso intensivo sobre desarrollo móvil multiplataforma"
+        "en": "Deep dive into server-side development and architecture.",
+        "es": "Inmersión profunda en desarrollo y arquitectura del lado del servidor."
       },
-      "icon": "device-mobile"
+      "icon": "server"
+    },
+    {
+      "id": 7,
+      "degree": {
+        "en": "Digital Marketing",
+        "es": "Marketing Digital"
+      },
+      "institution": {
+        "en": "Neetwork Business School",
+        "es": "Neetwork Business School"
+      },
+      "period": {
+        "en": "2020",
+        "es": "2020"
+      },
+      "description": {
+        "en": "Strategy and implementation of digital marketing campaigns.",
+        "es": "Estrategia e implementación de campañas de marketing digital."
+      },
+      "icon": "speakerphone"
+    },
+    {
+      "id": 8,
+      "degree": {
+        "en": "Google Analytics (In Progress)",
+        "es": "Google Analytics (En Curso)"
+      },
+      "institution": {
+        "en": "Google",
+        "es": "Google"
+      },
+      "period": {
+        "en": "In Progress",
+        "es": "En Curso"
+      },
+      "description": {
+        "en": "Training on web analytics for performance optimization.",
+        "es": "Formación en analítica web para la optimización del rendimiento."
+      },
+      "icon": "magnifying-glass"
     }
   ]
 }

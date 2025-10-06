@@ -23,7 +23,7 @@
         "en": "Fluent",
         "es": "Fluido"
       },
-      "proficiency": 90,
+      "proficiency": 80,
       "flag": "🇺🇸"
     },
     {
@@ -36,21 +36,8 @@
         "en": "Intermediate",
         "es": "Intermedio"
       },
-      "proficiency": 70,
+      "proficiency": 50,
       "flag": "🇧🇷"
-    },
-    {
-      "id": 4,
-      "name": {
-        "en": "French",
-        "es": "Francés"
-      },
-      "level": {
-        "en": "Basic",
-        "es": "Básico"
-      },
-      "proficiency": 40,
-      "flag": "🇫🇷"
     }
   ]
 }
