@@ -1,7 +1,7 @@
 ---
 import { getProjects, getProjectById } from "@utils/projects";
 import type { AstroSeoProps } from "@astrolib/seo";
-import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import projectTemplateImage from "@assets/images/projects/project-template.jpg";
 
 export async function getStaticPaths() {
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 const { project } = Astro.props;
 
 const seo: AstroSeoProps = {
-	title: `Project ${project.title} - Majestico`,
+	title: `Project ${project.title} - Andres Vargas`,
 	description: project.description,
 	canonical: `https://mintaka.co/work/${project.id}/`,
 	openGraph: {
@@ -32,7 +32,7 @@ const seo: AstroSeoProps = {
 				type: "image/jpeg",
 			},
 		],
-		site_name: "Majestico",
+		site_name: "Andres Vargas Portfolio",
 	},
 	twitter: {
 		handle: "@TwitterHandle",
@@ -40,26 +40,28 @@ const seo: AstroSeoProps = {
 		cardType: "summary_large_image",
 	},
 };
-
-// Convert content to markdown-like format for the layout
-const frontmatter = {
-	title: project.title,
-	description: project.description,
-	pubDate: new Date(project.pubDate),
-	link: project.link,
-	image: {
-		source: projectTemplateImage,
-		alt: project.title,
-	},
-};
-
-const body = project.content;
 ---
 
-<MarkdownPostLayout frontmatter={frontmatter} body={body} seo={seo}>
-	<div class="prose prose-invert max-w-none">
-		{project.content.split('\n').map(paragraph => 
-			paragraph.trim() ? `<p>${paragraph}</p>` : ''
-		).join('')}
-	</div>
-</MarkdownPostLayout>
+<BaseLayout seo={seo}>
+	<section class="section py-20">
+		<div class="col-span-12">
+			<div class="max-w-4xl mx-auto">
+				<div class="mb-8">
+					<img src={projectTemplateImage} alt={project.title} class="w-full h-64 object-cover rounded-lg mb-6" />
+					<h1 class="text-4xl font-bold mb-4">{project.title}</h1>
+					<p class="text-xl text-slate-600 mb-6">{project.description}</p>
+					<div class="flex gap-4 mb-8">
+						<a href={project.link} target="_blank" class="bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+							View Project
+						</a>
+					</div>
+				</div>
+				<div class="prose prose-lg max-w-none">
+					{project.content.split('\n').map(paragraph => 
+						paragraph.trim() ? `<p>${paragraph}</p>` : ''
+					).join('')}
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

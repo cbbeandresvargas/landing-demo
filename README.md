@@ -54,5 +54,5 @@ See `PROJECTS_README.md` for detailed instructions on how to add your own projec
 ## 📋 To-Do List
 
 ### tasks
-* db
-* cleaning of the project
+* ✅ db - Implemented with JSON data structure
+* ✅ cleaning of the project - Completed
