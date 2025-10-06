@@ -1,59 +1,30 @@
 ---
 // AboutEducation.astro - Education & Certifications section for About page
 import { getLangFromUrl } from "@i18n/utils";
+import { getEducation } from "@utils/data";
 
 const lang = getLangFromUrl(Astro.url);
-
-// Education data
-const educationData = [
-	{
-		id: 1,
-		title: {
-			en: "Systems Engineering",
-			es: "Ingeniería de Sistemas"
-		},
-		institution: "Universidad Mayor de San Andrés",
-		period: "2018 - 2023",
-		icon: "graduation"
-	},
-	{
-		id: 2,
-		title: {
-			en: "Cybersecurity Specialist",
-			es: "Especialista en Ciberseguridad"
-		},
-		institution: "Fortinet NSE 1-3",
-		period: "2023",
-		icon: "security"
-	},
-	{
-		id: 3,
-		title: {
-			en: "Cloud Architecture",
-			es: "Arquitectura en la Nube"
-		},
-		institution: "AWS Certified",
-		period: "2022",
-		icon: "cloud"
-	}
-];
+const educationData = getEducation(lang);
 
 // Icon component function
 function getIcon(iconType: string) {
-	const icons = {
-		graduation: `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+	const icons: Record<string, string> = {
+		"graduation-cap": `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
 		</svg>`,
-		security: `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+		"shield-check": `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
 		</svg>`,
-		cloud: `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
+		"device-mobile": `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+		</svg>`,
+		"lock-closed": `<svg class="w-12 h-12 mx-auto text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
 		</svg>`
 	};
-	return icons[iconType] || icons.graduation;
+	return icons[iconType] || icons["graduation-cap"];
 }
 ---
 
@@ -65,14 +36,15 @@ function getIcon(iconType: string) {
 				{lang === 'es' ? 'Educación y Certificaciones' : 'Education & Certifications'}
 			</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{educationData.map((education) => (
+				{educationData.map((education: any) => (
 					<div class="education-card bg-white p-8 rounded-lg shadow-sm border border-slate-200 text-center">
 						<div class="mb-4" set:html={getIcon(education.icon)}></div>
 						<h3 class="text-xl font-bold mb-2 text-black">
-							{education.title[lang]}
+							{education.degree}
 						</h3>
 						<p class="text-slate-600">{education.institution}</p>
 						<p class="text-sm text-slate-500 mt-2">{education.period}</p>
+						<p class="text-sm text-slate-400 mt-2">{education.description}</p>
 					</div>
 				))}
 			</div>

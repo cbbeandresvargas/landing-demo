@@ -1,0 +1,124 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Full-Stack Developer",
+        "es": "Desarrollador Full-Stack"
+      },
+      "company": "Kiev Line, Zurich-Seitanilm",
+      "period": {
+        "en": "May 2024 - Present",
+        "es": "Mayo 2024 - Presente"
+      },
+      "description": {
+        "en": "Leading development of enterprise-level applications using modern web technologies.",
+        "es": "Liderando el desarrollo de aplicaciones empresariales usando tecnologías web modernas."
+      },
+      "achievements": {
+        "en": [
+          "Led development of 3+ enterprise applications",
+          "Improved system performance by 40%",
+          "Mentored junior developers"
+        ],
+        "es": [
+          "Lideré el desarrollo de 3+ aplicaciones empresariales",
+          "Mejoré el rendimiento del sistema en un 40%",
+          "Guié a desarrolladores junior"
+        ]
+      },
+      "technologies": ["Python", "Django", "React", "PostgreSQL", "AWS"],
+      "isCurrent": true
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Head of IT Department",
+        "es": "Jefe del Departamento de TI"
+      },
+      "company": "Reborn Developments",
+      "period": {
+        "en": "Dec 2022 - Present",
+        "es": "Dic 2022 - Presente"
+      },
+      "description": {
+        "en": "Leading IT infrastructure and team management for innovative development projects.",
+        "es": "Liderando la infraestructura de TI y gestión de equipos para proyectos de desarrollo innovadores."
+      },
+      "achievements": {
+        "en": [
+          "Managed team of 8+ developers",
+          "Reduced infrastructure costs by 25%",
+          "Implemented CI/CD pipelines"
+        ],
+        "es": [
+          "Gestioné un equipo de 8+ desarrolladores",
+          "Reduje los costos de infraestructura en un 25%",
+          "Implementé pipelines de CI/CD"
+        ]
+      },
+      "technologies": ["Docker", "Kubernetes", "AWS", "Git", "Linux"],
+      "isCurrent": false
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Full-Stack Developer",
+        "es": "Desarrollador Full-Stack"
+      },
+      "company": "Pusaq 8 Innovations",
+      "period": {
+        "en": "2022 - May 2024",
+        "es": "2022 - Mayo 2024"
+      },
+      "description": {
+        "en": "Developed cutting-edge mobile and web applications using Flutter and modern backend technologies.",
+        "es": "Desarrollé aplicaciones móviles y web de vanguardia usando Flutter y tecnologías backend modernas."
+      },
+      "achievements": {
+        "en": [
+          "Built 5+ mobile applications",
+          "Reduced app loading time by 50%",
+          "Implemented real-time features"
+        ],
+        "es": [
+          "Construí 5+ aplicaciones móviles",
+          "Reduje el tiempo de carga de apps en un 50%",
+          "Implementé características en tiempo real"
+        ]
+      },
+      "technologies": ["Flutter", "Dart", "Node.js", "MongoDB", "Firebase"],
+      "isCurrent": false
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Software Engineer",
+        "es": "Ingeniero de Software"
+      },
+      "company": "Nuclea Solutions",
+      "period": {
+        "en": "Jan 2019 - Present",
+        "es": "Ene 2019 - Presente"
+      },
+      "description": {
+        "en": "Building robust software solutions with focus on scalability and performance optimization.",
+        "es": "Construyendo soluciones de software robustas con enfoque en escalabilidad y optimización de rendimiento."
+      },
+      "achievements": {
+        "en": [
+          "Developed scalable microservices",
+          "Improved database performance by 60%",
+          "Led code review processes"
+        ],
+        "es": [
+          "Desarrollé microservicios escalables",
+          "Mejoré el rendimiento de la base de datos en un 60%",
+          "Lideré procesos de revisión de código"
+        ]
+      },
+      "technologies": ["Java", "Spring Boot", "MySQL", "Redis", "Docker"],
+      "isCurrent": false
+    }
+  ]
+}

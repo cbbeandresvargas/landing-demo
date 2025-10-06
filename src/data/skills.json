@@ -1,0 +1,128 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "category": {
+        "en": "Backend",
+        "es": "Backend"
+      },
+      "skills": [
+        {
+          "name": "Python",
+          "level": 95
+        },
+        {
+          "name": "Django",
+          "level": 90
+        },
+        {
+          "name": "FastAPI",
+          "level": 85
+        },
+        {
+          "name": "Java",
+          "level": 80
+        },
+        {
+          "name": "Spring Boot",
+          "level": 75
+        },
+        {
+          "name": "Node.js",
+          "level": 85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": {
+        "en": "Frontend",
+        "es": "Frontend"
+      },
+      "skills": [
+        {
+          "name": "React",
+          "level": 90
+        },
+        {
+          "name": "Flutter",
+          "level": 85
+        },
+        {
+          "name": "Dart",
+          "level": 85
+        },
+        {
+          "name": "JavaScript",
+          "level": 95
+        },
+        {
+          "name": "TypeScript",
+          "level": 90
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": {
+        "en": "Databases",
+        "es": "Bases de Datos"
+      },
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "level": 90
+        },
+        {
+          "name": "MySQL",
+          "level": 85
+        },
+        {
+          "name": "MongoDB",
+          "level": 80
+        },
+        {
+          "name": "Redis",
+          "level": 75
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": {
+        "en": "Tools & Others",
+        "es": "Herramientas y Otros"
+      },
+      "skills": [
+        {
+          "name": "Docker",
+          "level": 85
+        },
+        {
+          "name": "AWS",
+          "level": 80
+        },
+        {
+          "name": "Git",
+          "level": 95
+        },
+        {
+          "name": "Figma",
+          "level": 70
+        },
+        {
+          "name": "Linux",
+          "level": 85
+        },
+        {
+          "name": "Fortinet",
+          "level": 75
+        }
+      ]
+    }
+  ]
+}

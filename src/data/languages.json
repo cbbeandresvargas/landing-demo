@@ -1,0 +1,56 @@
+{
+  "languages": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Spanish",
+        "es": "Español"
+      },
+      "level": {
+        "en": "Native",
+        "es": "Nativo"
+      },
+      "proficiency": 100,
+      "flag": "🇪🇸"
+    },
+    {
+      "id": 2,
+      "name": {
+        "en": "English",
+        "es": "Inglés"
+      },
+      "level": {
+        "en": "Fluent",
+        "es": "Fluido"
+      },
+      "proficiency": 90,
+      "flag": "🇺🇸"
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "Portuguese",
+        "es": "Portugués"
+      },
+      "level": {
+        "en": "Intermediate",
+        "es": "Intermedio"
+      },
+      "proficiency": 70,
+      "flag": "🇧🇷"
+    },
+    {
+      "id": 4,
+      "name": {
+        "en": "French",
+        "es": "Francés"
+      },
+      "level": {
+        "en": "Basic",
+        "es": "Básico"
+      },
+      "proficiency": 40,
+      "flag": "🇫🇷"
+    }
+  ]
+}

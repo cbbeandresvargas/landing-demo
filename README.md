@@ -54,8 +54,5 @@ See `PROJECTS_README.md` for detailed instructions on how to add your own projec
 ## 📋 To-Do List
 
 ### tasks
-* about page
-* projects page
 * db
-* portfolio page (gallery)
 * cleaning of the project

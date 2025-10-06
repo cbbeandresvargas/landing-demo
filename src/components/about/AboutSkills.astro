@@ -1,44 +1,10 @@
 ---
 // AboutSkills.astro - Technical Skills section for About page
 import { getLangFromUrl } from "@i18n/utils";
+import { getSkills } from "@utils/data";
 
 const lang = getLangFromUrl(Astro.url);
-
-// Skills data
-const skillsData = [
-	{
-		id: 1,
-		category: {
-			en: "Backend",
-			es: "Backend"
-		},
-		skills: ["Python", "Django", "Fast API", "Java", "Spring Boot", "Node.js"]
-	},
-	{
-		id: 2,
-		category: {
-			en: "Frontend",
-			es: "Frontend"
-		},
-		skills: ["React", "Flutter", "Dart", "JavaScript", "TypeScript", "Tailwind CSS"]
-	},
-	{
-		id: 3,
-		category: {
-			en: "Databases",
-			es: "Bases de Datos"
-		},
-		skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
-	},
-	{
-		id: 4,
-		category: {
-			en: "Tools & Others",
-			es: "Herramientas y Otros"
-		},
-		skills: ["Docker", "AWS", "Git", "Figma", "Linux", "Fortinet"]
-	}
-];
+const skillsData = getSkills(lang);
 ---
 
 <!-- Skills Section -->
@@ -49,15 +15,15 @@ const skillsData = [
 				{lang === 'es' ? 'Habilidades Técnicas' : 'Technical Skills'}
 			</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-				{skillsData.map((category) => (
+				{skillsData.map((category: any) => (
 					<div class="skill-category text-center">
 						<h3 class="text-xl font-bold mb-4 text-black">
-							{category.category[lang]}
+							{category.category}
 						</h3>
 						<div class="space-y-3">
-							{category.skills.map((skill) => (
+							{category.skills.map((skill: any) => (
 								<span class="inline-block bg-slate-800 text-slate-300 px-3 py-1 rounded text-sm">
-									{skill}
+									{skill.name}
 								</span>
 							))}
 						</div>

@@ -1,0 +1,37 @@
+{
+  "personal": {
+    "name": {
+      "en": "Andres Vargas",
+      "es": "Andres Vargas"
+    },
+    "title": {
+      "en": "Full-Stack Developer & Security Specialist",
+      "es": "Desarrollador Full-Stack y Especialista en Seguridad"
+    },
+    "location": {
+      "en": "Cochabamba, Bolivia",
+      "es": "Cochabamba, Bolivia"
+    },
+    "email": "andresvm10@gmail.com",
+    "phone": "+591 000 00000",
+    "timezone": "GMT-4",
+    "bio": {
+      "en": "I'm a passionate Full-Stack Developer with over 5 years of experience building robust, scalable applications. I specialize in modern web technologies, mobile development, and cybersecurity. My goal is to create innovative solutions that solve real-world problems while maintaining the highest standards of code quality and security.",
+      "es": "Soy un Desarrollador Full-Stack apasionado con más de 5 años de experiencia construyendo aplicaciones robustas y escalables. Me especializo en tecnologías web modernas, desarrollo móvil y ciberseguridad. Mi objetivo es crear soluciones innovadoras que resuelvan problemas del mundo real mientras mantengo los más altos estándares de calidad de código y seguridad."
+    },
+    "shortBio": {
+      "en": "Passionate about creating innovative software solutions that solve real-world problems. Let's discuss how I can help bring your ideas to life with cutting-edge technology.",
+      "es": "Apasionado por crear soluciones de software innovadoras que resuelven problemas del mundo real. Hablemos sobre cómo puedo ayudar a dar vida a tus ideas con tecnología de vanguardia."
+    },
+    "social": {
+      "github": "https://github.com/cbbeandresvargas",
+      "linkedin": "https://www.linkedin.com/in/andres-vargas-martins/",
+      "twitter": "https://twitter.com/andresvargas",
+      "email": "andresvm10@gmail.com"
+    },
+    "yearsOfExperience": 5,
+    "projectsCompleted": 50,
+    "happyClients": 25,
+    "technologiesUsed": 30
+  }
+}

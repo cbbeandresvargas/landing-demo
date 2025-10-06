@@ -1,0 +1,84 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": {
+        "en": "Bachelor's in Computer Science",
+        "es": "Licenciatura en Ciencias de la Computación"
+      },
+      "institution": {
+        "en": "Universidad Mayor de San Andrés",
+        "es": "Universidad Mayor de San Andrés"
+      },
+      "period": {
+        "en": "2015 - 2019",
+        "es": "2015 - 2019"
+      },
+      "description": {
+        "en": "Specialized in software engineering and system architecture",
+        "es": "Especializado en ingeniería de software y arquitectura de sistemas"
+      },
+      "icon": "graduation-cap"
+    },
+    {
+      "id": 2,
+      "degree": {
+        "en": "AWS Certified Solutions Architect",
+        "es": "Arquitecto de Soluciones Certificado AWS"
+      },
+      "institution": {
+        "en": "Amazon Web Services",
+        "es": "Amazon Web Services"
+      },
+      "period": {
+        "en": "2023",
+        "es": "2023"
+      },
+      "description": {
+        "en": "Professional certification in cloud architecture and services",
+        "es": "Certificación profesional en arquitectura de nube y servicios"
+      },
+      "icon": "shield-check"
+    },
+    {
+      "id": 3,
+      "degree": {
+        "en": "Certified Ethical Hacker (CEH)",
+        "es": "Hacker Ético Certificado (CEH)"
+      },
+      "institution": {
+        "en": "EC-Council",
+        "es": "EC-Council"
+      },
+      "period": {
+        "en": "2022",
+        "es": "2022"
+      },
+      "description": {
+        "en": "Specialized in cybersecurity and ethical hacking techniques",
+        "es": "Especializado en ciberseguridad y técnicas de hacking ético"
+      },
+      "icon": "lock-closed"
+    },
+    {
+      "id": 4,
+      "degree": {
+        "en": "Flutter Development Bootcamp",
+        "es": "Bootcamp de Desarrollo Flutter"
+      },
+      "institution": {
+        "en": "Google Developers",
+        "es": "Google Developers"
+      },
+      "period": {
+        "en": "2021",
+        "es": "2021"
+      },
+      "description": {
+        "en": "Intensive course on cross-platform mobile development",
+        "es": "Curso intensivo sobre desarrollo móvil multiplataforma"
+      },
+      "icon": "device-mobile"
+    }
+  ]
+}

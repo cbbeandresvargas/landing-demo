@@ -1,76 +1,10 @@
 ---
 // AboutExperience.astro - Experience timeline section for About page
 import { getLangFromUrl } from "@i18n/utils";
+import { getExperience } from "@utils/data";
 
 const lang = getLangFromUrl(Astro.url);
-
-// Experience data
-const experienceData = [
-	{
-		id: 1,
-		title: {
-			en: "Fullstack Software Developer",
-			es: "Desarrollador Full-Stack"
-		},
-		company: "Kiev Line, Zurich-Seitanilm",
-		period: {
-			en: "May 2024 - Present",
-			es: "Mayo 2024 - Presente"
-		},
-		description: {
-			en: "Leading development of enterprise-level applications using modern web technologies.",
-			es: "Liderando el desarrollo de aplicaciones empresariales usando tecnologías web modernas."
-		}
-	},
-	{
-		id: 2,
-		title: {
-			en: "Head of IT Department",
-			es: "Jefe del Departamento de TI"
-		},
-		company: "Reborn Developments",
-		period: {
-			en: "Dec 2022 - Present",
-			es: "Dic 2022 - Presente"
-		},
-		description: {
-			en: "Leading IT infrastructure and team management for innovative development projects.",
-			es: "Liderando la infraestructura de TI y gestión de equipos para proyectos de desarrollo innovadores."
-		}
-	},
-	{
-		id: 3,
-		title: {
-			en: "Fullstack Software Developer",
-			es: "Desarrollador Full-Stack"
-		},
-		company: "Pusaq 8 Innovations",
-		period: {
-			en: "2022 - May 2024",
-			es: "2022 - Mayo 2024"
-		},
-		description: {
-			en: "Developed cutting-edge mobile and web applications using Flutter and modern backend technologies.",
-			es: "Desarrollé aplicaciones móviles y web de vanguardia usando Flutter y tecnologías backend modernas."
-		}
-	},
-	{
-		id: 4,
-		title: {
-			en: "Software Engineer",
-			es: "Ingeniero de Software"
-		},
-		company: "Nuclea Solutions",
-		period: {
-			en: "Jan 2019 - Present",
-			es: "Ene 2019 - Presente"
-		},
-		description: {
-			en: "Building robust software solutions with focus on scalability and performance optimization.",
-			es: "Construyendo soluciones de software robustas con enfoque en escalabilidad y optimización de rendimiento."
-		}
-	}
-];
+const experienceData = getExperience(lang);
 ---
 
 <!-- Experience Timeline -->
@@ -81,19 +15,19 @@ const experienceData = [
 				{lang === 'es' ? 'Experiencia y Roles Clave' : 'Experience & Key Roles'}
 			</h2>
 			<div class="space-y-12">
-				{experienceData.map((experience) => (
+				{experienceData.map((experience: any) => (
 					<div class="experience-item border-l-2 border-slate-300 pl-8 relative">
 						<div class="absolute -left-2 top-0 w-4 h-4 bg-slate-300 rounded-full"></div>
 						<div>
 							<h3 class="text-2xl font-bold mb-2 text-black">
-								{experience.title[lang]}
+								{experience.title}
 							</h3>
 							<p class="text-lg text-slate-400 mb-2">{experience.company}</p>
 							<p class="text-sm text-slate-500 mb-4">
-								{experience.period[lang]}
+								{experience.period}
 							</p>
 							<p class="text-slate-300">
-								{experience.description[lang]}
+								{experience.description}
 							</p>
 						</div>
 					</div>
