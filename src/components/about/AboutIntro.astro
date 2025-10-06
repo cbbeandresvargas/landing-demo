@@ -6,7 +6,7 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <!-- Introduction Section -->
-<section class="section py-20">
+<section class="about-intro section py-20">
 	<div class="col-span-12">
 		<div class="max-w-4xl mx-auto text-center">
 			<h2 class="text-4xl font-bold mb-8 font-display">
@@ -39,4 +39,29 @@ const lang = getLangFromUrl(Astro.url);
 	</div>
 </section>
 
-<!-- GSAP animations temporarily disabled for debugging -->
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	function init() {
+		// Animate on scroll
+		gsap.from('.about-intro h2, .about-intro p', {
+			scrollTrigger: {
+				trigger: '.about-intro',
+				start: "top 80%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out",
+			stagger: 0.1
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>

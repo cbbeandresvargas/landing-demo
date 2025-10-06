@@ -42,7 +42,7 @@ const skillsData = [
 ---
 
 <!-- Skills Section -->
-<section class="section home-dark-section py-20">
+<section class="about-skills section home-dark-section py-20">
 	<div class="col-span-12">
 		<div class="max-w-4xl mx-auto">
 			<h2 class="text-4xl font-bold mb-16 text-center font-display">
@@ -50,7 +50,7 @@ const skillsData = [
 			</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				{skillsData.map((category) => (
-					<div class="text-center">
+					<div class="skill-category text-center">
 						<h3 class="text-xl font-bold mb-4 text-black">
 							{category.category[lang]}
 						</h3>
@@ -68,4 +68,43 @@ const skillsData = [
 	</div>
 </section>
 
-<!-- GSAP animations temporarily disabled for debugging -->
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	function init() {
+		// Animate title
+		gsap.from('.about-skills h2', {
+			scrollTrigger: {
+				trigger: '.about-skills',
+				start: "top 80%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out"
+		});
+
+		// Animate skill categories
+		gsap.from('.about-skills .skill-category', {
+			scrollTrigger: {
+				trigger: '.about-skills',
+				start: "top 70%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			},
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
+			ease: "power2.out",
+			stagger: 0.2
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>

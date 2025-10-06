@@ -14,7 +14,7 @@ const t = useTranslations(lang);
 				<span class="about-title-line">{lang === 'es' ? 'Sobre' : 'About'}</span>
 				<span class="about-title-line">{lang === 'es' ? 'Mí' : 'Me'}</span>
 			</h1>
-			<p class="text-xl text-slate-400 max-w-3xl mx-auto font-mono">
+			<p class="about-hero-subtitle text-xl text-slate-400 max-w-3xl mx-auto font-mono">
 				{lang === 'es' 
 					? 'Desarrollador Full-Stack y Especialista en Seguridad con más de 5 años de experiencia'
 					: 'Full-Stack Developer & Security Specialist with 5+ years of experience'
@@ -31,4 +31,52 @@ const t = useTranslations(lang);
 	}
 </style>
 
-<!-- GSAP animations temporarily disabled for debugging -->
+<script>
+	import { gsap } from "gsap";
+	import { SplitText } from "gsap/SplitText";
+
+	gsap.registerPlugin(SplitText);
+
+	function init() {
+		// Split text for animation
+		const childSplit = new SplitText(".about-title-line", {
+			type: "lines",
+			linesClass: "split-child",
+		});
+		const parentSplit = new SplitText(".about-title-line", {
+			linesClass: "split-parent",
+		});
+
+		// Animate title lines
+		gsap.timeline()
+			.from(childSplit.lines, {
+				duration: 1.2,
+				yPercent: 100,
+				ease: "power3.out",
+				stagger: 0.1,
+				delay: 0.3
+			})
+			.from(".about-hero-subtitle", {
+				duration: 0.8,
+				y: 50,
+				opacity: 0,
+				ease: "power2.out"
+			}, "-=0.6");
+	}
+
+	document.removeEventListener("DOMContentLoaded", init);
+	document.addEventListener("DOMContentLoaded", init);
+</script>
+
+<style>
+	.about-title-line {
+		display: block;
+		overflow: hidden;
+	}
+	.about-title-line :global(.split-parent) {
+		overflow: hidden;
+	}
+	.about-title-line :global(.split-child) {
+		display: inline-block;
+	}
+</style>
