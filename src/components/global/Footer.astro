@@ -12,32 +12,38 @@ const translatePath = useTranslatedPath(lang);
 	<div class="relative grid grid-cols-6 gap-y-20 lg:grid-cols-12 lg:text-xl">
 		<div class="col-span-6 col-start-1 grid grid-cols-6 gap-6 lg:col-span-8">
 			<div class="col-span-2 col-start-4 flex flex-col gap-2 lg:col-span-3">
-				<a href="https://twitter.com//" target="_blank">Twitter / X</a>
-				<a href="https://www.instagram.com//" target="_blank">Instagram</a>
-				<a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-				<a href="https://tiktok.com/" target="_blank">TikTok</a>
+				<a href="https://github.com/cbbeandresvargas" target="_blank">GitHub</a>
+				<a href="https://www.linkedin.com/in/andres-vargas-martins/" target="_blank">LinkedIn</a>
+				<a href="https://twitter.com/andresvargas" target="_blank">Twitter</a>
+				<a href="mailto:andresvm10@gmail.com" target="_blank">Email</a>
 			</div>
 			<div class="col-span-3 row-start-1 lg:col-span-2 lg:col-start-4 lg:row-start-auto">
 				<div class="flex flex-col gap-2">
-					<a href={translatePath("/")}>Home</a>
+					<a href={translatePath("/")}>{t("homepage")}</a>
+					<a href={translatePath("/about/")}>{t("about")}</a>
+					<a href={translatePath("/projects/")}>{t("projects")}</a>
+					<a href={translatePath("/portfolio/")}>{t("portfolio")}</a>
+					<a href={translatePath("/experience/")}>{t("experience")}</a>
 					<a href={translatePath("/contact/")}>{t("contacts")}</a>
 				</div>
 			</div>
 			<div class="col-span-3 mt-10 lg:col-start-4">
-				<div class="relative flex flex-col overflow-hidden"></div>
+				<div class="relative flex flex-col overflow-hidden">
+					<span class="text-sm text-slate-500">{lang === 'es' ? 'Desarrollador Full-Stack' : 'Full-Stack Developer'}</span>
+				</div>
 				<div class="relative mt-1 flex h-8 flex-col overflow-hidden">
-					<a href="mailto:test@mintaka.co" class="block cursor-pointer overflow-hidden">test@mintaka.co</a>
+					<a href="mailto:andres@mintaka.co" class="block cursor-pointer overflow-hidden">andresvm10@gmail.com</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-span-6 row-start-1 text-5xl leading-tight lg:col-span-4 lg:row-start-auto lg:text-6xl">
 			<!-- Contact Section -->
-			<div>{t("footer.newsletter")}</div>
-			<div>{t("footer.newsletter2")}</div>
+			<div>{lang === 'es' ? 'Trabajemos' : 'Let\'s work'}</div>
+			<div>{lang === 'es' ? 'juntos' : 'together'}</div>
 		</div>
 	</div>
 	<div class="relative mt-4 flex w-full items-end justify-between gap-y-4 text-sm lg:text-xl lg:font-normal">
-		<div>©2023 YOUR COMPANY</div>
+		<div>2025 Andres Vargas - Full-Stack Developer</div>
 		<!-- https://codepen.io/fliseno1k/pen/WNboLBy -->
 		<button
 			id="go-top-button"
