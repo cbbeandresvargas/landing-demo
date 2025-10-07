@@ -11,7 +11,8 @@ const translatePath = useTranslatedPath(lang);
 const { class: className } = Astro.props;
 
 const allProjects = getProjects(lang)
-	.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+	.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
+	.slice(0, 4); // Show only the first 4 projects
 ---
 
 <section id="projects" class:list={["section work-preview-section home-dark-section py-12", className]}>
