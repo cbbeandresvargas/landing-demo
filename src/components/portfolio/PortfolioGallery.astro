@@ -1,8 +1,15 @@
 ---
 // PortfolioGallery.astro - 3D Gallery component for Portfolio page
 import { getLangFromUrl } from "@i18n/utils";
+import projectsData from "@data/projects.json";
 
 const lang = getLangFromUrl(Astro.url);
+const projects = projectsData.projects.map(project => ({
+	title: project.title[lang] || project.title.en,
+	description: project.description[lang] || project.description.en,
+	image: `/assets/images/projects/${project.image}`,
+	technologies: project.technologies || []
+}));
 ---
 
 <!-- 3D Portfolio Gallery -->
@@ -46,6 +53,11 @@ const lang = getLangFromUrl(Astro.url);
 	</div>
 </section>
 
+<script define:vars={{ projects }}>
+	// Make projects data available to the client-side script
+	window.projectsData = projects;
+</script>
+
 <script>
 	import { gsap } from "gsap";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -64,45 +76,8 @@ const lang = getLangFromUrl(Astro.url);
 			return;
 		}
 
-		// Project data
-		const projects = [
-			{
-				title: "E-commerce Platform",
-				description: "Full-stack e-commerce solution with React and Node.js",
-				image: "/assets/images/projects/project-template.jpg",
-				technologies: ["React", "Node.js", "MongoDB", "Stripe"]
-			},
-			{
-				title: "Mobile Banking App",
-				description: "Secure mobile banking application with Flutter",
-				image: "/assets/images/projects/project-template.jpg",
-				technologies: ["Flutter", "Dart", "Firebase", "AWS"]
-			},
-			{
-				title: "Data Analytics Dashboard",
-				description: "Real-time analytics dashboard for business intelligence",
-				image: "/assets/images/projects/project-template.jpg",
-				technologies: ["React", "D3.js", "Python", "PostgreSQL"]
-			},
-			{
-				title: "AI Chatbot Platform",
-				description: "Intelligent chatbot platform with machine learning",
-				image: "/assets/images/projects/project-template.jpg",
-				technologies: ["Python", "TensorFlow", "FastAPI", "Redis"]
-			},
-			{
-				title: "Cloud Infrastructure",
-				description: "Scalable cloud infrastructure with microservices",
-				image: "/assets/images/projects/project-template.jpg",
-				technologies: ["Docker", "Kubernetes", "AWS", "Terraform"]
-			},
-			{
-				title: "Blockchain Wallet",
-				description: "Secure cryptocurrency wallet with multi-chain support",
-				image: "/assets/images/projects/project-template.jpg",
-				technologies: ["Web3.js", "Solidity", "React", "Ethereum"]
-			}
-		];
+		// Project data is now loaded from the server-side
+		const projects = window.projectsData || [];
 
 		// Mouse movement for 3D rotation
 		document.addEventListener("mousemove", function (event) {
@@ -127,7 +102,7 @@ const lang = getLangFromUrl(Astro.url);
 		});
 
 		// Create gallery items
-        for (let i = 0; i < 24; i++) {
+        for (let i = 0; i < Math.max(24, projects.length * 1); i++) {
 			const item = document.createElement("div");
             item.className = "item absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[60px] m-[10px] [transform-style:preserve-3d] bg-slate-800 rounded-lg overflow-hidden shadow-lg";
 			
