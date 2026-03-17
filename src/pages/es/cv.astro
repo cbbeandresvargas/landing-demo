@@ -1,11 +1,11 @@
 ---
-import "../styles/global.css";
-import cvData from "../data/data.json";
+import "../../styles/global.css";
+import cvData from "../../data/data.json";
 const { personal, education, experience, saas_projects, skills } = cvData;
-const lang = "en";
+const lang = "es";
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,7 +55,7 @@ const lang = "en";
 						d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
 					></path>
 				</svg>
-				<span>Print / Download PDF</span>
+				<span>Imprimir / Descargar PDF</span>
 			</button>
 		</div>
 		<main class="paper mx-auto min-h-[11in] max-w-[8.5in] bg-white p-[0.75in] shadow-2xl">
@@ -81,7 +81,7 @@ const lang = "en";
 			</header>
 
 			<section>
-				<h2 class="section-title text-[12pt] font-bold uppercase">Education</h2>
+				<h2 class="section-title text-[12pt] font-bold uppercase">Educación</h2>
 				{
 					education.map((edu) => (
 						<div class="mt-2 text-[11pt]">
@@ -100,7 +100,7 @@ const lang = "en";
 			</section>
 
 			<section>
-				<h2 class="section-title text-[12pt] font-bold uppercase">Experience</h2>
+				<h2 class="section-title text-[12pt] font-bold uppercase">Experiencia</h2>
 				{
 					experience.map((exp) => (
 						<div class="mt-3 text-[11pt]">
@@ -119,7 +119,7 @@ const lang = "en";
 			</section>
 
 			<section>
-				<h2 class="section-title text-[12pt] font-bold uppercase">Projects & SaaS Development</h2>
+				<h2 class="section-title text-[12pt] font-bold uppercase">Proyectos & Desarrollo SaaS</h2>
 				{
 					saas_projects.map((proj) => (
 						<div class="mt-3 text-[11pt]">
@@ -133,18 +133,18 @@ const lang = "en";
 			</section>
 
 			<section>
-				<h2 class="section-title text-[12pt] font-bold uppercase">Skills & Interests</h2>
+				<h2 class="section-title text-[12pt] font-bold uppercase">Habilidades e Intereses</h2>
 				<div class="mt-2 space-y-1 text-[11pt]">
-					<p><strong>Technical:</strong> {skills.technical}</p>
+					<p><strong>Técnicas:</strong> {skills.technical}</p>
 					<p>
-						<strong>Frameworks & Tools:</strong>
+						<strong>Frameworks y Herramientas:</strong>
 						{skills.frameworks}
 					</p>
-					<p><strong>Languages:</strong> {skills.languages[lang]}</p>
+					<p><strong>Idiomas:</strong> {skills.languages[lang]}</p>
 					{
 						skills.interests && (
 							<p>
-								<strong>Interests:</strong> {skills.interests[lang]}
+								<strong>Intereses:</strong> {skills.interests[lang]}
 							</p>
 						)
 					}

@@ -1,7 +1,10 @@
 {
     "personal": {
         "name": "Andres Vargas Martins",
-        "contact": "Cochabamba, Bolivia • +591 70795878 • andresvm10@gmail.com",
+        "contact": {
+            "en": "Cochabamba, Bolivia • +591 70795878 • andresvm10@gmail.com",
+            "es": "Cochabamba, Bolivia • +591 70795878 • andresvm10@gmail.com"
+        },
         "links": [
             {
                 "label": "github",
@@ -19,93 +22,240 @@
     },
     "education": [
         {
-            "school": "UNIFRANZ University",
-            "location": "Cochabamba, Bolivia",
-            "degree": "Bachelor of Science in Systems Engineering",
-            "date": "In Progress",
-            "honors": "Relevant Coursework: Distributed Systems, Cloud Computing, Software Architecture, and Database Management."
+            "school": {
+                "en": "UNIFRANZ University",
+                "es": "Universidad UNIFRANZ"
+            },
+            "location": {
+                "en": "Cochabamba, Bolivia",
+                "es": "Cochabamba, Bolivia"
+            },
+            "degree": {
+                "en": "Bachelor of Science in Systems Engineering",
+                "es": "Licenciatura en Ingeniería de Sistemas"
+            },
+            "date": {
+                "en": "In Progress",
+                "es": "En Curso"
+            },
+            "honors": {
+                "en": "Relevant Coursework: Distributed Systems, Cloud Computing, Software Architecture, and Database Management.",
+                "es": "Cursos relevantes: Sistemas Distribuidos, Computación en la Nube, Arquitectura de Software y Gestión de Bases de Datos."
+            }
         },
         {
-            "school": "Professional Certifications",
-            "location": "Online",
-            "degree": "100+ Industry Certifications",
-            "date": "2019 - Present",
-            "honors": "Completed over 100 specialized courses across various technology sectors, including Artificial Intelligence, Cloud Infrastructure, and advanced Software Engineering."
+            "school": {
+                "en": "Professional Certifications",
+                "es": "Certificaciones Profesionales"
+            },
+            "location": {
+                "en": "Online",
+                "es": "En línea"
+            },
+            "degree": {
+                "en": "100+ Industry Certifications",
+                "es": "Más de 100 Certificaciones de la Industria"
+            },
+            "date": {
+                "en": "2019 - Present",
+                "es": "2019 - Presente"
+            },
+            "honors": {
+                "en": "Completed over 100 specialized courses across various technology sectors, including Artificial Intelligence, Cloud Infrastructure, and advanced Software Engineering.",
+                "es": "Completé más de 100 cursos especializados en diversos sectores tecnológicos, incluyendo Inteligencia Artificial, Infraestructura en la Nube e Ingeniería de Software avanzada."
+            }
         },
         {
-            "school": "HarvardX / MIT / Google / Tecnológico de Monterrey / Oracle / Fortinet / Neetwork Digital Business School",
-            "location": "Online",
-            "degree": "Professional Certifications in Computer Science, AI, Data Science, Backend Specialization, Digital Marketing, and Cybersecurity",
-            "date": "2019 – 2024",
-            "honors": "Key credentials include Google Professional Certificate in Artificial Intelligence, Tecnológico de Monterrey Specialization in Data Science, HarvardX Computer Science (CS50), and MIT Data Science & Statistics. Completed 100+ specialized industry certifications."
+            "school": {
+                "en": "HarvardX / MIT / Google / Tecnológico de Monterrey / Oracle / Fortinet / Neetwork Digital Business School",
+                "es": "HarvardX / MIT / Google / Tecnológico de Monterrey / Oracle / Fortinet / Neetwork Digital Business School"
+            },
+            "location": {
+                "en": "Online",
+                "es": "En línea"
+            },
+            "degree": {
+                "en": "Professional Certifications in Computer Science, AI, Data Science, Backend Specialization, Digital Marketing, and Cybersecurity",
+                "es": "Certificaciones Profesionales en Ciencias de la Computación, IA, Ciencia de Datos, Especialización en Backend, Marketing Digital y Ciberseguridad"
+            },
+            "date": {
+                "en": "2019 – 2024",
+                "es": "2019 – 2024"
+            },
+            "honors": {
+                "en": "Key credentials include Google Professional Certificate in Artificial Intelligence, Tecnológico de Monterrey Specialization in Data Science, HarvardX Computer Science (CS50), and MIT Data Science & Statistics. Completed 100+ specialized industry certifications.",
+                "es": "Las credenciales clave incluyen el Certificado Profesional de Google en Inteligencia Artificial, la Especialización en Ciencia de Datos del Tecnológico de Monterrey, Ciencias de la Computación de HarvardX (CS50) y Ciencia de Datos y Estadísticas del MIT. Completé más de 100 certificaciones industriales especializadas."
+            }
         }
     ],
     "experience": [
         {
             "org": "Singular Agency",
-            "role": "Product Owner",
-            "date": "October 2025 - March 2026",
-            "location": "USA",
-            "description": "Directed the product lifecycle for OSMO Money, managing the product roadmap and prioritizing the backlog to align with stakeholder objectives. Orchestrated cross-functional teams to deliver high-impact financial features, ensuring technical feasibility and a user-centric approach."
+            "role": {
+                "en": "Product Owner",
+                "es": "Product Owner"
+            },
+            "date": {
+                "en": "October 2025 - March 2026",
+                "es": "Octubre 2025 - Marzo 2026"
+            },
+            "location": {
+                "en": "USA",
+                "es": "EE. UU."
+            },
+            "description": {
+                "en": "Directed the product lifecycle for OSMO Money, managing the product roadmap and prioritizing the backlog to align with stakeholder objectives. Orchestrated cross-functional teams to deliver high-impact financial features, ensuring technical feasibility and a user-centric approach.",
+                "es": "Dirigí el ciclo de vida del producto para OSMO Money, gestionando la hoja de ruta del producto y priorizando el backlog para alinearlo con los objetivos de las partes interesadas. Orquesté equipos multifuncionales para entregar características financieras de alto impacto, asegurando la viabilidad técnica y un enfoque centrado en el usuario."
+            }
         },
         {
             "org": "Reborn Developments",
-            "role": "Head of IT Department",
-            "date": "October 2022 - December 2025",
-            "location": "Kyiv, Ukraine",
-            "description": "Led the IT department overseeing full-stack software development and cybersecurity initiatives. Implemented scalable architectural strategies and managed the deployment of enterprise solutions to optimize internal business processes and system performance."
+            "role": {
+                "en": "Head of IT Department",
+                "es": "Jefe del Departamento de TI"
+            },
+            "date": {
+                "en": "October 2022 - December 2025",
+                "es": "Octubre 2022 - Diciembre 2025"
+            },
+            "location": {
+                "en": "Kyiv, Ukraine",
+                "es": "Kiev, Ucrania"
+            },
+            "description": {
+                "en": "Led the IT department overseeing full-stack software development and cybersecurity initiatives. Implemented scalable architectural strategies and managed the deployment of enterprise solutions to optimize internal business processes and system performance.",
+                "es": "Lideré el departamento de TI supervisando el desarrollo de software full-stack e iniciativas de ciberseguridad. Implementé estrategias arquitectónicas escalables y gestioné el despliegue de soluciones empresariales para optimizar los procesos comerciales internos y el rendimiento del sistema."
+            }
         },
         {
             "org": "Pusaq 8 Innovations",
-            "role": "Managing Partner & IT Director",
-            "date": "April 2024 - Present",
-            "location": "Zurich, Switzerland",
-            "description": "Develop robust web and mobile applications using modern frameworks. Design user-centered interfaces (UX/UI) and ensure backend integrity through rigorous testing, API integration, and database optimization."
+            "role": {
+                "en": "Managing Partner & IT Director",
+                "es": "Socio Gerente y Director de TI"
+            },
+            "date": {
+                "en": "April 2024 - Present",
+                "es": "Abril 2024 - Presente"
+            },
+            "location": {
+                "en": "Zurich, Switzerland",
+                "es": "Zúrich, Suiza"
+            },
+            "description": {
+                "en": "Develop robust web and mobile applications using modern frameworks. Design user-centered interfaces (UX/UI) and ensure backend integrity through rigorous testing, API integration, and database optimization.",
+                "es": "Desarrollo aplicaciones web y móviles robustas utilizando frameworks modernos. Diseño interfaces centradas en el usuario (UX/UI) y aseguro la integridad del backend mediante pruebas rigurosas, integración de APIs y optimización de bases de datos."
+            }
         },
         {
             "org": "Poleon & Grazia",
-            "role": "Full Stack Developer & UX/UI Designer",
-            "date": "April 2022 - May 2024",
-            "location": "Cochabamba, Bolivia",
-            "description": "Led the development and maintenance of dynamic web platforms for international clients under a dual-entity ecosystem. Directed frontend optimization and feature scaling for the Poleon SaaS platform and contributed to the interface and API architecture for Grazia, a high-traffic AI solution. Enhanced overall system performance by 25% through strategic code refactoring and asset optimization."
+            "role": {
+                "en": "Full Stack Developer & UX/UI Designer",
+                "es": "Desarrollador Full Stack y Diseñador UX/UI"
+            },
+            "date": {
+                "en": "April 2022 - May 2024",
+                "es": "Abril 2022 - Mayo 2024"
+            },
+            "location": {
+                "en": "Cochabamba, Bolivia",
+                "es": "Cochabamba, Bolivia"
+            },
+            "description": {
+                "en": "Led the development and maintenance of dynamic web platforms for international clients under a dual-entity ecosystem. Directed frontend optimization and feature scaling for the Poleon SaaS platform and contributed to the interface and API architecture for Grazia, a high-traffic AI solution. Enhanced overall system performance by 25% through strategic code refactoring and asset optimization.",
+                "es": "Lideré el desarrollo y mantenimiento de plataformas web dinámicas para clientes internacionales bajo un ecosistema de entidad dual. Dirigí la optimización del frontend y el escalado de características para la plataforma SaaS Poleon y contribuí a la arquitectura de interfaz y API para Grazia, una solución de IA de alto tráfico. Mejoré el rendimiento general del sistema en un 25% mediante la refactorización estratégica de código y la optimización de activos."
+            }
         },
         {
             "org": "Prestla",
-            "role": "Full-stack Software Developer",
-            "date": "January 2021 - May 2022",
-            "location": "Lima, Peru",
-            "description": "Coordinated technological infrastructure and streamlined development team workflows. Supervised the transition to cloud-native technologies and established comprehensive network security protocols."
+            "role": {
+                "en": "Full-stack Software Developer",
+                "es": "Desarrollador de Software Full-stack"
+            },
+            "date": {
+                "en": "January 2021 - May 2022",
+                "es": "Enero 2021 - Mayo 2022"
+            },
+            "location": {
+                "en": "Lima, Peru",
+                "es": "Lima, Perú"
+            },
+            "description": {
+                "en": "Coordinated technological infrastructure and streamlined development team workflows. Supervised the transition to cloud-native technologies and established comprehensive network security protocols.",
+                "es": "Coordiné la infraestructura tecnológica y optimicé los flujos de trabajo del equipo de desarrollo. Supervisé la transición a tecnologías nativas de la nube y establecí protocolos integrales de seguridad de red."
+            }
         },
         {
             "org": "Nuclea Solutions",
-            "role": "Software Engineer",
-            "date": "December 2021 - September 2022",
-            "location": "Mexico City, Mexico",
-            "description": "Designed and programmed complex modules for enterprise resource planning (ERP) systems. Participated in the full software development life cycle (SDLC), from UI conceptualization to final production deployment."
+            "role": {
+                "en": "Software Engineer",
+                "es": "Ingeniero de Software"
+            },
+            "date": {
+                "en": "December 2021 - September 2022",
+                "es": "Diciembre 2021 - Septiembre 2022"
+            },
+            "location": {
+                "en": "Mexico City, Mexico",
+                "es": "Ciudad de México, México"
+            },
+            "description": {
+                "en": "Designed and programmed complex modules for enterprise resource planning (ERP) systems. Participated in the full software development life cycle (SDLC), from UI conceptualization to final production deployment.",
+                "es": "Diseñé y programé módulos complejos para sistemas de planificación de recursos empresariales (ERP). Participé en el ciclo de vida completo de desarrollo de software (SDLC), desde la conceptualización de la interfaz de usuario hasta el despliegue final en producción."
+            }
         }
     ],
     "saas_projects": [
         {
-            "name": "Booking & Reminders Multi-tenant SaaS",
-            "description": "Architected a micro-SaaS solution for local businesses featuring data isolation. Engineered a collision-prevention algorithm for appointment scheduling and integrated asynchronous queues for automated WhatsApp reminders."
+            "name": {
+                "en": "Booking & Reminders Multi-tenant SaaS",
+                "es": "SaaS Multi-inquilino de Reservas y Recordatorios"
+            },
+            "description": {
+                "en": "Architected a micro-SaaS solution for local businesses featuring data isolation. Engineered a collision-prevention algorithm for appointment scheduling and integrated asynchronous queues for automated WhatsApp reminders.",
+                "es": "Arquitequé una solución micro-SaaS para negocios locales con aislamiento de datos. Diseñé un algoritmo de prevención de colisiones para la programación de citas e integré colas asíncronas para recordatorios automatizados de WhatsApp."
+            }
         },
         {
-            "name": "Event Ticket Management System",
-            "description": "Developed a comprehensive event ticketing platform valued at 25,000 BOB. Implemented to manage distinct administrative, staff, and customer roles."
+            "name": {
+                "en": "Event Ticket Management System",
+                "es": "Sistema de Gestión de Entradas para Eventos"
+            },
+            "description": {
+                "en": "Developed a comprehensive event ticketing platform valued at 25,000 BOB. Implemented to manage distinct administrative, staff, and customer roles.",
+                "es": "Desarrollé una plataforma integral de venta de entradas para eventos valorada en 25,000 BOB. Implementada para gestionar roles administrativos, de personal y de clientes distintos."
+            }
         },
         {
-            "name": "Restaurant Management System",
-            "description": "Engineered a specialized management system for high-volume restaurants. Optimized order-to-kitchen workflows and integrated real-time inventory tracking to reduce waste and improve service speed."
+            "name": {
+                "en": "Restaurant Management System",
+                "es": "Sistema de Gestión de Restaurantes"
+            },
+            "description": {
+                "en": "Engineered a specialized management system for high-volume restaurants. Optimized order-to-kitchen workflows and integrated real-time inventory tracking to reduce waste and improve service speed.",
+                "es": "Diseñé un sistema de gestión especializado para restaurantes de alto volumen. Optimicé los flujos de trabajo de pedido a cocina e integré el seguimiento de inventario en tiempo real para reducir el desperdicio y mejorar la velocidad del servicio."
+            }
         },
         {
-            "name": "Law Enforcement Resource Management System",
-            "description": "Architected an enterprise-grade resource planning (ERP) solution for the Venezuelan Police. Designed and implemented centralized databases for the automated tracking of armaments and vehicle maintenance logs, optimizing internal logistics and accountability through granular permission systems."
+            "name": {
+                "en": "Law Enforcement Resource Management System",
+                "es": "Sistema de Gestión de Recursos Policiales"
+            },
+            "description": {
+                "en": "Architected an enterprise-grade resource planning (ERP) solution for the Venezuelan Police. Designed and implemented centralized databases for the automated tracking of armaments and vehicle maintenance logs, optimizing internal logistics and accountability through granular permission systems.",
+                "es": "Arquitequé una solución de planificación de recursos empresariales (ERP) de grado empresarial para la Policía Venezolana. Diseñé e implementé bases de datos centralizadas para el seguimiento automatizado de armamentos y registros de mantenimiento de vehículos, optimizando la logística interna y la rendición de cuentas a través de sistemas de permisos granulares."
+            }
         }
     ],
     "skills": {
         "technical": "JavaScript (ES6+), TypeScript, PHP 8.3, Dart, Rust, Python, Java, C, C++, SQL (MySQL, PostgreSQL, SQLite), MongoDB",
         "frameworks": "Laravel, Flutter, Spring Boot, Astro, Django, Flask, FastAPI, Firebase",
-        "languages": "Spanish (Native), English (Professional Working Proficiency C1), Portuguese (Elementary)",
-        "interests": "Artificial Intelligence, Cybersecurity, Micro-SaaS Development, Tech Entrepreneurship"
+        "languages": {
+            "en": "Spanish (Native), English (Professional Working Proficiency C1), Portuguese (Elementary)",
+            "es": "Español (Nativo), Inglés (Competencia Profesional de Trabajo C1), Portugués (Elemental)"
+        },
+        "interests": {
+            "en": "Artificial Intelligence, Cybersecurity, Micro-SaaS Development, Tech Entrepreneurship",
+            "es": "Inteligencia Artificial, Ciberseguridad, Desarrollo de Micro-SaaS, Emprendimiento Tecnológico"
+        }
     }
 }
