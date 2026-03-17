@@ -1026,9 +1026,6 @@
         }
       ],
       "image": "tessinerhaus.png",
-      "images": [
-        "tessinerhaus.png"
-      ],
       "technologies": [
         "Astro",
         "Tailwind CSS",
@@ -1058,9 +1055,6 @@
         }
       ],
       "image": "osmo.png",
-      "images": [
-        "osmo.png"
-      ],
       "technologies": [
         "Flutter",
         "Firebase",
@@ -1091,9 +1085,6 @@
         }
       ],
       "image": "housing-research.png",
-      "images": [
-        "housing-research.png"
-      ],
       "technologies": [
         "React",
         "Tailwind CSS",
@@ -1125,9 +1116,6 @@
         }
       ],
       "image": "fed-up.png",
-      "images": [
-        "fed-up.png"
-      ],
       "technologies": [
         "Flutter",
         "Firebase",
@@ -1158,9 +1146,6 @@
         }
       ],
       "image": "self-t.png",
-      "images": [
-        "self-t.png"
-      ],
       "technologies": [
         "React",
         "Tailwind CSS",
@@ -1192,9 +1177,6 @@
         }
       ],
       "image": "teuscher.png",
-      "images": [
-        "teuscher.png"
-      ],
       "technologies": [
         "Laravel",
         "Tailwind CSS",
@@ -1225,9 +1207,6 @@
         }
       ],
       "image": "schaller.png",
-      "images": [
-        "schaller.png"
-      ],
       "technologies": [
         "Astro",
         "Tailwind CSS",

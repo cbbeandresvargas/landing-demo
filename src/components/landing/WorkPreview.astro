@@ -1,7 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import { getLangFromUrl, useTranslatedPath, useTranslations } from "@i18n/utils";
 import { getProjects } from "@utils/projects";
+import fs from 'node:fs';
+import path from 'node:path';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -9,9 +10,30 @@ const translatePath = useTranslatedPath(lang);
 
 const { class: className } = Astro.props;
 
-const allProjects = getProjects(lang)
-	.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
-	.slice(0, 4); // Show only the first 4 projects
+const allProjects = getProjects(lang).map(p => {
+	let hasImage = false;
+	if (p.image && p.image !== "project-template.jpg" && p.image !== "" && p.image !== null && !p.image.includes("logomodeltemplate.png")) {
+		// Check if file exists in public folder
+		const imagePath = p.image.startsWith("/") 
+			? path.join(process.cwd(), 'public', p.image)
+			: path.join(process.cwd(), 'public', 'assets', 'images', 'projects', p.image);
+		
+		if (fs.existsSync(imagePath)) {
+			hasImage = true;
+		}
+	}
+
+	return {
+		...p,
+		hasImage
+	};
+}).sort((a, b) => {
+	// 1. Prioritize projects with images
+	if (a.hasImage && !b.hasImage) return -1;
+	if (!a.hasImage && b.hasImage) return 1;
+	// 2. Sort by date descending
+	return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
+}).slice(0, 4); // Show only the first 4 projects with images if possible
 ---
 
 <section id="projects" class:list={["section work-preview-section home-dark-section py-12", className]}>
@@ -20,20 +42,21 @@ const allProjects = getProjects(lang)
 		<ol class="grid grid-cols-1 gap-24 md:grid-cols-2 lg:gap-44">
 			{
 				allProjects.map((project, index) => (
-					<li class={
-						index % 2 === 0
-							? `md:col-start-1 md:row-start-${Math.floor(index / 2) * 2 + 1} md:row-span-2`
-							: `md:col-start-2 md:row-start-${Math.floor(index / 2) * 2 + 2} md:row-span-2`
-					}>
+					<li
+						class={
+							index % 2 === 0
+								? `md:col-start-1 md:row-start-${Math.floor(index / 2) * 2 + 1} md:row-span-2`
+								: `md:col-start-2 md:row-start-${Math.floor(index / 2) * 2 + 2} md:row-span-2`
+						}>
 						<a href={translatePath(`/work/${project.id}`)} class="group block">
 							<div class="relative overflow-hidden rounded-lg">
 								<img
 									src={project.image.startsWith("/") ? project.image : `/assets/images/projects/${project.image}`}
 									alt={project.title}
-									class="w-full h-48 object-contain bg-[#a1a1aa] p-6 transition-transform duration-300 group-hover:scale-105"
+									class="h-48 w-full bg-[#1c1917] object-contain p-6 transition-transform duration-300 group-hover:scale-105"
 								/>
-								<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-									<h3 class="text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+								<div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 transition-all duration-300 group-hover:bg-opacity-30">
+									<h3 class="text-xl font-bold text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 										{project.title}
 									</h3>
 								</div>
