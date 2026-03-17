@@ -20,10 +20,10 @@
         "es": "Inglés"
       },
       "level": {
-        "en": "Fluent",
-        "es": "Fluido"
+        "en": "Professional Working Proficiency (C1)",
+        "es": "Competencia Profesional de Trabajo (C1)"
       },
-      "proficiency": 80,
+      "proficiency": 90,
       "flag": "🇺🇸"
     },
     {
@@ -33,10 +33,10 @@
         "es": "Portugués"
       },
       "level": {
-        "en": "Intermediate",
-        "es": "Intermedio"
+        "en": "Elementary",
+        "es": "Elemental"
       },
-      "proficiency": 50,
+      "proficiency": 30,
       "flag": "🇧🇷"
     }
   ]

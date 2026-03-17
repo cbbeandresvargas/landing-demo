@@ -3,137 +3,61 @@
     {
       "id": 1,
       "category": {
-        "en": "Backend & Server-Side",
-        "es": "Backend y Lado del Servidor"
+        "en": "Programming Languages",
+        "es": "Lenguajes de Programación"
       },
       "skills": [
-        {
-          "name": "Python",
-          "level": 95
-        },
-        {
-          "name": "Django",
-          "level": 90
-        },
-        {
-          "name": "Flask",
-          "level": 85
-        },
-        {
-          "name": "Fast API",
-          "level": 85
-        },
-        {
-          "name": "Java",
-          "level": 80
-        },
-        {
-          "name": "Spring Boot",
-          "level": 75
-        },
-        {
-          "name": "PHP",
-          "level": 70
-        }
+        { "name": "JavaScript (ES6+)", "level": 95 },
+        { "name": "TypeScript", "level": 95 },
+        { "name": "PHP 8.3", "level": 90 },
+        { "name": "Dart", "level": 90 },
+        { "name": "Rust", "level": 75 },
+        { "name": "Python", "level": 95 },
+        { "name": "Java", "level": 85 },
+        { "name": "C/C++", "level": 80 }
       ]
     },
     {
       "id": 2,
       "category": {
-        "en": "Frontend & Mobile",
-        "es": "Frontend y Móvil"
+        "en": "Frameworks",
+        "es": "Frameworks"
       },
       "skills": [
-        {
-          "name": "Flutter",
-          "level": 90
-        },
-        {
-          "name": "Dart",
-          "level": 90
-        },
-        {
-          "name": "React",
-          "level": 85
-        },
-        {
-          "name": "JavaScript/HTML/CSS",
-          "level": 90
-        },
-        {
-          "name": "Flutterflow (No-Code)",
-          "level": 75
-        },
-        {
-          "name": "Figma (UX/UI)",
-          "level": 70
-        }
+        { "name": "Laravel", "level": 90 },
+        { "name": "Flutter", "level": 90 },
+        { "name": "Spring Boot", "level": 85 },
+        { "name": "Astro", "level": 95 },
+        { "name": "Django", "level": 90 },
+        { "name": "Flask", "level": 85 },
+        { "name": "FastAPI", "level": 90 },
+        { "name": "Firebase", "level": 90 }
       ]
     },
     {
       "id": 3,
       "category": {
-        "en": "Databases & DevOps",
-        "es": "Bases de Datos y Operaciones"
+        "en": "Databases",
+        "es": "Bases de Datos"
       },
       "skills": [
-        {
-          "name": "PostgreSQL",
-          "level": 90
-        },
-        {
-          "name": "MySQL",
-          "level": 85
-        },
-        {
-          "name": "Mongo Db",
-          "level": 80
-        },
-        {
-          "name": "Linux",
-          "level": 85
-        },
-        {
-          "name": "Git / GitHub",
-          "level": 95
-        },
-        {
-          "name": "Docker",
-          "level": 75
-        }
+        { "name": "MySQL", "level": 90 },
+        { "name": "PostgreSQL", "level": 95 },
+        { "name": "SQLite", "level": 90 },
+        { "name": "MongoDB", "level": 85 }
       ]
     },
     {
       "id": 4,
       "category": {
-        "en": "Specialized & Security",
-        "es": "Especializadas y Seguridad"
+        "en": "Specialized",
+        "es": "Especialidades"
       },
       "skills": [
-        {
-          "name": "Fortinet (Network Security)",
-          "level": 80
-        },
-        {
-          "name": "Data Science / Analytics",
-          "level": 75
-        },
-        {
-          "name": "C/C++/C#",
-          "level": 70
-        },
-        {
-          "name": "Scrum / Metodologías Ágiles",
-          "level": 90
-        },
-        {
-          "name": "Google Analytics",
-          "level": 70
-        },
-        {
-          "name": "Digital Marketing",
-          "level": 70
-        }
+        { "name": "Artificial Intelligence", "level": 85 },
+        { "name": "Cybersecurity", "level": 80 },
+        { "name": "Micro-SaaS Development", "level": 90 },
+        { "name": "Tech Entrepreneurship", "level": 85 }
       ]
     }
   ]

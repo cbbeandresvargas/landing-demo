@@ -3,162 +3,62 @@
     {
       "id": 1,
       "degree": {
-        "en": "Systems Engineering (In Progress)",
-        "es": "Ingeniería de Sistemas (En Curso)"
+        "en": "Bachelor of Science in Systems Engineering (In Progress)",
+        "es": "Licenciatura en Ingeniería de Sistemas (En Curso)"
       },
       "institution": {
-        "en": "UNIFRANZ University Unifranz",
-        "es": "Universidad UNIFRANZ Unifranz"
+        "en": "UNIFRANZ University",
+        "es": "Universidad UNIFRANZ"
       },
       "period": {
         "en": "In Progress",
         "es": "En Curso"
       },
       "description": {
-        "en": "Advanced studies focused on software architecture and system design.",
-        "es": "Estudios avanzados enfocados en arquitectura de software y diseño de sistemas."
+        "en": "Relevant Coursework: Distributed Systems, Cloud Computing, Software Architecture, and Database Management.",
+        "es": "Cursos relevantes: Sistemas Distribuidos, Computación en la Nube, Arquitectura de Software y Gestión de Bases de Datos."
       },
       "icon": "graduation-cap"
     },
     {
       "id": 2,
       "degree": {
-        "en": "Computer Science",
-        "es": "Ciencias de la Computación"
+        "en": "100+ Industry Certifications",
+        "es": "Más de 100 Certificaciones de la Industria"
       },
       "institution": {
-        "en": "HarvardX",
-        "es": "HarvardX"
+        "en": "Professional Certifications",
+        "es": "Certificaciones Profesionales"
       },
       "period": {
-        "en": "Dec 201?",
-        "es": "Dic 201?"
+        "en": "2019 - Present",
+        "es": "2019 - Presente"
       },
       "description": {
-        "en": "Foundational course in Computer Science principles and algorithms.",
-        "es": "Curso fundamental en principios y algoritmos de Ciencias de la Computación."
+        "en": "Completed over 100 specialized courses across various technology sectors, including Artificial Intelligence, Cloud Infrastructure, and advanced Software Engineering.",
+        "es": "Completé más de 100 cursos especializados en diversos sectores tecnológicos, incluyendo Inteligencia Artificial, Infraestructura en la Nube e Ingeniería de Software avanzada."
       },
       "icon": "academic-cap"
     },
     {
       "id": 3,
       "degree": {
-        "en": "Network Security Specialist 3",
-        "es": "Especialista en Seguridad de Red Nivel 3"
+        "en": "Specialized Technical Certifications",
+        "es": "Certificaciones Técnicas Especializadas"
       },
       "institution": {
-        "en": "Fortinet",
-        "es": "Fortinet"
+        "en": "HarvardX / MIT / Google / Oracle / Fortinet",
+        "es": "HarvardX / MIT / Google / Oracle / Fortinet"
       },
       "period": {
-        "en": "Jan 202?",
-        "es": "Ene 202?"
+        "en": "2019 - 2024",
+        "es": "2019 - 2024"
       },
       "description": {
-        "en": "Professional certification focused on network security and threat management.",
-        "es": "Certificación profesional enfocada en seguridad de red y gestión de amenazas."
+        "en": "Key credentials include Google Professional Certificate in AI, HarvardX Computer Science (CS50), and MIT Data Science & Statistics.",
+        "es": "Las credenciales clave incluyen el Certificado Profesional de Google en IA, Ciencias de la Computación de HarvardX (CS50) y Ciencia de Datos y Estadísticas del MIT."
       },
       "icon": "shield-check"
-    },
-    {
-      "id": 4,
-      "degree": {
-        "en": "UX & UI (In Progress)",
-        "es": "UX & UI (En Curso)"
-      },
-      "institution": {
-        "en": "MIT",
-        "es": "MIT"
-      },
-      "period": {
-        "en": "In Progress",
-        "es": "En Curso"
-      },
-      "description": {
-        "en": "Specialization in user experience and interface design principles.",
-        "es": "Especialización en experiencia de usuario y principios de diseño de interfaz."
-      },
-      "icon": "device-tablet"
-    },
-    {
-      "id": 5,
-      "degree": {
-        "en": "Data Science",
-        "es": "Ciencia de Datos"
-      },
-      "institution": {
-        "en": "Tecnologico de monterey",
-        "es": "Tecnológico de Monterrey"
-      },
-      "period": {
-        "en": "2022",
-        "es": "2022"
-      },
-      "description": {
-        "en": "Training in data analysis, interpretation, and decision-making.",
-        "es": "Formación en análisis de datos, interpretación y toma de decisiones."
-      },
-      "icon": "chart-bar"
-    },
-    {
-      "id": 6,
-      "degree": {
-        "en": "Backend Specialization",
-        "es": "Especialización Backend"
-      },
-      "institution": {
-        "en": "Oracle/Alura Latam",
-        "es": "Oracle/Alura Latam"
-      },
-      "period": {
-        "en": "202?",
-        "es": "202?"
-      },
-      "description": {
-        "en": "Deep dive into server-side development and architecture.",
-        "es": "Inmersión profunda en desarrollo y arquitectura del lado del servidor."
-      },
-      "icon": "server"
-    },
-    {
-      "id": 7,
-      "degree": {
-        "en": "Digital Marketing",
-        "es": "Marketing Digital"
-      },
-      "institution": {
-        "en": "Neetwork Business School",
-        "es": "Neetwork Business School"
-      },
-      "period": {
-        "en": "2020",
-        "es": "2020"
-      },
-      "description": {
-        "en": "Strategy and implementation of digital marketing campaigns.",
-        "es": "Estrategia e implementación de campañas de marketing digital."
-      },
-      "icon": "speakerphone"
-    },
-    {
-      "id": 8,
-      "degree": {
-        "en": "Google Analytics (In Progress)",
-        "es": "Google Analytics (En Curso)"
-      },
-      "institution": {
-        "en": "Google",
-        "es": "Google"
-      },
-      "period": {
-        "en": "In Progress",
-        "es": "En Curso"
-      },
-      "description": {
-        "en": "Training on web analytics for performance optimization.",
-        "es": "Formación en analítica web para la optimización del rendimiento."
-      },
-      "icon": "magnifying-glass"
     }
   ]
 }

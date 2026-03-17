@@ -3,32 +3,30 @@
     {
       "id": 1,
       "title": {
-        "en": "Fullstack Software Developer",
-        "es": "Desarrollador de Software Fullstack"
+        "en": "Product Owner",
+        "es": "Product Owner"
       },
-      "company": "Kiev Line, Zurich-Seitanilm",
+      "company": "Singular Agency",
       "period": {
-        "en": "May 2024 - Present",
-        "es": "Mayo 2024 - Presente"
+        "en": "Oct 2025 - Mar 2026",
+        "es": "Oct 2025 - Mar 2026"
       },
       "description": {
-        "en": "Developing robust and scalable web solutions as a Fullstack Developer, focusing on high-performance backend architecture and secure API design.",
-        "es": "Desarrollo de soluciones web robustas y escalables como Fullstack Developer, centrado en la arquitectura de backend de alto rendimiento y el diseño seguro de APIs."
+        "en": "Directed the product lifecycle for OSMO Money, managing the product roadmap and prioritizing the backlog to align with stakeholder objectives.",
+        "es": "Dirigí el ciclo de vida del producto para OSMO Money, gestionando el roadmap del producto y priorizando el backlog para alinearlo con los objetivos de los stakeholders."
       },
       "achievements": {
         "en": [
-          "Led the migration of the main platform to a Python microservice, improving latency by 35%.",
-          "Designed and implemented secure RESTful APIs to integrate critical third-party services.",
-          "Implemented unit and integration tests that resulted in a 90% reduction of production failures."
+          "Orchestrated cross-functional teams to deliver high-impact financial features.",
+          "Ensured technical feasibility and a user-centric approach for financial products."
         ],
         "es": [
-          "Lideré la migración de la plataforma principal a un microservicio en Python, mejorando la latencia en un 35%.",
-          "Diseñé e implementé APIs RESTful seguras para integrar servicios críticos de terceros.",
-          "Implementé pruebas unitarias y de integración que resultaron en una reducción del 90% de fallos en producción."
+          "Orquesté equipos multifuncionales para entregar características financieras de alto impacto.",
+          "Garanticé la viabilidad técnica y un enfoque centrado en el usuario para productos financieros."
         ]
       },
-      "technologies": ["Python", "Django", "React", "PostgreSQL", "Scrum"],
-      "isCurrent": true
+      "technologies": ["Product Management", "Roadmap", "Agile", "Fintech"],
+      "isCurrent": false
     },
     {
       "id": 2,
@@ -38,87 +36,137 @@
       },
       "company": "Reborn Developments",
       "period": {
-        "en": "Dec 2022 - Present",
-        "es": "Dic 2022 - Presente"
+        "en": "Oct 2022 - Dec 2025",
+        "es": "Oct 2022 - Dic 2025"
       },
       "description": {
-        "en": "Strategic management of technological infrastructure, cybersecurity oversight, and leadership of the IT development team for the company's innovative projects.",
-        "es": "Gestión estratégica de la infraestructura tecnológica, supervisión de ciberseguridad y liderazgo del equipo de desarrollo de TI para los proyectos innovadores de la empresa."
+        "en": "Led the IT department overseeing full-stack software development and cybersecurity initiatives.",
+        "es": "Lideré el departamento de TI supervisando el desarrollo de software full-stack e iniciativas de ciberseguridad."
       },
       "achievements": {
         "en": [
-          "Supervised the implementation of a Fortinet-based cybersecurity policy, reducing critical network vulnerabilities.",
-          "Led a team of 5 developers and IT specialists, improving project efficiency by 20% through Agile practices.",
-          "Designed the cloud migration plan to optimize operational costs and enhance system resilience."
+          "Implemented scalable architectural strategies.",
+          "Managed the deployment of enterprise solutions to optimize internal business processes."
         ],
         "es": [
-          "Supervisé la implementación de una política de ciberseguridad basada en Fortinet, reduciendo vulnerabilidades críticas de la red.",
-          "Lideré un equipo de 5 desarrolladores y especialistas en TI, mejorando la eficiencia del proyecto en un 20% con prácticas Ágiles.",
-          "Diseñé el plan de migración a la nube para optimizar los costos operativos y mejorar la resiliencia del sistema."
+          "Implementé estrategias arquitectónicas escalables.",
+          "Gestioné el despliegue de soluciones empresariales para optimizar los procesos de negocio internos."
         ]
       },
-      "technologies": ["Linux", "Fortinet", "Docker", "CI/CD", "Scrum"],
-      "isCurrent": true
+      "technologies": ["Fullstack", "Cybersecurity", "Software Architecture", "Enterprise Solutions"],
+      "isCurrent": false
     },
     {
       "id": 3,
       "title": {
-        "en": "Fullstack Software Developer",
-        "es": "Desarrollador de Software Fullstack"
+        "en": "Managing Partner & IT Director",
+        "es": "Socio Gerente y Director de TI"
       },
       "company": "Pusaq 8 Innovations",
       "period": {
-        "en": "2022 - May 2024",
-        "es": "2022 - Mayo 2024"
+        "en": "Apr 2024 - Present",
+        "es": "Abr 2024 - Presente"
       },
       "description": {
-        "en": "Developed cutting-edge cross-platform mobile applications (Flutter) and integrated them with efficient microservices built on modern backend technologies.",
-        "es": "Desarrollo de aplicaciones móviles multiplataforma (Flutter) de vanguardia e integración con microservicios eficientes construidos con tecnologías backend modernas."
+        "en": "Develop robust web and mobile applications using modern frameworks and design user-centered interfaces.",
+        "es": "Desarrollo de aplicaciones web y móviles robustas utilizando frameworks modernos y diseño de interfaces centradas en el usuario."
       },
       "achievements": {
         "en": [
-          "Developed the company's main mobile application from scratch using Flutter, available on iOS and Android.",
-          "Optimized API resource consumption, successfully handling a 50% increase in user traffic.",
-          "Collaborated with the design team to ensure high accessibility and usability (UX) standards for the app."
+          "Ensuring backend integrity through rigorous testing and API integration.",
+          "Optimizing databases and ensuring high performance across all digital products."
         ],
         "es": [
-          "Desarrollé desde cero la aplicación móvil principal de la compañía usando Flutter, disponible en iOS y Android.",
-          "Optimicé el consumo de recursos en la API, manejando exitosamente un incremento del tráfico de usuarios del 50%.",
-          "Colaboré con el equipo de diseño para garantizar altos estándares de accesibilidad y usabilidad (UX) de la aplicación."
+          "Garantizando la integridad del backend mediante pruebas rigurosas e integración de APIs.",
+          "Optimizando bases de datos y asegurando un alto rendimiento en todos los productos digitales."
         ]
       },
-      "technologies": ["Flutter", "Dart", "Fast API", "Mongo Db", "UX/UI"],
-      "isCurrent": false
+      "technologies": ["Web Apps", "Mobile Apps", "UX/UI", "API Integration"],
+      "isCurrent": true
     },
     {
       "id": 4,
+      "title": {
+        "en": "Full Stack Developer & UX/UI Designer",
+        "es": "Desarrollador Full Stack y Diseñador UX/UI"
+      },
+      "company": "Poleon & Grazia",
+      "period": {
+        "en": "Apr 2022 - May 2024",
+        "es": "Abr 2022 - May 2024"
+      },
+      "description": {
+        "en": "Led the development and maintenance of dynamic web platforms for international clients under a dual-entity ecosystem.",
+        "es": "Lideré el desarrollo y mantenimiento de plataformas web dinámicas para clientes internacionales bajo un ecosistema de entidad dual."
+      },
+      "achievements": {
+        "en": [
+          "Enhanced overall system performance by 25% through strategic code refactoring.",
+          "Contributed to the interface and API architecture for Grazia, a high-traffic AI solution."
+        ],
+        "es": [
+          "Mejoré el rendimiento general del sistema en un 25% mediante la refactorización estratégica de código.",
+          "Contribuí a la interfaz y arquitectura de API para Grazia, una solución de IA de alto tráfico."
+        ]
+      },
+      "technologies": ["Frontend Optimization", "SaaS", "Refactoring", "AI Integration"],
+      "isCurrent": false
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Full-stack Software Developer",
+        "es": "Desarrollador de Software Full-stack"
+      },
+      "company": "Prestla",
+      "period": {
+        "en": "Jan 2021 - May 2022",
+        "es": "Ene 2021 - May 2022"
+      },
+      "description": {
+        "en": "Coordinated technological infrastructure and streamlined development team workflows.",
+        "es": "Coordiné la infraestructura tecnológica y optimicé los flujos de trabajo del equipo de desarrollo."
+      },
+      "achievements": {
+        "en": [
+          "Supervised the transition to cloud-native technologies.",
+          "Established comprehensive network security protocols."
+        ],
+        "es": [
+          "Supervisé la transición a tecnologías nativas de la nube.",
+          "Establecí protocolos integrales de seguridad de red."
+        ]
+      },
+      "technologies": ["Infrastructure", "Cloud Native", "Network Security", "Workflow Optimization"],
+      "isCurrent": false
+    },
+    {
+      "id": 6,
       "title": {
         "en": "Software Engineer",
         "es": "Ingeniero de Software"
       },
       "company": "Nuclea Solutions",
       "period": {
-        "en": "Jan 2019 - Present",
-        "es": "Enero 2019 - Presente"
+        "en": "Dec 2021 - Sep 2022",
+        "es": "Dic 2021 - Sep 2022"
       },
       "description": {
-        "en": "Core software engineering focused on building complex and robust solutions, specializing in performance optimization and enterprise-level scalability using Java/Spring Boot.",
-        "es": "Ingeniería de software central enfocada en construir soluciones complejas y robustas, especializándome en la optimización del rendimiento y la escalabilidad a nivel empresarial usando Java/Spring Boot."
+        "en": "Designed and programmed complex modules for enterprise resource planning (ERP) systems.",
+        "es": "Diseñé y programé módulos complejos para sistemas de planificación de recursos empresariales (ERP)."
       },
       "achievements": {
         "en": [
-          "Participated in the design and implementation of the highly scalable microservices architecture.",
-          "Developed key backend modules using Java and Spring Boot for critical transaction processing.",
-          "Performed major code refactoring efforts that improved project maintainability by over 25%."
+          "Participated in the full software development life cycle (SDLC).",
+          "Managed production deployment and UI conceptualization."
         ],
         "es": [
-          "Participé en el diseño e implementación de la arquitectura de microservicios altamente escalables.",
-          "Desarrollé módulos clave de backend usando Java y Spring Boot para el procesamiento de transacciones críticas.",
-          "Realicé importantes refactorizaciones de código que mejoraron la mantenibilidad del proyecto en más de un 25%."
+          "Participé en el ciclo de vida completo de desarrollo de software (SDLC).",
+          "Gestioné el despliegue en producción y la conceptualización de UI."
         ]
       },
-      "technologies": ["Java", "Spring Boot", "MySQL", "React", "CI/CD"],
-      "isCurrent": true
+      "technologies": ["ERP", "SDLC", "UI Design", "Deployment"],
+      "isCurrent": false
     }
   ]
 }

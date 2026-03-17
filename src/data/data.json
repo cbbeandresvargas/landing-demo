@@ -1,0 +1,111 @@
+{
+    "personal": {
+        "name": "Andres Vargas Martins",
+        "contact": "Cochabamba, Bolivia • +591 70795878 • andresvm10@gmail.com",
+        "links": [
+            {
+                "label": "github",
+                "url": "https://github.com/cbbeandresvargas"
+            },
+            {
+                "label": "linkedin",
+                "url": "https://www.linkedin.com/in/andres-vargas-martins/"
+            },
+            {
+                "label": "Portfolio",
+                "url": "https://andres-vargas-portfolio.pages.dev/"
+            }
+        ]
+    },
+    "education": [
+        {
+            "school": "UNIFRANZ University",
+            "location": "Cochabamba, Bolivia",
+            "degree": "Bachelor of Science in Systems Engineering",
+            "date": "In Progress",
+            "honors": "Relevant Coursework: Distributed Systems, Cloud Computing, Software Architecture, and Database Management."
+        },
+        {
+            "school": "Professional Certifications",
+            "location": "Online",
+            "degree": "100+ Industry Certifications",
+            "date": "2019 - Present",
+            "honors": "Completed over 100 specialized courses across various technology sectors, including Artificial Intelligence, Cloud Infrastructure, and advanced Software Engineering."
+        },
+        {
+            "school": "HarvardX / MIT / Google / Tecnológico de Monterrey / Oracle / Fortinet / Neetwork Digital Business School",
+            "location": "Online",
+            "degree": "Professional Certifications in Computer Science, AI, Data Science, Backend Specialization, Digital Marketing, and Cybersecurity",
+            "date": "2019 – 2024",
+            "honors": "Key credentials include Google Professional Certificate in Artificial Intelligence, Tecnológico de Monterrey Specialization in Data Science, HarvardX Computer Science (CS50), and MIT Data Science & Statistics. Completed 100+ specialized industry certifications."
+        }
+    ],
+    "experience": [
+        {
+            "org": "Singular Agency",
+            "role": "Product Owner",
+            "date": "October 2025 - March 2026",
+            "location": "USA",
+            "description": "Directed the product lifecycle for OSMO Money, managing the product roadmap and prioritizing the backlog to align with stakeholder objectives. Orchestrated cross-functional teams to deliver high-impact financial features, ensuring technical feasibility and a user-centric approach."
+        },
+        {
+            "org": "Reborn Developments",
+            "role": "Head of IT Department",
+            "date": "October 2022 - December 2025",
+            "location": "Kyiv, Ukraine",
+            "description": "Led the IT department overseeing full-stack software development and cybersecurity initiatives. Implemented scalable architectural strategies and managed the deployment of enterprise solutions to optimize internal business processes and system performance."
+        },
+        {
+            "org": "Pusaq 8 Innovations",
+            "role": "Managing Partner & IT Director",
+            "date": "April 2024 - Present",
+            "location": "Zurich, Switzerland",
+            "description": "Develop robust web and mobile applications using modern frameworks. Design user-centered interfaces (UX/UI) and ensure backend integrity through rigorous testing, API integration, and database optimization."
+        },
+        {
+            "org": "Poleon & Grazia",
+            "role": "Full Stack Developer & UX/UI Designer",
+            "date": "April 2022 - May 2024",
+            "location": "Cochabamba, Bolivia",
+            "description": "Led the development and maintenance of dynamic web platforms for international clients under a dual-entity ecosystem. Directed frontend optimization and feature scaling for the Poleon SaaS platform and contributed to the interface and API architecture for Grazia, a high-traffic AI solution. Enhanced overall system performance by 25% through strategic code refactoring and asset optimization."
+        },
+        {
+            "org": "Prestla",
+            "role": "Full-stack Software Developer",
+            "date": "January 2021 - May 2022",
+            "location": "Lima, Peru",
+            "description": "Coordinated technological infrastructure and streamlined development team workflows. Supervised the transition to cloud-native technologies and established comprehensive network security protocols."
+        },
+        {
+            "org": "Nuclea Solutions",
+            "role": "Software Engineer",
+            "date": "December 2021 - September 2022",
+            "location": "Mexico City, Mexico",
+            "description": "Designed and programmed complex modules for enterprise resource planning (ERP) systems. Participated in the full software development life cycle (SDLC), from UI conceptualization to final production deployment."
+        }
+    ],
+    "saas_projects": [
+        {
+            "name": "Booking & Reminders Multi-tenant SaaS",
+            "description": "Architected a micro-SaaS solution for local businesses featuring data isolation. Engineered a collision-prevention algorithm for appointment scheduling and integrated asynchronous queues for automated WhatsApp reminders."
+        },
+        {
+            "name": "Event Ticket Management System",
+            "description": "Developed a comprehensive event ticketing platform valued at 25,000 BOB. Implemented to manage distinct administrative, staff, and customer roles."
+        },
+        {
+            "name": "Restaurant Management System",
+            "description": "Engineered a specialized management system for high-volume restaurants. Optimized order-to-kitchen workflows and integrated real-time inventory tracking to reduce waste and improve service speed."
+        },
+        {
+            "name": "Law Enforcement Resource Management System",
+            "description": "Architected an enterprise-grade resource planning (ERP) solution for the Venezuelan Police. Designed and implemented centralized databases for the automated tracking of armaments and vehicle maintenance logs, optimizing internal logistics and accountability through granular permission systems."
+        }
+    ],
+    "skills": {
+        "technical": "JavaScript (ES6+), TypeScript, PHP 8.3, Dart, Rust, Python, Java, C, C++, SQL (MySQL, PostgreSQL, SQLite), MongoDB",
+        "frameworks": "Laravel, Flutter, Spring Boot, Astro, Django, Flask, FastAPI, Firebase",
+        "languages": "Spanish (Native), English (Professional Working Proficiency C1), Portuguese (Elementary)",
+        "interests": "Artificial Intelligence, Cybersecurity, Micro-SaaS Development, Tech Entrepreneurship"
+    }
+}
