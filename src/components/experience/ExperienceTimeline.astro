@@ -186,22 +186,34 @@ const experienceData = [
 	gsap.registerPlugin(ScrollTrigger);
 
 	function init() {
-		// Animate experience items
-		gsap.from('.experience-timeline .experience-item', {
-			scrollTrigger: {
-				trigger: '.experience-timeline',
-				start: "top 80%",
-				end: "bottom 20%",
-				toggleActions: "play none none reverse"
-			},
-			duration: 0.8,
-			y: 50,
-			opacity: 0,
-			ease: "power2.out",
-			stagger: 0.2
+		const items = document.querySelectorAll('.experience-timeline .experience-item');
+		
+		items.forEach((item, index) => {
+			const dot = item.querySelector('.absolute');
+			const card = item.querySelector('.bg-white');
+
+			const tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: item,
+					start: "top 85%",
+					toggleActions: "play none none reverse"
+				}
+			});
+
+			tl.from(dot, {
+				duration: 0.6,
+				scale: 0,
+				ease: "back.out(1.7)"
+			})
+			.from(card, {
+				duration: 1,
+				xPercent: index % 2 === 0 ? -10 : 10, // Slight horizontal movement for interest
+				y: 30,
+				opacity: 0,
+				ease: "power4.out"
+			}, "-=0.3");
 		});
 	}
 
-	document.removeEventListener("DOMContentLoaded", init);
 	document.addEventListener("DOMContentLoaded", init);
 </script>

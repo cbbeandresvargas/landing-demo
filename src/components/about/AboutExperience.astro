@@ -44,36 +44,41 @@ const experienceData = getExperience(lang);
 	gsap.registerPlugin(ScrollTrigger);
 
 	function init() {
-		// Animate title
-		gsap.from('.about-experience h2', {
-			scrollTrigger: {
-				trigger: '.about-experience',
-				start: "top 80%",
-				end: "bottom 20%",
-				toggleActions: "play none none reverse"
-			},
-			duration: 0.8,
-			y: 50,
-			opacity: 0,
-			ease: "power2.out"
-		});
-
-		// Animate experience items
-		gsap.from('.about-experience .experience-item', {
+		const timeline = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.about-experience',
 				start: "top 70%",
-				end: "bottom 20%",
 				toggleActions: "play none none reverse"
-			},
+			}
+		});
+
+		// Animate title first
+		timeline.from('.about-experience h2', {
 			duration: 0.8,
-			y: 50,
+			y: 30,
 			opacity: 0,
-			ease: "power2.out",
-			stagger: 0.2
+			ease: "power3.out"
+		});
+
+		// Animate experience items with a stagger
+		const experienceItems = document.querySelectorAll('.about-experience .experience-item');
+		experienceItems.forEach((item, index) => {
+			const dot = item.querySelector('.absolute');
+			const content = item.querySelector('div');
+
+			timeline.from(dot, {
+				duration: 0.5,
+				scale: 0,
+				ease: "back.out(2)"
+			}, "-=0.2")
+			.from(content, {
+				duration: 0.8,
+				x: 30,
+				opacity: 0,
+				ease: "power3.out"
+			}, "-=0.3");
 		});
 	}
 
-	document.removeEventListener("DOMContentLoaded", init);
 	document.addEventListener("DOMContentLoaded", init);
 </script>

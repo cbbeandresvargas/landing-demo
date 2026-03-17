@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+	const posts = await getCollection("blog");
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout seo={{ title: post.data.title, description: post.data.description }}>
+	<article class="section home-dark-section min-h-screen py-20 pb-32">
+		<div class="col-span-12 mx-auto max-w-3xl px-6">
+			<a href="/blog/" class="mb-8 inline-block text-blue-400 hover:underline">
+				&larr; Back to blog
+			</a>
+			
+			<div class="mb-4 aspect-[21/9] w-full overflow-hidden rounded-3xl group">
+				<img 
+					src={post.data.heroImage || "/images/blog-placeholder.png"} 
+					alt={post.data.title}
+					class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+				/>
+			</div>
+
+			<div class="mb-8">
+				<h1 class="text-4xl font-extrabold text-white lg:text-5xl">{post.data.title}</h1>
+				<div class="mt-4 flex flex-wrap gap-2">
+					{post.data.tags.map(tag => (
+						<span class="rounded-full bg-zinc-800 px-3 py-1 text-xs font-mono text-blue-400">#{tag}</span>
+					))}
+				</div>
+			</div>
+
+			<div class="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-blue-400">
+				<Content />
+			</div>
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	/* Custom prose styles for the dark theme */
+	:global(.prose) {
+		color: #94a3b8;
+	}
+	:global(.prose strong) {
+		color: #f8fafc;
+	}
+</style>

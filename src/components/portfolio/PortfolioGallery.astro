@@ -1,20 +1,56 @@
 ---
 // PortfolioGallery.astro
-import { getLangFromUrl } from "@i18n/utils";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import projectsData from "@data/projects.json";
 
 const lang = getLangFromUrl(Astro.url);
-const projects = projectsData.projects.map((project) => ({
-	title: project.title[lang] || project.title.en,
-	description: project.description[lang] || project.description.en,
-	image: project.image.startsWith("/") ? project.image : `/assets/images/projects/${project.image}`,
-	technologies: project.technologies || [],
-}));
+const t = useTranslations(lang);
+
+const projects = projectsData.projects.map((project) => {
+	const hasRealImage = project.image && project.image !== "project-template.jpg" && project.image !== "";
+	return {
+		...project,
+		title: project.title[lang] || project.title.en,
+		description: project.description[lang] || project.description.en,
+		// If no image, we keep it as is, but we'll handle hiding the component in the template
+		displayImage: hasRealImage ? (project.image.startsWith("/") ? project.image : `/assets/images/projects/${project.image}`) : null,
+		hasRealImage,
+		technologies: project.technologies || [],
+		pubDate: project.pubDate || "2000-01-01"
+	};
+}).sort((a, b) => {
+	// 1. Prioritize projects with real images
+	if (a.hasRealImage && !b.hasRealImage) return -1;
+	if (!a.hasRealImage && b.hasRealImage) return 1;
+	
+	// 2. Sort by date descending (Newest first)
+	return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
+});
+
+const allTechnologies = [...new Set(projectsData.projects.flatMap(p => p.technologies || []))].sort();
 ---
 
 <!-- ===== MOBILE: Horizontal cylinder-style carousel (hidden on md+) ===== -->
 <section class="portfolio-mobile-section block md:hidden">
 	<div class="mobile-stage relative flex min-h-screen flex-col items-center justify-center overflow-x-hidden pb-8 pt-20">
+		<!-- Filter & Sort UI (Mobile) -->
+		<div class="z-30 mb-6 flex flex-col items-center gap-4 px-4 w-full">
+			<div class="flex flex-wrap justify-center gap-2">
+				<button class="filter-btn active rounded-full bg-zinc-800 px-4 py-1 text-xs text-white" data-filter="all">{t("filter.all")}</button>
+				{allTechnologies.slice(0, 5).map(tech => (
+					<button class="filter-btn rounded-full bg-zinc-900 border border-zinc-800 px-4 py-1 text-xs text-slate-400" data-filter={tech}>{tech}</button>
+				))}
+			</div>
+			<div class="flex items-center gap-2">
+				<span class="text-[10px] uppercase tracking-widest text-slate-500">{t("sort.by")}:</span>
+				<select class="sort-select bg-zinc-900 text-xs text-white border-none rounded-lg px-2 py-1 outline-none">
+					<option value="newest">{t("sort.newest")}</option>
+					<option value="oldest">{t("sort.oldest")}</option>
+					<option value="alpha">{t("sort.alpha")}</option>
+				</select>
+			</div>
+		</div>
+
 		<!-- Title -->
 		<div class="mb-6 text-center">
 			<h1 class="text-3xl font-bold text-white">Portfolio</h1>
@@ -57,6 +93,27 @@ const projects = projectsData.projects.map((project) => ({
 
 <!-- ===== DESKTOP: 3D rotating gallery (hidden on mobile, shown on md+) ===== -->
 <section class="portfolio-gallery-section section home-dark-section relative hidden min-h-screen overflow-hidden md:flex md:items-center">
+	<!-- Filter & Sort UI (Desktop) -->
+	<div class="absolute left-6 top-24 z-30 flex flex-col gap-6">
+		<div class="flex flex-col gap-2">
+			<span class="text-[10px] uppercase tracking-widest text-slate-500">{t("filter.category")}</span>
+			<div class="flex flex-col items-start gap-1">
+				<button class="filter-btn active text-sm text-white hover:text-blue-400 transition-colors" data-filter="all">{t("filter.all")}</button>
+				{allTechnologies.slice(0, 8).map(tech => (
+					<button class="filter-btn text-sm text-slate-400 hover:text-white transition-colors" data-filter={tech}>{tech}</button>
+				))}
+			</div>
+		</div>
+		<div class="flex flex-col gap-2">
+			<span class="text-[10px] uppercase tracking-widest text-slate-500">{t("sort.by")}</span>
+			<div class="flex flex-col items-start gap-1">
+				<button class="sort-btn active text-sm text-white" data-sort="newest">{t("sort.newest")}</button>
+				<button class="sort-btn text-sm text-slate-400 hover:text-white" data-sort="oldest">{t("sort.oldest")}</button>
+				<button class="sort-btn text-sm text-slate-400 hover:text-white" data-sort="alpha">{t("sort.alpha")}</button>
+			</div>
+		</div>
+	</div>
+
 	<div class="relative h-screen w-full">
 		<!-- Preview Image -->
 		<div class="preview-img absolute left-1/2 top-1/2 z-20 h-[220px] w-[320px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg shadow-2xl">
@@ -97,28 +154,80 @@ const projects = projectsData.projects.map((project) => ({
 
 	gsap.registerPlugin(ScrollTrigger);
 
-	// ─── Safe image helper ───────────────────────────────────────────────────────
-	function safeImg(src: string, alt: string): HTMLImageElement {
-		const img = document.createElement("img");
-		img.src = src;
-		img.alt = alt;
-		img.className = "w-full h-full object-cover";
-		img.dataset.fallbackUsed = "false";
-		img.onerror = () => {
-			if (img.dataset.fallbackUsed === "false") {
-				img.dataset.fallbackUsed = "true";
-				img.src = "/assets/images/projects/project-template.jpg";
+	let currentProjects = [...(window as any).portfolioProjects];
+	let activeFilter = "all";
+	let activeSort = "newest";
+
+	// ─── Safe image helper (Handling products without images) ───────────────────
+	function createProjectItem(project: any): HTMLElement {
+		const container = document.createElement("div");
+		container.className = "w-full h-full relative";
+
+		if (project.hasRealImage && project.displayImage) {
+			const img = document.createElement("img");
+			img.src = project.displayImage;
+			img.alt = project.title;
+			img.className = "w-full h-full object-cover";
+			img.dataset.fallbackUsed = "false";
+			img.onerror = () => {
+				if (img.dataset.fallbackUsed === "false") {
+					img.dataset.fallbackUsed = "true";
+					img.src = "/assets/images/projects/project-template.jpg";
+				}
+			};
+			container.appendChild(img);
+		} else {
+			// Stylized text card for projects without images
+			const info = document.createElement("div");
+			info.className = "flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-900 p-4 text-center";
+			info.innerHTML = `
+				<div class="mb-2 text-[10px] font-mono text-blue-400 uppercase tracking-tighter opacity-70">${project.technologies[0] || 'Project'}</div>
+				<div class="text-[11px] font-bold text-white line-clamp-2 leading-tight">${project.title}</div>
+				<div class="mt-2 h-1 w-8 bg-blue-500/30 rounded-full"></div>
+			`;
+			container.appendChild(info);
+		}
+		return container;
+	}
+
+	// ─── Filter & Sort Logic ───────────────────────────────────────────────────
+	function updateProjectList() {
+		let filtered = [...(window as any).portfolioProjects];
+		
+		if (activeFilter !== "all") {
+			filtered = filtered.filter(p => p.technologies.includes(activeFilter));
+		}
+
+		filtered.sort((a, b) => {
+			if (activeSort === "alpha") {
+				return a.title.localeCompare(b.title);
+			} else if (activeSort === "oldest") {
+				return new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime();
+			} else { // newest
+				// Still prioritize images even in newest sort if possible, 
+				// or just follow user's request for "initially by image" but then specific sorts.
+				// User said: "inicialmente esten ordenados por los que tienen y los que no tienen imagen"
+				// I'll keep the image priority as a secondary tie-breaker for date/alpha if helpful, 
+				// but let's stick to the specific sort first.
+				return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
 			}
-		};
-		return img;
+		});
+
+		currentProjects = filtered;
+		renderGalleries();
+	}
+
+	// ─── Re-rendering ──────────────────────────────────────────────────────────
+	function renderGalleries() {
+		initMobileCarousel();
+		initDesktopGallery();
 	}
 
 	// ─── MOBILE: Cylinder carousel ───────────────────────────────────────────────
+	let mobileScrollTrigger: any = null;
+
 	function initMobileCarousel() {
 		if (window.innerWidth >= 768) return;
-
-		const projects: any[] = (window as any).portfolioProjects || [];
-		if (!projects.length) return;
 
 		const track = document.getElementById("carousel-track");
 		const infoTitle = document.getElementById("mobile-info-title");
@@ -126,17 +235,29 @@ const projects = projectsData.projects.map((project) => ({
 		const infoTags = document.getElementById("mobile-info-tags");
 
 		if (!track) return;
+		track.innerHTML = "";
 
-		// Card dimensions
-		// CARD_H_ACTIVE is the real height of the focused card — GSAP animates
-		// the actual `height` CSS property so flexbox adjusts and no clipping occurs.
+		currentProjects.forEach((project, i) => {
+			const card = document.createElement("div");
+			card.className = "carousel-card flex-none group cursor-pointer";
+			card.dataset.index = i.toString();
+			
+			const content = createProjectItem(project);
+			card.appendChild(content);
+
+			const overlay = document.createElement("div");
+			overlay.className = "card-overlay absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent";
+			card.appendChild(overlay);
+
+			track.appendChild(card);
+		});
+
 		const CARD_W = 160;
-		const CARD_H_BASE = 165;   // resting height of non-active cards
-		const CARD_H_ACTIVE = 230; // height of the center (active) card
+		const CARD_H_BASE = 165;
+		const CARD_H_ACTIVE = 230;
 		const GAP = 16;
 		const STEP = CARD_W + GAP;
 
-		// Apply track styles
 		Object.assign(track.style, {
 			gap: `${GAP}px`,
 			paddingLeft: "50%",
@@ -144,9 +265,8 @@ const projects = projectsData.projects.map((project) => ({
 			alignItems: "center",
 		});
 
-		// Style each card from the server-rendered HTML
 		const cards = track.querySelectorAll<HTMLElement>(".carousel-card");
-		cards.forEach((card) => {
+		cards.forEach((card, i) => {
 			Object.assign(card.style, {
 				width: `${CARD_W}px`,
 				height: `${CARD_H_BASE}px`,
@@ -155,15 +275,16 @@ const projects = projectsData.projects.map((project) => ({
 				position: "relative",
 				flexShrink: "0",
 			});
+			card.addEventListener("click", () => updateCarousel(i));
 		});
 
 		let currentIndex = 0;
 
 		function updateCarousel(index: number) {
-			currentIndex = Math.max(0, Math.min(index, projects.length - 1));
-			const project = projects[currentIndex];
+			if (!currentProjects.length) return;
+			currentIndex = Math.max(0, Math.min(index, currentProjects.length - 1));
+			const project = currentProjects[currentIndex];
 
-			// Update info panel
 			if (infoTitle) infoTitle.textContent = project.title;
 			if (infoDesc) infoDesc.textContent = project.description;
 			if (infoTags) {
@@ -173,7 +294,6 @@ const projects = projectsData.projects.map((project) => ({
 					.join("");
 			}
 
-			// Animate cards — use real height (not scale) so flexbox adjusts layout
 			cards.forEach((card, i) => {
 				const dist = i - currentIndex;
 				const absD = Math.abs(dist);
@@ -185,47 +305,31 @@ const projects = projectsData.projects.map((project) => ({
 				gsap.to(card, {
 					duration: 0.45,
 					ease: "power2.out",
-					height, // real layout change — no clipping
+					height,
 					rotationY: -angle,
 					opacity,
 					z: translateZ,
 					boxShadow: absD === 0 ? "0 20px 60px rgba(0,0,0,0.6)" : "none",
 					overwrite: "auto",
 				});
-
-				// Active border highlight
 				card.style.outline = absD === 0 ? "2px solid rgba(148,163,184,0.7)" : "none";
 			});
 
-			// Scroll track so center card is centred
 			const scrollTarget = currentIndex * STEP;
-			track.scrollTo({ left: scrollTarget, behavior: "smooth" });
+			track?.scrollTo({ left: scrollTarget, behavior: "smooth" });
 		}
 
-		// Initialize on index 0
 		updateCarousel(0);
 
-		// Touch / drag
+		// Touch / drag logic (kept from original)
 		let startX = 0;
 		let isDragging = false;
-
-		track.addEventListener("touchstart", (e) => {
-			startX = e.touches[0].clientX;
-			isDragging = true;
-		}, { passive: true });
-
+		track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; isDragging = true; }, { passive: true });
 		track.addEventListener("touchend", (e) => {
 			if (!isDragging) return;
 			isDragging = false;
 			const diff = startX - e.changedTouches[0].clientX;
-			if (Math.abs(diff) > 40) {
-				updateCarousel(currentIndex + (diff > 0 ? 1 : -1));
-			}
-		});
-
-		// Click on a card to jump to it
-		cards.forEach((card, i) => {
-			card.addEventListener("click", () => updateCarousel(i));
+			if (Math.abs(diff) > 40) updateCarousel(currentIndex + (diff > 0 ? 1 : -1));
 		});
 	}
 
@@ -234,20 +338,64 @@ const projects = projectsData.projects.map((project) => ({
 		if (window.innerWidth < 768) return;
 
 		const gallery = document.querySelector(".gallery") as HTMLElement | null;
-		const previewImage = document.querySelector(".preview-img img") as HTMLImageElement | null;
+		const previewImageContainer = document.querySelector(".preview-img") as HTMLElement | null;
+		const previewImg = previewImageContainer?.querySelector("img") as HTMLImageElement | null;
 		const infoTitle = document.getElementById("desktop-info-title");
 		const infoDescription = document.getElementById("desktop-info-description");
 		const infoTags = document.getElementById("desktop-info-tags");
 
-		if (!gallery || !previewImage) return;
-
-		const projects: any[] = (window as any).portfolioProjects || [];
-		if (!projects.length) return;
+		if (!gallery || !previewImageContainer) return;
 
 		gallery.innerHTML = "";
+		
+		// Clean up previous ScrollTrigger
+		if (mobileScrollTrigger) mobileScrollTrigger.kill();
 
-		// Mouse → 3D rotation
-		document.addEventListener("mousemove", (e) => {
+		const displayProjects = currentProjects.length >= 24 ? currentProjects : [...currentProjects];
+		// If very few projects, we might want to repeat them for the circular effect
+		const count = Math.max(24, currentProjects.length);
+		
+		for (let i = 0; i < count; i++) {
+			const project = currentProjects[i % currentProjects.length];
+			const item = document.createElement("div");
+			item.className = "item absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[60px] m-[10px] [transform-style:preserve-3d] bg-slate-800 rounded-lg overflow-hidden shadow-lg cursor-pointer";
+			
+			const content = createProjectItem(project);
+			item.appendChild(content);
+			gallery.appendChild(item);
+
+			const angleInc = 360 / count;
+			gsap.set(item, {
+				rotationY: 90,
+				rotationZ: i * angleInc - 90,
+				transformOrigin: "50% 320px",
+			});
+
+			item.addEventListener("mouseover", () => {
+				if (project.hasRealImage && project.displayImage && previewImg) {
+					previewImg.src = project.displayImage;
+					previewImageContainer.style.opacity = "1";
+				} else if (previewImageContainer) {
+					previewImageContainer.style.opacity = "0.3"; // Dim preview if no image
+				}
+
+				if (infoTitle) infoTitle.textContent = project.title;
+				if (infoDescription) infoDescription.textContent = project.description;
+				if (infoTags) {
+					infoTags.innerHTML = project.technologies
+						.map((t: string) => `<span class="rounded-full bg-slate-700 px-3 py-1 text-sm text-slate-300">${t}</span>`)
+						.join("");
+				}
+				gsap.to(item, { x: 10, y: 10, z: 10, ease: "power2.out", duration: 0.5 });
+			});
+
+			item.addEventListener("mouseout", () => {
+				gsap.to(item, { x: 0, y: 0, z: 0, ease: "power2.out", duration: 0.5 });
+			});
+		}
+
+		// Mouse rotation
+		const onMouseMove = (e: MouseEvent) => {
 			const percentX = (e.clientX - window.innerWidth / 2) / (window.innerWidth / 2);
 			gsap.to(gallery, {
 				duration: 1,
@@ -256,58 +404,18 @@ const projects = projectsData.projects.map((project) => ({
 				rotateY: percentX * 1.5,
 				overwrite: "auto",
 			});
-		});
+		};
+		document.addEventListener("mousemove", onMouseMove);
 
-		// Build circular items
-		const count = Math.max(24, projects.length);
-		for (let i = 0; i < count; i++) {
-			const item = document.createElement("div");
-			item.className =
-				"item absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[60px] m-[10px] [transform-style:preserve-3d] bg-slate-800 rounded-lg overflow-hidden shadow-lg cursor-pointer";
-
-			const idx = i % projects.length;
-			item.appendChild(safeImg(projects[idx].image, projects[idx].title));
-			gallery.appendChild(item);
-		}
-
-		const items = gallery.querySelectorAll<HTMLElement>(".item");
-		const angleInc = 360 / items.length;
-
-		items.forEach((item, index) => {
-			gsap.set(item, {
-				rotationY: 90,
-				rotationZ: index * angleInc - 90,
-				transformOrigin: "50% 320px",
-			});
-
-			item.addEventListener("mouseover", () => {
-				const project = projects[index % projects.length];
-				const imgEl = item.querySelector("img") as HTMLImageElement;
-
-				if (imgEl) previewImage.src = imgEl.src;
-				if (infoTitle) infoTitle.textContent = project.title;
-				if (infoDescription) infoDescription.textContent = project.description;
-				if (infoTags) {
-					infoTags.innerHTML = project.technologies
-						.map((t: string) => `<span class="rounded-full bg-slate-700 px-3 py-1 text-sm text-slate-300">${t}</span>`)
-						.join("");
-				}
-
-				gsap.to(item, { x: 10, y: 10, z: 10, ease: "power2.out", duration: 0.5 });
-			});
-
-			item.addEventListener("mouseout", () => {
-				gsap.to(item, { x: 0, y: 0, z: 0, ease: "power2.out", duration: 0.5 });
-			});
-		});
-
-		ScrollTrigger.create({
+		mobileScrollTrigger = ScrollTrigger.create({
 			trigger: ".portfolio-gallery-section",
 			start: "top top",
 			end: "bottom bottom",
 			scrub: 2,
 			onUpdate: (self) => {
 				const prog = self.progress * 360;
+				const items = gallery.querySelectorAll<HTMLElement>(".item");
+				const angleInc = 360 / items.length;
 				items.forEach((item, index) => {
 					gsap.to(item, {
 						rotationZ: index * angleInc - 90 + prog,
@@ -320,13 +428,58 @@ const projects = projectsData.projects.map((project) => ({
 		});
 	}
 
-	// ─── Init ─────────────────────────────────────────────────────────────────────
-	function init() {
-		initMobileCarousel();
-		initDesktopGallery();
+	// ─── UI Interactions ────────────────────────────────────────────────────────
+	function initUI() {
+		// Filter buttons
+		document.querySelectorAll(".filter-btn").forEach(btn => {
+			btn.addEventListener("click", (e) => {
+				const target = e.currentTarget as HTMLElement;
+				activeFilter = target.dataset.filter || "all";
+				
+				// Update active class
+				document.querySelectorAll(".filter-btn").forEach(b => {
+					b.classList.remove("active", "bg-zinc-800", "text-white");
+					b.classList.add("bg-zinc-900", "text-slate-400");
+				});
+				target.classList.add("active", "bg-zinc-800", "text-white");
+				target.classList.remove("bg-zinc-900", "text-slate-400");
+				
+				updateProjectList();
+			});
+		});
+
+		// Sort buttons/select
+		const sortSelect = document.querySelector(".sort-select") as HTMLSelectElement;
+		if (sortSelect) {
+			sortSelect.addEventListener("change", (e) => {
+				activeSort = (e.target as HTMLSelectElement).value;
+				updateProjectList();
+			});
+		}
+
+		document.querySelectorAll(".sort-btn").forEach(btn => {
+			btn.addEventListener("click", (e) => {
+				const target = e.currentTarget as HTMLElement;
+				activeSort = target.dataset.sort || "newest";
+				
+				document.querySelectorAll(".sort-btn").forEach(b => {
+					b.classList.remove("active", "text-white");
+					b.classList.add("text-slate-400");
+				});
+				target.classList.add("active", "text-white");
+				target.classList.remove("text-slate-400");
+				
+				updateProjectList();
+			});
+		});
 	}
 
-	document.removeEventListener("DOMContentLoaded", init);
+	// ─── Init ─────────────────────────────────────────────────────────────────────
+	function init() {
+		initUI();
+		renderGalleries();
+	}
+
 	document.addEventListener("DOMContentLoaded", init);
 </script>
 

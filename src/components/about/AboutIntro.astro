@@ -42,26 +42,40 @@ const lang = getLangFromUrl(Astro.url);
 <script>
 	import { gsap } from "gsap";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
+	import { SplitText } from "gsap/SplitText";
 
-	gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger, SplitText);
 
 	function init() {
-		// Animate on scroll
-		gsap.from('.about-intro h2, .about-intro p', {
+		// Split headings for character animation
+		const headingSplit = new SplitText(".about-intro h2", { type: "chars" });
+		
+		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.about-intro',
 				start: "top 80%",
-				end: "bottom 20%",
 				toggleActions: "play none none reverse"
-			},
-			duration: 0.8,
-			y: 50,
-			opacity: 0,
-			ease: "power2.out",
-			stagger: 0.1
+			}
 		});
+
+		tl.from(headingSplit.chars, {
+			duration: 0.6,
+			opacity: 0,
+			scale: 0,
+			y: 20,
+			rotationX: 90,
+			transformOrigin: "0% 50% -50",
+			ease: "back.out",
+			stagger: 0.02
+		})
+		.from('.about-intro p', {
+			duration: 1,
+			y: 30,
+			opacity: 0,
+			ease: "power3.out",
+			stagger: 0.2
+		}, "-=0.4");
 	}
 
-	document.removeEventListener("DOMContentLoaded", init);
 	document.addEventListener("DOMContentLoaded", init);
 </script>
