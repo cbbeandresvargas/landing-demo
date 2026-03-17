@@ -1008,6 +1008,236 @@
         "en": "Reborn Holding Pages is a collection of four coming soon pages designed for GRB (Global Reborn Group) projects and upcoming services. These pages serve as placeholders for future GRB initiatives, providing visitors with information about upcoming launches while maintaining the company's professional brand identity and encouraging email subscriptions for updates.\n\nBuilt with HTML, CSS, JavaScript, and Email API integration, the pages deliver a cohesive coming soon experience across multiple GRB projects. The platform emphasizes professional presentation, email capture functionality, brand consistency, and engaging design that builds anticipation for upcoming GRB services and developments.\n\nKey project features:\n- Professional coming soon page design and branding\n- Email subscription and notification system\n- Consistent GRB brand identity across all pages\n- Countdown timers and launch date information\n- Social media integration and sharing capabilities\n- Mobile-responsive design for all devices\n- Newsletter signup and update notifications\n- Project teaser content and preview information\n- Contact information and company details\n- SEO optimization for future project launches\n\nTechnologies used: HTML, CSS, JavaScript, Email API\n\nThe final result provides GRB with professional coming soon pages that effectively build anticipation for upcoming projects, capture interested visitors' contact information, and maintain consistent branding across all future GRB initiatives while providing a foundation for successful project launches.",
         "es": "Reborn Holding Pages es una colección de cuatro páginas de coming soon diseñadas para proyectos de GRB (Global Reborn Group) y servicios próximos. Estas páginas sirven como marcadores de posición para futuras iniciativas de GRB, proporcionando a los visitantes información sobre próximos lanzamientos mientras mantienen la identidad de marca profesional de la empresa y fomentan suscripciones por email para actualizaciones.\n\nConstruidas con HTML, CSS, JavaScript e integración de Email API, las páginas ofrecen una experiencia cohesiva de coming soon a través de múltiples proyectos de GRB. La plataforma enfatiza presentación profesional, funcionalidad de captura de email, consistencia de marca y diseño atractivo que genera anticipación para próximos servicios y desarrollos de GRB.\n\nCaracterísticas clave del proyecto:\n- Diseño profesional de páginas coming soon y marca\n- Sistema de suscripción por email y notificaciones\n- Identidad de marca GRB consistente en todas las páginas\n- Temporizadores de cuenta regresiva e información de fecha de lanzamiento\n- Integración de redes sociales y capacidades de compartir\n- Diseño responsivo para todos los dispositivos\n- Registro de boletín y notificaciones de actualizaciones\n- Contenido de avance de proyectos e información de vista previa\n- Información de contacto y detalles de la empresa\n- Optimización SEO para futuros lanzamientos de proyectos\n\nTecnologías utilizadas: HTML, CSS, JavaScript, Email API\n\nEl resultado final proporciona a GRB páginas coming soon profesionales que generan efectivamente anticipación para próximos proyectos, capturan información de contacto de visitantes interesados y mantienen marca consistente a través de todas las futuras iniciativas de GRB mientras proporcionan una base para lanzamientos exitosos de proyectos."
       }
+    },
+    {
+      "id": "tessinerhaus",
+      "title": {
+        "en": "Tessinerhaus Kebab - Culinary Experience Web",
+        "es": "Tessinerhaus Kebab - Web de Experiencia Culinaria"
+      },
+      "description": {
+        "en": "High-performance restaurant website in Switzerland with interactive menus and smooth animations",
+        "es": "Sitio web de alto rendimiento para restaurante en Suiza con menús interactivos y animaciones fluidas"
+      },
+      "links": [
+        {
+          "title": "View Site",
+          "url": "https://tessinerhaus-kebab.ch/"
+        }
+      ],
+      "image": "tessinerhaus.png",
+      "images": [
+        "tessinerhaus.png"
+      ],
+      "technologies": [
+        "Astro",
+        "Tailwind CSS",
+        "TypeScript",
+        "GSAP"
+      ],
+      "pubDate": "2025-01-15",
+      "content": {
+        "en": "Tessinerhaus Kebab is a modern web platform designed for a Swiss restaurant, focusing on speed and visual impact. Built with Astro for optimal SEO and performance, the site features advanced animations using GSAP to showcase the menu and the restaurant's atmosphere.\n\nKey features:\n- Blazing fast page loads using Astro's islands architecture\n- Smooth scroll and reveal animations with GSAP\n- Fully responsive digital menu with category filtering\n- Integration with Google Maps for easy location tracking\n- Optimized performance for mobile users",
+        "es": "Tessinerhaus Kebab es una plataforma web moderna diseñada para un restaurante suizo, centrada en la velocidad y el impacto visual. Construido con Astro para un SEO y rendimiento óptimos, el sitio presenta animaciones avanzadas utilizando GSAP para mostrar el menú y el ambiente del restaurante.\n\nCaracterísticas clave:\n- Carga de página ultra rápida mediante la arquitectura de islas de Astro\n- Animaciones fluidas de desplazamiento y revelación con GSAP\n- Menú digital totalmente responsivo con filtrado por categorías\n- Integración con Google Maps para ubicación sencilla\n- Rendimiento optimizado para usuarios móviles"
+      }
+    },
+    {
+      "id": "osmo",
+      "title": {
+        "en": "Osmo - Next-Gen Digital Wallet",
+        "es": "Osmo - Billetera Digital de Próxima Generación"
+      },
+      "description": {
+        "en": "Secure and fast multi-currency digital wallet for seamless financial transactions and asset management",
+        "es": "Billetera digital multimoneda segura y rápida para transacciones financieras y gestión de activos sin fricciones"
+      },
+      "links": [
+        {
+          "title": "Visit Osmo",
+          "url": "https://osmomoney.com/"
+        }
+      ],
+      "image": "osmo.png",
+      "images": [
+        "osmo.png"
+      ],
+      "technologies": [
+        "Flutter",
+        "Firebase",
+        "Node.js",
+        "TypeScript",
+        "Python"
+      ],
+      "pubDate": "2026-02-10",
+      "content": {
+        "en": "Osmo is a comprehensive fintech solution that redefines how users interact with their money. Using Flutter for a consistent cross-platform experience and a backend powered by Node.js and Python, it offers real-time transaction processing and advanced security layers.\n\nKey features:\n- Real-time peer-to-peer transfers with Firebase Cloud Messaging\n- Multi-currency support with live exchange rate integration\n- Automated financial insights using Python-based data processing\n- Biometric authentication and end-to-end encryption\n- Sleek, intuitive UI/UX designed for modern financial users",
+        "es": "Osmo es una solución fintech integral que redefine cómo los usuarios interactúan con su dinero. Utilizando Flutter para una experiencia multiplataforma consistente y un backend impulsado por Node.js y Python, ofrece procesamiento de transacciones en tiempo real y capas de seguridad avanzadas.\n\nCaracterísticas clave:\n- Transferencias P2P en tiempo real con Firebase Cloud Messaging\n- Soporte multimoneda con integración de tasas de cambio en vivo\n- Análisis financieros automatizados mediante procesamiento de datos en Python\n- Autenticación biométrica y cifrado de extremo a extremo\n- Interfaz de usuario intuitiva diseñada para el usuario financiero moderno"
+      }
+    },
+    {
+      "id": "housing-research",
+      "title": {
+        "en": "Housing Research Center - Data Analytics Hub",
+        "es": "Housing Research Center - Panel de Análisis de Datos"
+      },
+      "description": {
+        "en": "Professional data visualization platform for housing market research and urban development analysis",
+        "es": "Plataforma profesional de visualización de datos para investigación del mercado inmobiliario y análisis de desarrollo urbano"
+      },
+      "links": [
+        {
+          "title": "GitHub Repository",
+          "url": "https://github.com/yourusername/housing-research"
+        }
+      ],
+      "image": "housing-research.png",
+      "images": [
+        "housing-research.png"
+      ],
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL"
+      ],
+      "pubDate": "2025-03-05",
+      "content": {
+        "en": "This project is a sophisticated dashboard for analyzing housing trends. It handles large datasets to provide actionable insights into urban growth and real estate pricing, featuring a robust full-stack architecture.\n\nKey features:\n- Interactive charts and data tables with advanced filtering\n- Complex SQL queries for deep market analysis\n- Secure REST API with Express and TypeScript\n- Responsive data grids optimized for large screen monitoring\n- Export functionality for custom reports (PDF/CSV)",
+        "es": "Este proyecto es un dashboard sofisticado para analizar tendencias de vivienda. Maneja grandes conjuntos de datos para proporcionar información accionable sobre el crecimiento urbano y los precios inmobiliarios, con una arquitectura full-stack robusta.\n\nCaracterísticas clave:\n- Gráficos interactivos y tablas de datos con filtrado avanzado\n- Consultas SQL complejas para análisis profundo del mercado\n- API REST segura con Express y TypeScript\n- Grillas de datos responsivas optimizadas para monitoreo en pantallas grandes\n- Funcionalidad de exportación para informes personalizados (PDF/CSV)"
+      }
+    },
+    {
+      "id": "fed-up",
+      "title": {
+        "en": "Fed Up - AI Nutrition & Habit Tracker",
+        "es": "Fed Up - Rastreador de Nutrición y Hábitos con IA"
+      },
+      "description": {
+        "en": "Artificial intelligence application designed to optimize dietary habits and personalized meal planning",
+        "es": "Aplicación de inteligencia artificial diseñada para optimizar hábitos alimenticios y planificación de comidas personalizada"
+      },
+      "links": [
+        {
+          "title": "Private Repository",
+          "url": "https://github.com/yourusername/fed-up"
+        }
+      ],
+      "image": "fed-up.png",
+      "images": [
+        "fed-up.png"
+      ],
+      "technologies": [
+        "Flutter",
+        "Firebase",
+        "Node.js",
+        "TypeScript",
+        "Python"
+      ],
+      "pubDate": "2025-05-20",
+      "content": {
+        "en": "Fed Up leverages machine learning to help users improve their relationship with food. The app analyzes eating patterns and provides AI-generated suggestions to ensure a balanced lifestyle.\n\nKey features:\n- AI-driven meal recognition and logging\n- Predictive analytics for dietary habits using Python models\n- Real-time data sync across devices via Firebase\n- Personalized goal setting and progress visualization\n- Cross-platform availability for iOS and Android",
+        "es": "Fed Up aprovecha el aprendizaje automático para ayudar a los usuarios a mejorar su relación con la comida. La aplicación analiza patrones de alimentación y proporciona sugerencias generadas por IA para asegurar un estilo de vida equilibrado.\n\nCaracterísticas clave:\n- Reconocimiento y registro de comidas impulsado por IA\n- Analítica predictiva de hábitos mediante modelos de Python\n- Sincronización en tiempo real entre dispositivos vía Firebase\n- Establecimiento de metas personalizadas y visualización de progreso\n- Disponibilidad multiplataforma para iOS y Android"
+      }
+    },
+    {
+      "id": "self-t",
+      "title": {
+        "en": "Self-T - Developer Mastery Tracker",
+        "es": "Self-T - Seguimiento de Dominio Técnico"
+      },
+      "description": {
+        "en": "Skill management dashboard for dev teams to monitor proficiency levels across various technology stacks",
+        "es": "Panel de gestión de habilidades para equipos de desarrollo para monitorear niveles de dominio en diversos stacks tecnológicos"
+      },
+      "links": [
+        {
+          "title": "GitHub Repo",
+          "url": "https://github.com/yourusername/self-t"
+        }
+      ],
+      "image": "self-t.png",
+      "images": [
+        "self-t.png"
+      ],
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL"
+      ],
+      "pubDate": "2025-06-15",
+      "content": {
+        "en": "Self-T is an internal tool designed to map and track developer growth. It provides a visual representation of skills mastery, helping leads identify strengths and training needs within the team.\n\nKey features:\n- Interactive competency matrices and skill radars\n- Performance tracking over time with historical data\n- Automated report generation for talent reviews\n- Role-based access control for managers and developers\n- Modern UI with Tailwind CSS and dark mode support",
+        "es": "Self-T es una herramienta interna diseñada para mapear y rastrear el crecimiento de los desarrolladores. Proporciona una representación visual del dominio de habilidades, ayudando a los líderes a identificar fortalezas y necesidades de capacitación.\n\nCaracterísticas clave:\n- Matrices de competencias interactivas y radares de habilidades\n- Seguimiento del rendimiento a lo largo del tiempo con datos históricos\n- Generación automática de reportes para revisiones de talento\n- Control de acceso basado en roles para gerentes y desarrolladores\n- Interfaz moderna con Tailwind CSS y soporte para modo oscuro"
+      }
+    },
+    {
+      "id": "teuscher",
+      "title": {
+        "en": "Teuscher - Swiss Luxury Chocolatier",
+        "es": "Teuscher - Chocolatería Suiza de Lujo"
+      },
+      "description": {
+        "en": "Premium e-commerce and brand platform for the world-renowned Swiss chocolate house Teuscher",
+        "es": "Plataforma de e-commerce y marca premium para la casa de chocolates suiza de renombre mundial Teuscher"
+      },
+      "links": [
+        {
+          "title": "Visit Teuscher",
+          "url": "https://teuscher.ch/"
+        }
+      ],
+      "image": "teuscher.png",
+      "images": [
+        "teuscher.png"
+      ],
+      "technologies": [
+        "Laravel",
+        "Tailwind CSS",
+        "TypeScript",
+        "PHP",
+        "MySQL"
+      ],
+      "pubDate": "2026-04-01",
+      "content": {
+        "en": "An elegant digital presence for Teuscher Chocolates, focusing on high-end user experience and secure e-commerce workflows. The site reflects the brand's heritage while providing modern shopping features.\n\nKey features:\n- Custom-built e-commerce engine with Laravel\n- Luxury-focused UI design with premium imagery\n- International shipping and tax calculation logic\n- Optimized checkout flow for higher conversion rates\n- Multilingual support for global customers",
+        "es": "Una presencia digital elegante para Teuscher Chocolates, centrada en una experiencia de usuario de alto nivel y flujos de e-commerce seguros. El sitio refleja la herencia de la marca mientras proporciona funciones de compra modernas.\n\nCaracterísticas clave:\n- Motor de e-commerce personalizado construido con Laravel\n- Diseño de interfaz de lujo con imágenes premium\n- Lógica de cálculo de impuestos y envíos internacionales\n- Flujo de pago optimizado para mayores tasas de conversión\n- Soporte multilingüe para clientes globales"
+      }
+    },
+    {
+      "id": "schaller-consulting",
+      "title": {
+        "en": "Schaller Consulting - Financial Advisory Web",
+        "es": "Schaller Consulting - Web de Consultoría Financiera"
+      },
+      "description": {
+        "en": "Professional corporate website for financial consultants, featuring service catalogs and lead generation tools",
+        "es": "Sitio web corporativo profesional para consultores financieros, con catálogos de servicios y herramientas de captación de clientes"
+      },
+      "links": [
+        {
+          "title": "View Site",
+          "url": "https://schaller-consulting.ch/"
+        }
+      ],
+      "image": "schaller.png",
+      "images": [
+        "schaller.png"
+      ],
+      "technologies": [
+        "Astro",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "pubDate": "2025-07-10",
+      "content": {
+        "en": "Schaller Consulting's website establishes trust and authority in the financial sector. Built for clarity and conversion, it presents complex services in an accessible and professional manner.\n\nKey features:\n- Clean, corporate design focused on readability\n- Interactive contact and appointment request forms\n- Optimized SEO for Swiss financial services keywords\n- Resource center for financial news and insights\n- High-performance architecture using Astro",
+        "es": "El sitio web de Schaller Consulting establece confianza y autoridad en el sector financiero. Construido para la claridad y la conversión, presenta servicios complejos de manera accesible y profesional.\n\nCaracterísticas clave:\n- Diseño corporativo limpio centrado en la legibilidad\n- Formularios interactivos de contacto y solicitud de citas\n- SEO optimizado para palabras clave de servicios financieros en Suiza\n- Centro de recursos para noticias e información financiera\n- Arquitectura de alto rendimiento utilizando Astro"
+      }
     }
   ]
 }
