@@ -23,7 +23,8 @@ const allProjects = getProjects(lang).map(p => {
 
 	return {
 		...p,
-		hasImage
+		hasImage,
+		projectUrl: translatePath(`/work/${p.id}`)
 	};
 }).sort((a, b) => {
 	// 1. Prioritize projects with images
@@ -62,10 +63,9 @@ const allProjects = getProjects(lang).map(p => {
 	</div>
 </section>
 
-<script define:vars={{ allProjects, lang, translatePath }}>
+<script define:vars={{ allProjects, lang }}>
 	window.allProjectsData = allProjects;
 	window.currentLang = lang;
-	window.translatePath = translatePath;
 </script>
 
 <script>
@@ -75,7 +75,6 @@ const allProjects = getProjects(lang).map(p => {
 	const itemsPerPage = 9;
 	const allProjects = (window as any).allProjectsData;
 	const lang = (window as any).currentLang;
-	const translatePath = (window as any).translatePath;
 	const totalPages = Math.ceil(allProjects.length / itemsPerPage);
 
 	function renderProjects(page: number) {
@@ -131,7 +130,7 @@ const allProjects = getProjects(lang).map(p => {
 					<p class="text-slate-600 mb-6 line-clamp-2 text-sm leading-relaxed">${project.description}</p>
 					<div class="flex items-center justify-between pt-4 border-t border-slate-50">
 						<a 
-							href="${translatePath + "work/" + project.id}"
+							href="${project.projectUrl}"
 							class="text-slate-900 hover:text-blue-600 font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2"
 						>
 							${lang === "es" ? "Ver Proyecto" : "View Project"}
