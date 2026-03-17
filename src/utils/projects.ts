@@ -11,6 +11,7 @@ export interface Project {
   description: string;
   links: ProjectLink[];
   image: string;
+  technologies: string[];
   pubDate: string;
   content: string;
 }
@@ -27,7 +28,7 @@ export function getProjects(lang: string = 'en'): Project[] {
 export function getProjectById(id: string, lang: string = 'en'): Project | undefined {
   const project = projectsData.projects.find(p => p.id === id);
   if (!project) return undefined;
-  
+
   return {
     ...project,
     title: project.title[lang as keyof typeof project.title] || project.title.en,

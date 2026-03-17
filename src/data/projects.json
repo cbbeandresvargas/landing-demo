@@ -1,4 +1,4 @@
-﻿{
+{
   "projects": [
     {
       "id": "grb",
@@ -24,13 +24,7 @@
           "url": "http://tasks.grb-group.com/"
         }
       ],
-      "image": "grb-homepage.jpg",
-      "images": [
-        "grb-homepage.jpg",
-        "grb-admin-dashboard.jpg",
-        "grb-tasks-dashboard.jpg",
-        "grb-mobile.jpg"
-      ],
+      "image": "/logos/GRGlogo.png",
       "technologies": [
         "Astro",
         "Next.js",
@@ -61,13 +55,7 @@
           "url": "https://rbcmuk.grb-group.com/"
         }
       ],
-      "image": "rbcmche-home.jpg",
-      "images": [
-        "rbcmche-home.jpg",
-        "rbcmche-services.jpg",
-        "rbcmche-languages.jpg",
-        "rbcmche-mobile.jpg"
-      ],
+      "image": "/logos/GRGlogo.png",
       "technologies": [
         "Flutter Web"
       ],
@@ -97,13 +85,7 @@
           "url": "https://admin.reborndevelopments.com/"
         }
       ],
-      "image": "reborndevelopments-home.jpg",
-      "images": [
-        "reborndevelopments-home.jpg",
-        "reborndevelopments-admin-dashboard.jpg",
-        "reborndevelopments-logs-dashboard.jpg",
-        "reborn-backend-architecture.jpg"
-      ],
+      "image": "/logos/Rebornfavicon.png",
       "technologies": [
         "Next.js",
         "Laravel",
@@ -134,13 +116,7 @@
           "url": "https://www.rebornhotels.com/"
         }
       ],
-      "image": "reborn-hospitality-dashboard.jpg",
-      "images": [
-        "reborn-hospitality-dashboard.jpg",
-        "reborn-hospitality-bookings.jpg",
-        "reborn-hospitality-guests.jpg",
-        "reborn-hospitality-mobile.jpg"
-      ],
+      "image": "/logos/Rebornfavicon.png",
       "technologies": [
         "Flutter Web"
       ],
@@ -166,13 +142,7 @@
           "url": "http://rebornhost.com/"
         }
       ],
-      "image": "reborn-host-homepage.jpg",
-      "images": [
-        "reborn-host-homepage.jpg",
-        "reborn-host-pricing.jpg",
-        "reborn-host-services.jpg",
-        "reborn-host-mobile.jpg"
-      ],
+      "image": "/logos/rebornhostlogo.png",
       "technologies": [
         "HTML",
         "Tailwind CSS",
@@ -204,13 +174,7 @@
           "url": "https://reports.ecomine.ch/"
         }
       ],
-      "image": "ecomine-homepage.jpg",
-      "images": [
-        "ecomine-homepage.jpg",
-        "ecomine-mining.jpg",
-        "ecomine-reports-dashboard.jpg",
-        "ecomine-reports-excel.jpg"
-      ],
+      "image": "/logos/logoecomine.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -239,13 +203,7 @@
           "url": "https://ecokon.ch/"
         }
       ],
-      "image": "ecokon-homepage.jpg",
-      "images": [
-        "ecokon-homepage.jpg",
-        "ecokon-solar.jpg",
-        "ecokon-roofing.jpg",
-        "ecokon-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "Astro",
         "JavaScript",
@@ -273,13 +231,7 @@
           "url": "https://alegria.restaurant/"
         }
       ],
-      "image": "alegria-homepage.jpg",
-      "images": [
-        "alegria-homepage.jpg",
-        "alegria-menu.jpg",
-        "alegria-locations.jpg",
-        "alegria-mobile.jpg"
-      ],
+      "image": "/logos/logoalegria.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -308,13 +260,7 @@
           "url": "https://cafefelix.pusaq8.com/"
         }
       ],
-      "image": "cafe-felix-homepage.jpg",
-      "images": [
-        "cafe-felix-homepage.jpg",
-        "cafe-felix-menu.jpg",
-        "cafe-felix-shop.jpg",
-        "cafe-felix-mobile.jpg"
-      ],
+      "image": "/logos/logocafefelix.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -347,13 +293,7 @@
           "url": "https://app.profunded.com/"
         }
       ],
-      "image": "profunded-homepage.jpg",
-      "images": [
-        "profunded-homepage.jpg",
-        "profunded-system-dashboard.jpg",
-        "profunded-evaluation.jpg",
-        "profunded-system-trading.jpg"
-      ],
+      "image": "/logos/logoprofunded.png",
       "technologies": [
         "Astro",
         "HTML",
@@ -391,13 +331,7 @@
           "url": "http://system.inter-protect.ch/"
         }
       ],
-      "image": "inter-protect-homepage.jpg",
-      "images": [
-        "inter-protect-homepage.jpg",
-        "inter-protect-services.jpg",
-        "interprotect-system-dashboard.jpg",
-        "interprotect-system-reports.jpg"
-      ],
+      "image": "/logos/logo-interprotect.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -434,13 +368,7 @@
           "url": "http://demo.pusaq8.com/"
         }
       ],
-      "image": "pusaq-website-homepage.jpg",
-      "images": [
-        "pusaq-website-homepage.jpg",
-        "pusaq-website-services.jpg",
-        "pusaq-admin-dashboard.jpg",
-        "pusaq-admin-tasks.jpg"
-      ],
+      "image": "/logos/pusaq_logo.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -473,13 +401,7 @@
           "url": "https://model-template.pages.dev/"
         }
       ],
-      "image": "model-template-homepage.jpg",
-      "images": [
-        "model-template-homepage.jpg",
-        "model-template-gallery.jpg",
-        "model-template-portraits.jpg",
-        "model-template-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -508,13 +430,7 @@
           "url": "https://rekaliber.com/"
         }
       ],
-      "image": "rekaliber-homepage.jpg",
-      "images": [
-        "rekaliber-homepage.jpg",
-        "rekaliber-dashboard.jpg",
-        "rekaliber-analytics.jpg",
-        "rekaliber-mobile.jpg"
-      ],
+      "image": "/logos/logo.png",
       "technologies": [
         "Next.js",
         "Python",
@@ -544,13 +460,7 @@
           "url": "https://reborn-alpha.com/"
         }
       ],
-      "image": "reborn-alpha-homepage.jpg",
-      "images": [
-        "reborn-alpha-homepage.jpg",
-        "reborn-alpha-services.jpg",
-        "reborn-alpha-global.jpg",
-        "reborn-alpha-mobile.jpg"
-      ],
+      "image": "/logos/Rebornfavicon.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -578,13 +488,7 @@
           "url": "https://reborn-rentals.com/"
         }
       ],
-      "image": "reborn-rentals-homepage.jpg",
-      "images": [
-        "reborn-rentals-homepage.jpg",
-        "reborn-rentals-machinery.jpg",
-        "reborn-rentals-rental.jpg",
-        "reborn-rentals-mobile.jpg"
-      ],
+      "image": "/logos/Logorebornrentals.png",
       "technologies": [
         "Laravel",
         "Tailwind CSS",
@@ -613,13 +517,7 @@
           "url": "https://svaneholmhotel.se/"
         }
       ],
-      "image": "svaneholmhotel-homepage.jpg",
-      "images": [
-        "svaneholmhotel-homepage.jpg",
-        "svaneholmhotel-rooms.jpg",
-        "svaneholmhotel-facilities.jpg",
-        "svaneholmhotel-mobile.jpg"
-      ],
+      "image": "/logos/logo-svaneholm.png",
       "technologies": [
         "HTML",
         "CSS",
@@ -644,16 +542,7 @@
         "es": "Solución integral de startup suiza que incluye una aplicación móvil para el comercio de ropa mediante QR en mercadillos y un panel administrativo robusto para la gestión de operaciones."
       },
       "link": null,
-      "image": "bloem-app-homepage.jpg",
-      "images": [
-        "bloem-app-homepage.jpg",
-        "bloem-app-qr-scan.jpg",
-        "bloem-app-marketplace.jpg",
-        "bloem-app-mobile.jpg",
-        "bloem-dashboard-homepage.jpg",
-        "bloem-dashboard-analytics.jpg",
-        "bloem-dashboard-users.jpg"
-      ],
+      "image": "/logos/bloemlogo.png",
       "technologies": [
         "flutter",
         "dart",
@@ -683,13 +572,7 @@
         "es": "Aplicación integral de gestión de clínica veterinaria para manejo de citas, registros de pacientes y operaciones de clínica"
       },
       "link": null,
-      "image": "saku-vet-homepage.jpg",
-      "images": [
-        "saku-vet-homepage.jpg",
-        "saku-vet-appointments.jpg",
-        "saku-vet-patients.jpg",
-        "saku-vet-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -713,13 +596,7 @@
         "es": "Aplicación móvil integral de servicio de taxi con precios dinámicos, emparejamiento conductor-pasajero y seguimiento en tiempo real"
       },
       "link": null,
-      "image": "iba-app-homepage.jpg",
-      "images": [
-        "iba-app-homepage.jpg",
-        "iba-app-booking.jpg",
-        "iba-app-tracking.jpg",
-        "iba-app-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -744,13 +621,7 @@
         "es": "Plataforma integral de inversión en criptomonedas con contratos inteligentes, trading y características de gestión de portafolio"
       },
       "link": null,
-      "image": "crypto-platform-homepage.jpg",
-      "images": [
-        "crypto-platform-homepage.jpg",
-        "crypto-platform-trading.jpg",
-        "crypto-platform-smart-contracts.jpg",
-        "crypto-platform-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -776,13 +647,7 @@
         "es": "Aplicación integral de gestión escolar para manejo de estudiantes, profesores, calificaciones y operaciones administrativas en colegios venezolanos"
       },
       "link": null,
-      "image": "cmi-app-homepage.jpg",
-      "images": [
-        "cmi-app-homepage.jpg",
-        "cmi-app-students.jpg",
-        "cmi-app-grades.jpg",
-        "cmi-app-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -805,13 +670,7 @@
         "es": "Videojuego educativo desarrollado como proyecto final de colegio para enseñar a niños a través de jugabilidad interactiva y experiencias de aprendizaje divertidas"
       },
       "link": null,
-      "image": "discokids-homepage.jpg",
-      "images": [
-        "discokids-homepage.jpg",
-        "discokids-gameplay.jpg",
-        "discokids-characters.jpg",
-        "discokids-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "pocketbase"
@@ -833,13 +692,7 @@
         "es": "Aplicación integral de gestión de rutas para optimizar rutas de transporte y logística en Venezuela"
       },
       "link": null,
-      "image": "route-masters-homepage.jpg",
-      "images": [
-        "route-masters-homepage.jpg",
-        "route-masters-routes.jpg",
-        "route-masters-optimization.jpg",
-        "route-masters-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -868,13 +721,7 @@
           "url": "https://grazia-ai.com/"
         }
       ],
-      "image": "grazia-homepage.jpg",
-      "images": [
-        "grazia-homepage.jpg",
-        "grazia-image-generation.jpg",
-        "grazia-video-generation.jpg",
-        "grazia-mobile.jpg"
-      ],
+      "image": "/logos/grazialogo.png",
       "technologies": [
         "Python",
         "next.js",
@@ -902,13 +749,7 @@
           "url": "https://flumestore.com/"
         }
       ],
-      "image": "flume-homepage.jpg",
-      "images": [
-        "flume-homepage.jpg",
-        "flume-products.jpg",
-        "flume-sales-system.jpg",
-        "flume-mobile.jpg"
-      ],
+      "image": "/logos/flumelogo.png",
       "technologies": [
         "shopify",
         "liquid",
@@ -933,14 +774,13 @@
         "en": "Online lottery system developed for a Venezuelan influencer to sell lottery tickets to their followers",
         "es": "Sistema de lotería online desarrollado para un influencer venezolano para vender billetes de lotería a sus seguidores"
       },
-      "link": null,
-      "image": "narbis-loteria-homepage.jpg",
-      "images": [
-        "narbis-loteria-homepage.jpg",
-        "narbis-loteria-tickets.jpg",
-        "narbis-loteria-sales.jpg",
-        "narbis-loteria-mobile.jpg"
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://ganaconnarbis.com/"
+        }
       ],
+      "image": "/logos/logonarbis.png",
       "technologies": [
         "flutter",
         "dart",
@@ -962,14 +802,11 @@
         "en": "Comprehensive car dealership management system for tracking customers and vehicle sales in Venezuela",
         "es": "Sistema integral de gestión de concesionaria de autos para seguimiento de clientes y ventas de vehículos en Venezuela"
       },
-      "link": null,
-      "image": "usaditos-cars-homepage.jpg",
-      "images": [
-        "usaditos-cars-homepage.jpg",
-        "usaditos-cars-inventory.jpg",
-        "usaditos-cars-customers.jpg",
-        "usaditos-cars-mobile.jpg"
-      ],
+      "links": {
+        "live": "https://usaditoscars.online",
+        "github": null
+      },
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -992,13 +829,7 @@
         "es": "Sistema de inteligencia artificial que genera sesiones de meditación personalizadas basadas en el estado emocional y ánimo de los usuarios"
       },
       "link": null,
-      "image": "menta-homepage.jpg",
-      "images": [
-        "menta-homepage.jpg",
-        "menta-mood-detection.jpg",
-        "menta-meditation.jpg",
-        "menta-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "Python",
         "Machine Learning",
@@ -1026,13 +857,7 @@
         "es": "Aplicación móvil para rastrear ubicación de mascotas usando collares con GPS y sistema de monitoreo en tiempo real"
       },
       "link": null,
-      "image": "dogps-homepage.jpg",
-      "images": [
-        "dogps-homepage.jpg",
-        "dogps-tracking.jpg",
-        "dogps-map.jpg",
-        "dogps-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -1058,13 +883,7 @@
         "es": "Aplicación móvil que conecta influencers y promotores para facilitar ventas y ganar comisiones a través de transacciones dentro de la app"
       },
       "link": null,
-      "image": "poleon-homepage.jpg",
-      "images": [
-        "poleon-homepage.jpg",
-        "poleon-influencers.jpg",
-        "poleon-sales.jpg",
-        "poleon-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "flutter",
         "dart",
@@ -1093,13 +912,7 @@
           "url": "https://zenbooking.com/"
         }
       ],
-      "image": "zenbooking-homepage.jpg",
-      "images": [
-        "zenbooking-homepage.jpg",
-        "zenbooking-experiences.jpg",
-        "zenbooking-locations.jpg",
-        "zenbooking-mobile.jpg"
-      ],
+      "image": "/logos/zenbookinglogo.png",
       "technologies": [
         "Next.js",
         "Laravel",
@@ -1129,13 +942,7 @@
           "url": "https://certificate-bolivia.com/"
         }
       ],
-      "image": "certificate-bolivia-homepage.jpg",
-      "images": [
-        "certificate-bolivia-homepage.jpg",
-        "certificate-bolivia-courses.jpg",
-        "certificate-bolivia-portal.jpg",
-        "certificate-bolivia-mobile.jpg"
-      ],
+      "image": "/logos/logomodeltemplate.png",
       "technologies": [
         "wordpress",
         "moodle",
@@ -1165,13 +972,7 @@
           "url": "https://soelecmv.com/"
         }
       ],
-      "image": "soelecmv-homepage.jpg",
-      "images": [
-        "soelecmv-homepage.jpg",
-        "soelecmv-automation.jpg",
-        "soelecmv-products.jpg",
-        "soelecmv-mobile.jpg"
-      ],
+      "image": "/logos/soelec-logo-01.png",
       "technologies": [
         "wordpress",
         "html",
@@ -1195,13 +996,7 @@
         "es": "Colección de cuatro páginas de coming soon para proyectos de GRB (Global Reborn Group) y servicios próximos"
       },
       "link": null,
-      "image": "reborn-holding-homepage.jpg",
-      "images": [
-        "reborn-holding-homepage.jpg",
-        "reborn-holding-coming-soon.jpg",
-        "reborn-holding-notify.jpg",
-        "reborn-holding-mobile.jpg"
-      ],
+      "image": "/logos/Rebornfavicon.png",
       "technologies": [
         "HTML",
         "CSS",

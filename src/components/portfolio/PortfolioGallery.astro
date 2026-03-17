@@ -7,7 +7,7 @@ const lang = getLangFromUrl(Astro.url);
 const projects = projectsData.projects.map((project) => ({
 	title: project.title[lang] || project.title.en,
 	description: project.description[lang] || project.description.en,
-	image: `/assets/images/projects/${project.image}`,
+	image: project.image.startsWith("/") ? project.image : `/assets/images/projects/${project.image}`,
 	technologies: project.technologies || [],
 }));
 ---

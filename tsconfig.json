@@ -16,5 +16,7 @@
 			"@i18n/*": ["i18n/*"],
 			"@data/*": ["data/*"],
 		},
-	},
+		"resolveJsonModule": true,
+		"esModuleInterop": true
+	}
 }
