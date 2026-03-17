@@ -1,10 +1,15 @@
 import projectsData from '../data/projects.json';
 
+export interface ProjectLink {
+  title: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   title: string;
   description: string;
-  link: string;
+  links: ProjectLink[];
   image: string;
   pubDate: string;
   content: string;

@@ -50,16 +50,30 @@ const seo: AstroSeoProps = {
 					<img src={projectTemplateImage} alt={project.title} class="w-full h-64 object-cover rounded-lg mb-6" />
 					<h1 class="text-4xl font-bold mb-4">{project.title}</h1>
 					<p class="text-xl text-slate-600 mb-6">{project.description}</p>
-					<div class="flex gap-4 mb-8">
-						<a href={project.link} target="_blank" class="bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors">
-							Ver Proyecto
-						</a>
+					<div class="mb-8 flex flex-wrap gap-3">
+						{
+							project.links && project.links.length > 0 ? (
+								project.links.map((link) => (
+									<a
+										href={link.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="rounded-lg bg-slate-900 px-6 py-3 text-white transition-colors hover:bg-slate-700">
+										{link.title} ↗
+									</a>
+								))
+							) : (
+								<span class="rounded-lg border border-slate-300 px-6 py-3 text-slate-400">Privado / Bajo NDA</span>
+							)
+						}
 					</div>
 				</div>
 				<div class="prose prose-lg max-w-none">
-					{project.content.split('\n').map(paragraph => 
-						paragraph.trim() ? `<p>${paragraph}</p>` : ''
-					).join('')}
+					{
+						project.content
+							.split("\n")
+							.map((paragraph) => (paragraph.trim() ? <p>{paragraph}</p> : null))
+					}
 				</div>
 			</div>
 		</div>

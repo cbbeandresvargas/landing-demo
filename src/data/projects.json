@@ -1,94 +1,48 @@
-{
+﻿{
   "projects": [
     {
       "id": "grb",
       "title": {
-        "en": "Global Reborn Group - Corporate Website",
-        "es": "Global Reborn Group - Sitio Web Corporativo"
+        "en": "Global Reborn Group - Corporate Ecosystem",
+        "es": "Global Reborn Group - Ecosistema Corporativo"
       },
       "description": {
-        "en": "Corporate landing page and informational website for Global Reborn Group real estate company",
-        "es": "Página de aterrizaje corporativa e informativa para la empresa inmobiliaria Global Reborn Group"
+        "en": "Full digital ecosystem for GRB: corporate website, admin panel, and internal project & task management system",
+        "es": "Ecosistema digital completo para GRB: sitio corporativo, panel de administración y sistema interno de gestión de proyectos y tareas"
       },
-      "link": "http://grb-group.com/",
+      "links": [
+        {
+          "title": "Corporate Site",
+          "url": "http://grb-group.com/"
+        },
+        {
+          "title": "Admin Panel",
+          "url": "https://admin.grb-group.com/"
+        },
+        {
+          "title": "Task Manager",
+          "url": "http://tasks.grb-group.com/"
+        }
+      ],
       "image": "grb-homepage.jpg",
       "images": [
         "grb-homepage.jpg",
-        "grb-strategy.jpg",
-        "grb-businesses.jpg",
+        "grb-admin-dashboard.jpg",
+        "grb-tasks-dashboard.jpg",
         "grb-mobile.jpg"
       ],
       "technologies": [
         "Astro",
-        "Supabase",
         "Next.js",
-        "CSR",
-        "WordPress API"
-      ],
-      "pubDate": "2025-01-01",
-      "content": {
-        "en": "Global Reborn Group (GRBG) is a comprehensive corporate website showcasing the integrated real estate infrastructure company's diverse portfolio and strategic vision. The project required building a modern, responsive platform that effectively communicates the company's multi-faceted approach to real estate, technology, finance, and community development.\n\nThe website features a sophisticated design that reflects GRBG's professional brand identity while maintaining excellent user experience across all devices. The platform integrates seamlessly with WordPress API for content management while leveraging modern web technologies for optimal performance.\n\nKey project features:\n- Modern corporate landing page with strategic messaging\n- Comprehensive business portfolio showcase\n- Interactive navigation with multi-level menu structure\n- Mobile-responsive design for all devices\n- Integration with WordPress API for content management\n- Performance-optimized with Astro and Next.js\n- CSR (Client-Side Rendering) for dynamic content\n- Supabase integration for data management\n\nTechnologies used: Astro, Supabase, Next.js, CSR, WordPress API\n\nThe final result successfully represents GRBG as a leading integrated real estate infrastructure company, effectively communicating their mission across real estate, technology, finance, franchising, and family values to a global audience.",
-        "es": "Global Reborn Group (GRBG) es un sitio web corporativo integral que muestra el portafolio diverso y la visión estratégica de la empresa de infraestructura inmobiliaria integrada. El proyecto requirió construir una plataforma moderna y responsiva que comunique efectivamente el enfoque multifacético de la empresa hacia bienes raíces, tecnología, finanzas y desarrollo comunitario.\n\nEl sitio web cuenta con un diseño sofisticado que refleja la identidad de marca profesional de GRBG mientras mantiene una excelente experiencia de usuario en todos los dispositivos. La plataforma se integra perfectamente con WordPress API para gestión de contenido mientras aprovecha tecnologías web modernas para un rendimiento óptimo.\n\nCaracterísticas clave del proyecto:\n- Página de aterrizaje corporativa moderna con mensajería estratégica\n- Exhibición integral del portafolio de negocios\n- Navegación interactiva con estructura de menú multinivel\n- Diseño responsivo para todos los dispositivos\n- Integración con WordPress API para gestión de contenido\n- Optimizado para rendimiento con Astro y Next.js\n- CSR (Renderizado del Lado del Cliente) para contenido dinámico\n- Integración con Supabase para gestión de datos\n\nTecnologías utilizadas: Astro, Supabase, Next.js, CSR, WordPress API\n\nEl resultado final representa exitosamente a GRBG como una empresa líder en infraestructura inmobiliaria integrada, comunicando efectivamente su misión a través de bienes raíces, tecnología, finanzas, franquicias y valores familiares a una audiencia global."
-      }
-    },
-    {
-      "id": "grb-admin",
-      "title": {
-        "en": "Global Reborn Group - Admin Panel",
-        "es": "Global Reborn Group - Panel de Administración"
-      },
-      "description": {
-        "en": "Administrative dashboard and management panel for Global Reborn Group corporate operations",
-        "es": "Panel de administración y dashboard de gestión para las operaciones corporativas de Global Reborn Group"
-      },
-      "link": "https://admin.grb-group.com/",
-      "image": "grb-admin-dashboard.jpg",
-      "images": [
-        "grb-admin-dashboard.jpg",
-        "grb-admin-users.jpg",
-        "grb-admin-content.jpg",
-        "grb-admin-analytics.jpg"
-      ],
-      "technologies": [
-        "Astro",
         "Supabase",
-        "Next.js",
-        "CSR",
-        "WordPress API"
-      ],
-      "pubDate": "2025-01-01",
-      "content": {
-        "en": "The Global Reborn Group Admin Panel is a comprehensive administrative dashboard designed to manage all aspects of the corporate website and business operations. This internal management system provides administrators with powerful tools to control content, monitor performance, and oversee the various business units within the GRBG ecosystem.\n\nThe admin panel features an intuitive interface that allows for seamless management of the corporate website content, user permissions, and business data. Built with the same modern technology stack as the main website, it ensures consistency and optimal performance across all administrative functions.\n\nKey project features:\n- Comprehensive administrative dashboard with real-time data\n- Content management system integration with WordPress API\n- User role management and permission controls\n- Business analytics and reporting tools\n- Real estate portfolio management interface\n- Technology and finance tracking modules\n- Mobile-responsive admin interface\n- Secure authentication and data protection\n- Integration with Supabase for data management\n- CSR (Client-Side Rendering) for dynamic admin content\n\nTechnologies used: Astro, Supabase, Next.js, CSR, WordPress API\n\nThe final result provides GRBG administrators with a powerful, user-friendly platform to efficiently manage all aspects of the integrated real estate infrastructure company's digital presence and operations.",
-        "es": "El Panel de Administración de Global Reborn Group es un dashboard administrativo integral diseñado para gestionar todos los aspectos del sitio web corporativo y las operaciones empresariales. Este sistema de gestión interno proporciona a los administradores herramientas poderosas para controlar contenido, monitorear rendimiento y supervisar las diversas unidades de negocio dentro del ecosistema GRBG.\n\nEl panel de administración cuenta con una interfaz intuitiva que permite la gestión fluida del contenido del sitio web corporativo, permisos de usuario y datos empresariales. Construido con la misma pila tecnológica moderna que el sitio web principal, asegura consistencia y rendimiento óptimo en todas las funciones administrativas.\n\nCaracterísticas clave del proyecto:\n- Dashboard administrativo integral con datos en tiempo real\n- Integración del sistema de gestión de contenido con WordPress API\n- Gestión de roles de usuario y controles de permisos\n- Herramientas de análisis empresarial y reportes\n- Interfaz de gestión de portafolio inmobiliario\n- Módulos de seguimiento de tecnología y finanzas\n- Interfaz administrativa responsiva para móviles\n- Autenticación segura y protección de datos\n- Integración con Supabase para gestión de datos\n- CSR (Renderizado del Lado del Cliente) para contenido administrativo dinámico\n\nTecnologías utilizadas: Astro, Supabase, Next.js, CSR, WordPress API\n\nEl resultado final proporciona a los administradores de GRBG una plataforma poderosa y fácil de usar para gestionar eficientemente todos los aspectos de la presencia digital y operaciones de la empresa de infraestructura inmobiliaria integrada."
-      }
-    },
-    {
-      "id": "grb-tasks",
-      "title": {
-        "en": "GRB Tasks - Project & Company Management System",
-        "es": "GRB Tasks - Sistema de Gestión de Proyectos y Empresas"
-      },
-      "description": {
-        "en": "Comprehensive management system for projects, companies, tasks, and employee administration within GRB ecosystem",
-        "es": "Sistema integral de gestión para proyectos, empresas, tareas y administración de empleados dentro del ecosistema GRB"
-      },
-      "link": "http://tasks.grb-group.com/",
-      "image": "grb-tasks-dashboard.jpg",
-      "images": [
-        "grb-tasks-dashboard.jpg",
-        "grb-tasks-projects.jpg",
-        "grb-tasks-companies.jpg",
-        "grb-tasks-employees.jpg"
-      ],
-      "technologies": [
         "Laravel",
         "Tailwind CSS",
-        "JavaScript"
+        "WordPress API"
       ],
       "pubDate": "2025-01-01",
       "content": {
-        "en": "GRB Tasks is a comprehensive project and company management system designed to streamline operations across the Global Reborn Group ecosystem. This internal management platform serves as the central hub for managing subsidiary companies, project workflows, task assignments, and employee administration within the GRB family of businesses.\n\nThe system provides administrators and managers with powerful tools to oversee multiple business units, track project progress, assign tasks to team members, and maintain detailed records of company operations. Built with Laravel for robust backend functionality and Tailwind CSS for modern, responsive design.\n\nKey project features:\n- Centralized project management dashboard\n- Multi-company administration interface\n- Task assignment and tracking system\n- Employee management and role administration\n- Real-time project progress monitoring\n- Company hierarchy and subsidiary management\n- Advanced reporting and analytics\n- Mobile-responsive design with Tailwind CSS\n- Secure user authentication and authorization\n- Integration with GRB business ecosystem\n\nTechnologies used: Laravel, Tailwind CSS, JavaScript\n\nThe final result provides GRB management with a powerful, scalable platform to efficiently coordinate operations across all subsidiary companies and projects, ensuring streamlined communication and effective resource allocation throughout the organization.",
-        "es": "GRB Tasks es un sistema integral de gestión de proyectos y empresas diseñado para optimizar las operaciones en todo el ecosistema de Global Reborn Group. Esta plataforma de gestión interna sirve como centro de control para gestionar empresas subsidiarias, flujos de trabajo de proyectos, asignaciones de tareas y administración de empleados dentro de la familia de negocios GRB.\n\nEl sistema proporciona a administradores y gerentes herramientas poderosas para supervisar múltiples unidades de negocio, rastrear el progreso de proyectos, asignar tareas a miembros del equipo y mantener registros detallados de las operaciones de la empresa. Construido con Laravel para funcionalidad backend robusta y Tailwind CSS para diseño moderno y responsivo.\n\nCaracterísticas clave del proyecto:\n- Dashboard centralizado de gestión de proyectos\n- Interfaz de administración multi-empresa\n- Sistema de asignación y seguimiento de tareas\n- Gestión de empleados y administración de roles\n- Monitoreo de progreso de proyectos en tiempo real\n- Gestión de jerarquía empresarial y subsidiarias\n- Reportes y análisis avanzados\n- Diseño responsivo para móviles con Tailwind CSS\n- Autenticación segura de usuarios y autorización\n- Integración con el ecosistema empresarial GRB\n\nTecnologías utilizadas: Laravel, Tailwind CSS, JavaScript\n\nEl resultado final proporciona a la gerencia de GRB una plataforma poderosa y escalable para coordinar eficientemente las operaciones en todas las empresas subsidiarias y proyectos, asegurando comunicación fluida y asignación efectiva de recursos en toda la organización."
+        "en": "Global Reborn Group (GRBG) is a comprehensive corporate digital ecosystem built across three interconnected platforms. The corporate website is a modern, responsive landing that communicates the company's multi-faceted approach to real estate, technology, finance, and community development, integrating with WordPress API for content management.\n\nThe Admin Panel provides GRBG administrators with powerful tools to control content, monitor performance, and manage user permissions across all business units. Built with the same modern stack, it ensures consistency and optimal performance for all administrative functions.\n\nGRB Tasks is the internal project and company management system serving as the operational hub for managing subsidiary companies, project workflows, task assignments, and employee administration throughout the GRB family of businesses.\n\nKey platform features:\n- Modern corporate landing with strategic messaging and portfolio showcase\n- CMS integration with WordPress API for content management\n- Comprehensive admin dashboard with analytics and role management\n- Multi-company task management and project tracking\n- Employee administration and hierarchical company structure\n- Mobile-responsive design across all three platforms\n- Supabase integration for data management\n\nTechnologies used: Astro, Next.js, Supabase, Laravel, Tailwind CSS, WordPress API\n\nThe combined result gives GRBG a professional, scalable digital presence — from public-facing communication to internal operations management — all operating as one cohesive ecosystem.",
+        "es": "Global Reborn Group (GRBG) es un ecosistema digital corporativo integral construido en tres plataformas interconectadas. El sitio web corporativo es una landing moderna y responsiva que comunica el enfoque multifacético de la empresa hacia bienes raíces, tecnología, finanzas y desarrollo comunitario, integrándose con WordPress API para gestión de contenido.\n\nEl Panel Administrativo proporciona a los administradores de GRBG herramientas poderosas para controlar contenido, monitorear rendimiento y gestionar permisos de usuario en todas las unidades de negocio.\n\nGRB Tasks es el sistema interno de gestión de proyectos y empresas que sirve como centro operacional para gestionar empresas subsidiarias, flujos de trabajo de proyectos, asignaciones de tareas y administración de empleados en toda la familia de negocios GRB.\n\nCaracterísticas clave:\n- Landing corporativa moderna con mensajería estratégica y exhibición de portafolio\n- Integración CMS con WordPress API\n- Dashboard administrativo integral con analíticas y gestión de roles\n- Gestión de tareas multi-empresa y seguimiento de proyectos\n- Administración de empleados y estructura jerárquica de empresas\n- Diseño responsivo en las tres plataformas\n- Integración con Supabase para gestión de datos\n\nTecnologías utilizadas: Astro, Next.js, Supabase, Laravel, Tailwind CSS, WordPress API\n\nEl resultado combinado proporciona a GRBG una presencia digital profesional y escalable, desde comunicación pública hasta gestión de operaciones internas, operando como un ecosistema cohesivo."
       }
     },
     {
@@ -101,7 +55,12 @@
         "en": "Multilingual services information website for GRB with regional variants and brand names",
         "es": "Sitio informativo de servicios multilenguaje para GRB con variantes regionales y marcas"
       },
-      "link": "https://rbcmuk.grb-group.com/",
+      "links": [
+        {
+          "title": "View Site",
+          "url": "https://rbcmuk.grb-group.com/"
+        }
+      ],
       "image": "rbcmche-home.jpg",
       "images": [
         "rbcmche-home.jpg",
@@ -121,119 +80,42 @@
     {
       "id": "reborn-developments",
       "title": {
-        "en": "Reborn Developments - Real Estate Investment Platform",
-        "es": "Reborn Developments - Plataforma de Inversiones Inmobiliarias"
+        "en": "Reborn Developments - Full Platform Ecosystem",
+        "es": "Reborn Developments - Ecosistema Completo de Plataforma"
       },
       "description": {
-        "en": "Real estate investment platform with project discovery, due diligence resources, and onboarding",
-        "es": "Plataforma de inversiones inmobiliarias con exploración de proyectos, recursos de due diligence y onboarding"
+        "en": "Complete real estate investment platform with investor-facing site, admin panel, backend logs system, and Laravel API infrastructure",
+        "es": "Plataforma completa de inversiones inmobiliarias con sitio para inversores, panel admin, sistema de logs y infraestructura API Laravel"
       },
-      "link": "https://reborndevelopments.com/",
+      "links": [
+        {
+          "title": "Investor Platform",
+          "url": "https://reborndevelopments.com/"
+        },
+        {
+          "title": "Admin Panel",
+          "url": "https://admin.reborndevelopments.com/"
+        }
+      ],
       "image": "reborndevelopments-home.jpg",
       "images": [
         "reborndevelopments-home.jpg",
-        "reborndevelopments-projects.jpg",
-        "reborndevelopments-filters.jpg",
-        "reborndevelopments-mobile.jpg"
-      ],
-      "technologies": [
-        "Next.js",
-        "Laravel",
-        "Tailwind CSS"
-      ],
-      "pubDate": "2025-01-01",
-      "content": {
-        "en": "Reborn Developments is a real estate investment platform designed to provide investors with transparent access to curated projects, comprehensive due diligence resources, and streamlined onboarding. The platform combines a performant Next.js frontend with a secure Laravel backend, while Tailwind CSS delivers a clean, responsive UI aligned with the brand.\n\nKey project features:\n- Investor-focused landing with clear risk disclosures\n- Discoverable projects with advanced filters and dynamic loading\n- Educational resources: due diligence, risk assessments, FAQs\n- Multi-step onboarding and account verification (KYC/AML ready)\n- Mobile-first responsive design with consistent design system\n- Secure API integration between Next.js and Laravel\n\nTechnologies used: Next.js, Laravel, Tailwind CSS\n\nThe result is a robust investment experience that communicates transparency and compliance while enabling scalable growth of the projects catalog.",
-        "es": "Reborn Developments es una plataforma de inversiones inmobiliarias diseñada para ofrecer a los inversionistas acceso transparente a proyectos curados, recursos completos de due diligence y un proceso de onboarding ágil. La plataforma combina un frontend de alto rendimiento en Next.js con un backend seguro en Laravel, mientras que Tailwind CSS entrega una UI limpia y responsiva alineada con la marca.\n\nCaracterísticas clave del proyecto:\n- Landing orientada al inversor con declaraciones claras de riesgo\n- Descubrimiento de proyectos con filtros avanzados y carga dinámica\n- Recursos educativos: due diligence, evaluaciones de riesgo, FAQs\n- Onboarding multi-paso y verificación de cuenta (listo para KYC/AML)\n- Diseño responsivo mobile-first con sistema de diseño consistente\n- Integración segura de API entre Next.js y Laravel\n\nTecnologías utilizadas: Next.js, Laravel, Tailwind CSS\n\nEl resultado es una experiencia de inversión robusta que comunica transparencia y cumplimiento, habilitando el crecimiento escalable del catálogo de proyectos."
-      }
-    },
-    {
-      "id": "reborn-developments-admin",
-      "title": {
-        "en": "Reborn Developments - Admin Panel",
-        "es": "Reborn Developments - Panel de Administración"
-      },
-      "description": {
-        "en": "Administrative dashboard for investment platform: content, users, projects and compliance",
-        "es": "Panel administrativo de la plataforma de inversión: contenido, usuarios, proyectos y cumplimiento"
-      },
-      "link": "https://admin.reborndevelopments.com/",
-      "image": "reborndevelopments-admin-dashboard.jpg",
-      "images": [
         "reborndevelopments-admin-dashboard.jpg",
-        "reborndevelopments-admin-users.jpg",
-        "reborndevelopments-admin-projects.jpg",
-        "reborndevelopments-admin-analytics.jpg"
-      ],
-      "technologies": [
-        "Next.js",
-        "Laravel",
-        "Tailwind CSS"
-      ],
-      "pubDate": "2025-01-01",
-      "content": {
-        "en": "The Reborn Developments Admin Panel powers internal operations of the real estate investment platform. Admins manage public content, review and approve projects, oversee user onboarding (KYC/AML), configure risk disclosures, and monitor performance through analytics. Built with a Next.js frontend and a Laravel API, styled with Tailwind CSS for a clean, responsive admin UX.",
-        "es": "El Panel de Administración de Reborn Developments impulsa las operaciones internas de la plataforma de inversiones inmobiliarias. Los administradores gestionan contenido público, revisan y aprueban proyectos, supervisan el onboarding de usuarios (KYC/AML), configuran divulgaciones de riesgo y monitorean el rendimiento mediante analíticas. Construido con frontend en Next.js y API en Laravel, con Tailwind CSS para una experiencia admin limpia y responsiva."
-      }
-    },
-    {
-      "id": "reborn-developments-logs",
-      "title": {
-        "en": "Reborn Developments - Backend Logs Panel",
-        "es": "Reborn Developments - Panel de Logs del Backend"
-      },
-      "description": {
-        "en": "Backend logging and monitoring dashboard for the investment platform infrastructure",
-        "es": "Dashboard de logging y monitoreo del backend para la infraestructura de la plataforma de inversión"
-      },
-      "link": null,
-      "image": "reborndevelopments-logs-dashboard.jpg",
-      "images": [
         "reborndevelopments-logs-dashboard.jpg",
-        "reborndevelopments-logs-monitoring.jpg",
-        "reborndevelopments-logs-alerts.jpg",
-        "reborndevelopments-logs-analytics.jpg"
+        "reborn-backend-architecture.jpg"
       ],
       "technologies": [
         "Next.js",
-        "Laravel",
-        "Tailwind CSS"
-      ],
-      "pubDate": "2025-01-01",
-      "content": {
-        "en": "The Reborn Developments Backend Logs Panel is a comprehensive monitoring and logging dashboard designed to track system performance, user activities, and platform health for the investment platform infrastructure. This internal tool provides administrators with real-time insights into backend operations, error tracking, and system analytics.\n\nThe logging system captures detailed information about API calls, user interactions, database queries, and system events. Built with the same technology stack as the main platform, it ensures seamless integration and consistent user experience for administrative staff.\n\nKey project features:\n- Real-time log monitoring and filtering\n- System performance metrics and analytics\n- Error tracking and alerting system\n- User activity monitoring and audit trails\n- Database query performance tracking\n- API endpoint monitoring and response times\n- Security event logging and analysis\n- Mobile-responsive admin interface\n- Integration with Laravel logging system\n- Advanced search and filtering capabilities\n\nTechnologies used: Next.js, Laravel, Tailwind CSS\n\nThe final result provides administrators with a powerful tool to maintain platform stability, troubleshoot issues quickly, and ensure optimal performance of the investment platform infrastructure.",
-        "es": "El Panel de Logs del Backend de Reborn Developments es un dashboard integral de monitoreo y logging diseñado para rastrear el rendimiento del sistema, actividades de usuarios y salud de la plataforma para la infraestructura de la plataforma de inversión. Esta herramienta interna proporciona a los administradores información en tiempo real sobre operaciones del backend, seguimiento de errores y análisis del sistema.\n\nEl sistema de logging captura información detallada sobre llamadas API, interacciones de usuarios, consultas de base de datos y eventos del sistema. Construido con la misma pila tecnológica que la plataforma principal, asegura integración fluida y experiencia de usuario consistente para el personal administrativo.\n\nCaracterísticas clave del proyecto:\n- Monitoreo de logs en tiempo real y filtrado\n- Métricas de rendimiento del sistema y análisis\n- Sistema de seguimiento de errores y alertas\n- Monitoreo de actividades de usuarios y pistas de auditoría\n- Seguimiento de rendimiento de consultas de base de datos\n- Monitoreo de endpoints API y tiempos de respuesta\n- Logging de eventos de seguridad y análisis\n- Interfaz administrativa responsiva para móviles\n- Integración con el sistema de logging de Laravel\n- Capacidades avanzadas de búsqueda y filtrado\n\nTecnologías utilizadas: Next.js, Laravel, Tailwind CSS\n\nEl resultado final proporciona a los administradores una herramienta poderosa para mantener la estabilidad de la plataforma, solucionar problemas rápidamente y asegurar el rendimiento óptimo de la infraestructura de la plataforma de inversión."
-      }
-    },
-    {
-      "id": "reborn-backend",
-      "title": {
-        "en": "Reborn Backend - Laravel API Infrastructure",
-        "es": "Reborn Backend - Infraestructura API Laravel"
-      },
-      "description": {
-        "en": "Laravel-based backend API infrastructure supporting Reborn Developments platform and admin systems",
-        "es": "Infraestructura API backend basada en Laravel que soporta la plataforma Reborn Developments y sistemas administrativos"
-      },
-      "link": null,
-      "image": "reborn-backend-architecture.jpg",
-      "images": [
-        "reborn-backend-architecture.jpg",
-        "reborn-backend-api.jpg",
-        "reborn-backend-database.jpg",
-        "reborn-backend-monitoring.jpg"
-      ],
-      "technologies": [
         "Laravel",
         "PHP",
         "MySQL",
         "Redis",
-        "API"
+        "Tailwind CSS"
       ],
       "pubDate": "2025-01-01",
       "content": {
-        "en": "The Reborn Backend is a comprehensive Laravel-based API infrastructure that powers the entire Reborn Developments ecosystem, including the investment platform, admin panels, and logging systems. This robust backend provides secure, scalable, and high-performance services to support all frontend applications and administrative tools.\n\nThe backend architecture is designed to handle complex real estate investment workflows, user management, project data processing, and compliance requirements. Built with Laravel's powerful features, it ensures data integrity, security, and optimal performance across all connected systems.\n\nKey project features:\n- RESTful API architecture with comprehensive endpoints\n- Secure authentication and authorization system\n- Real estate project data management and processing\n- User onboarding and KYC/AML workflow automation\n- Investment tracking and portfolio management\n- Advanced logging and monitoring capabilities\n- Database optimization and query performance\n- Redis caching for improved response times\n- API rate limiting and security measures\n- Integration with external services and third-party APIs\n\nTechnologies used: Laravel, PHP, MySQL, Redis, API\n\nThe final result provides a solid, scalable foundation that supports the entire Reborn Developments platform ecosystem, ensuring reliable data management, secure operations, and seamless integration between all frontend applications and administrative tools.",
-        "es": "El Reborn Backend es una infraestructura API integral basada en Laravel que impulsa todo el ecosistema de Reborn Developments, incluyendo la plataforma de inversión, paneles administrativos y sistemas de logging. Este backend robusto proporciona servicios seguros, escalables y de alto rendimiento para soportar todas las aplicaciones frontend y herramientas administrativas.\n\nLa arquitectura del backend está diseñada para manejar flujos de trabajo complejos de inversión inmobiliaria, gestión de usuarios, procesamiento de datos de proyectos y requisitos de cumplimiento. Construido con las características poderosas de Laravel, asegura integridad de datos, seguridad y rendimiento óptimo en todos los sistemas conectados.\n\nCaracterísticas clave del proyecto:\n- Arquitectura API RESTful con endpoints comprensivos\n- Sistema seguro de autenticación y autorización\n- Gestión y procesamiento de datos de proyectos inmobiliarios\n- Automatización de flujos de onboarding de usuarios y KYC/AML\n- Seguimiento de inversiones y gestión de portafolio\n- Capacidades avanzadas de logging y monitoreo\n- Optimización de base de datos y rendimiento de consultas\n- Caché Redis para tiempos de respuesta mejorados\n- Limitación de velocidad de API y medidas de seguridad\n- Integración con servicios externos y APIs de terceros\n\nTecnologías utilizadas: Laravel, PHP, MySQL, Redis, API\n\nEl resultado final proporciona una base sólida y escalable que soporta todo el ecosistema de la plataforma Reborn Developments, asegurando gestión confiable de datos, operaciones seguras e integración fluida entre todas las aplicaciones frontend y herramientas administrativas."
+        "en": "Reborn Developments is a complete real estate investment ecosystem built across four interconnected systems. The investor-facing platform provides transparent access to curated projects, due diligence resources, and streamlined onboarding. It combines a performant Next.js frontend with a secure Laravel backend and Tailwind CSS for a clean, responsive UI.\n\nThe Admin Panel powers internal operations: admins manage public content, review and approve projects, oversee KYC/AML user onboarding, configure risk disclosures, and monitor analytics.\n\nThe Backend Logs Panel is a monitoring dashboard that tracks system performance, API response times, database queries, error events, and security logs in real time — ensuring platform stability and fast troubleshooting.\n\nThe Laravel API Infrastructure is the backbone of the entire ecosystem: a RESTful API supporting all frontend applications, with Redis caching, secure authentication, investment workflow automation, and KYC/AML compliance integrations.\n\nKey platform features:\n- Investor landing with advanced project filters and risk disclosures\n- Multi-step onboarding and KYC/AML compliance workflow\n- Admin control for content, user verification, and project management\n- Real-time backend monitoring and error tracking\n- RESTful API with Redis caching and rate limiting\n- Scalable architecture supporting platform growth\n\nTechnologies used: Next.js, Laravel, PHP, MySQL, Redis, Tailwind CSS\n\nThe combined result is a secure, transparent investment experience built for compliance and scalability — from public-facing investor communications to deep internal infrastructure management.",
+        "es": "Reborn Developments es un ecosistema completo de inversiones inmobiliarias construido en cuatro sistemas interconectados. La plataforma para inversores proporciona acceso transparente a proyectos curados, recursos de due diligence y un proceso de onboarding ágil, combinando Next.js con Laravel y Tailwind CSS.\n\nEl Panel Administrativo gestiona operaciones internas: administradores controlan contenido público, revisan proyectos, supervisan el onboarding KYC/AML y monitorizan analíticas.\n\nEl Panel de Logs del Backend es un dashboard de monitoreo en tiempo real que rastrea rendimiento del sistema, tiempos de respuesta API, consultas de base de datos y eventos de seguridad.\n\nLa Infraestructura API Laravel es el núcleo del ecosistema: una API RESTful con autenticación segura, caché Redis, automatización de flujos de inversión e integraciones KYC/AML.\n\nCaracterísticas clave:\n- Landing para inversores con filtros avanzados y divulgaciones de riesgo\n- Onboarding multi-paso y cumplimiento KYC/AML\n- Control admin para contenido, verificación de usuarios y gestión de proyectos\n- Monitoreo de backend en tiempo real y seguimiento de errores\n- API RESTful con caché Redis y limitación de velocidad\n- Arquitectura escalable para crecimiento de la plataforma\n\nTecnologías utilizadas: Next.js, Laravel, PHP, MySQL, Redis, Tailwind CSS\n\nEl resultado combinado es una experiencia de inversión segura y transparente construida para cumplimiento y escalabilidad."
       }
     },
     {
@@ -246,7 +128,12 @@
         "en": "Comprehensive hotel management platform for hospitality operations and guest services",
         "es": "Plataforma integral de gestión hotelera para operaciones de hospitalidad y servicios a huéspedes"
       },
-      "link": "https://www.rebornhotels.com/",
+      "links": [
+        {
+          "title": "View Platform",
+          "url": "https://www.rebornhotels.com/"
+        }
+      ],
       "image": "reborn-hospitality-dashboard.jpg",
       "images": [
         "reborn-hospitality-dashboard.jpg",
@@ -259,8 +146,8 @@
       ],
       "pubDate": "2022-01-01",
       "content": {
-        "en": "Reborn Hospitality is a comprehensive hotel management platform designed to streamline hospitality operations and enhance guest experiences. Built with Flutter Web, the platform provides hotel staff with powerful tools to manage reservations, guest services, room operations, and administrative tasks through a modern, responsive interface.\n\nThe platform serves as a central hub for hotel management, offering real-time insights into occupancy rates, guest preferences, and operational efficiency. The Flutter Web implementation ensures consistent performance across all devices while maintaining the native app-like experience that users expect.\n\nKey project features:\n- Real-time reservation management and booking system\n- Guest profile management and preferences tracking\n- Room status monitoring and housekeeping coordination\n- Revenue management and pricing optimization\n- Guest communication and service request handling\n- Staff scheduling and task management\n- Analytics dashboard with occupancy and revenue insights\n- Mobile-responsive design for on-the-go management\n- Integration with payment processing systems\n- Multi-property management capabilities\n\nTechnologies used: Flutter Web\n\nThe final result provides hotel management teams with a powerful, user-friendly platform that improves operational efficiency, enhances guest satisfaction, and drives revenue growth through better resource management and service delivery.",
-        "es": "Reborn Hospitality es una plataforma integral de gestión hotelera diseñada para optimizar las operaciones de hospitalidad y mejorar las experiencias de los huéspedes. Construida con Flutter Web, la plataforma proporciona al personal hotelero herramientas poderosas para gestionar reservas, servicios a huéspedes, operaciones de habitaciones y tareas administrativas a través de una interfaz moderna y responsiva.\n\nLa plataforma sirve como centro de control para la gestión hotelera, ofreciendo información en tiempo real sobre tasas de ocupación, preferencias de huéspedes y eficiencia operacional. La implementación con Flutter Web asegura rendimiento consistente en todos los dispositivos mientras mantiene la experiencia tipo aplicación nativa que los usuarios esperan.\n\nCaracterísticas clave del proyecto:\n- Gestión de reservas en tiempo real y sistema de reservaciones\n- Gestión de perfiles de huéspedes y seguimiento de preferencias\n- Monitoreo de estado de habitaciones y coordinación de limpieza\n- Gestión de ingresos y optimización de precios\n- Comunicación con huéspedes y manejo de solicitudes de servicio\n- Programación de personal y gestión de tareas\n- Dashboard de análisis con información de ocupación e ingresos\n- Diseño responsivo para gestión móvil\n- Integración con sistemas de procesamiento de pagos\n- Capacidades de gestión multi-propiedades\n\nTecnologías utilizadas: Flutter Web\n\nEl resultado final proporciona a los equipos de gestión hotelera una plataforma poderosa y fácil de usar que mejora la eficiencia operacional, aumenta la satisfacción de los huéspedes y impulsa el crecimiento de ingresos a través de mejor gestión de recursos y entrega de servicios."
+        "en": "Reborn Hospitality is a comprehensive hotel management platform designed to streamline hospitality operations and enhance guest experiences. Built with Flutter Web, the platform provides hotel staff with powerful tools to manage reservations, guest services, room operations, and administrative tasks through a modern, responsive interface.\n\nKey project features:\n- Real-time reservation management and booking system\n- Guest profile management and preferences tracking\n- Room status monitoring and housekeeping coordination\n- Revenue management and pricing optimization\n- Analytics dashboard with occupancy and revenue insights\n- Multi-property management capabilities\n\nTechnologies used: Flutter Web\n\nThe final result provides hotel management teams with a powerful, user-friendly platform that improves operational efficiency, enhances guest satisfaction, and drives revenue growth.",
+        "es": "Reborn Hospitality es una plataforma integral de gestión hotelera diseñada para optimizar las operaciones de hospitalidad y mejorar las experiencias de los huéspedes. Construida con Flutter Web, proporciona al personal hotelero herramientas poderosas para gestionar reservas, servicios a huéspedes y tareas administrativas a través de una interfaz moderna y responsiva.\n\nCaracterísticas clave:\n- Gestión de reservas en tiempo real\n- Gestión de perfiles de huéspedes y preferencias\n- Monitoreo de estado de habitaciones y coordinación de limpieza\n- Gestión de ingresos y optimización de precios\n- Dashboard de análisis con información de ocupación e ingresos\n- Gestión multi-propiedades\n\nTecnologías utilizadas: Flutter Web\n\nEl resultado final proporciona a los equipos de gestión hotelera una plataforma poderosa que mejora la eficiencia operacional y la satisfacción de huéspedes."
       }
     },
     {
@@ -273,7 +160,12 @@
         "en": "Property management landing page for short-term rental optimization and hosting services",
         "es": "Página de aterrizaje de gestión de propiedades para optimización de alquileres a corto plazo y servicios de hosting"
       },
-      "link": "http://rebornhost.com/",
+      "links": [
+        {
+          "title": "View Site",
+          "url": "http://rebornhost.com/"
+        }
+      ],
       "image": "reborn-host-homepage.jpg",
       "images": [
         "reborn-host-homepage.jpg",
@@ -288,27 +180,36 @@
       ],
       "pubDate": "2022-01-01",
       "content": {
-        "en": "Reborn Host is a comprehensive property management landing page designed to showcase short-term rental optimization services and hosting solutions. The platform targets property owners looking to maximize their rental income through professional management services across multiple booking platforms.\n\nBuilt with modern web technologies including HTML, Tailwind CSS, and JavaScript, the site delivers a clean, responsive experience that effectively communicates the value proposition of Reborn Host's property management services. The design emphasizes transparency, professional credibility, and clear service offerings.\n\nKey project features:\n- Compelling landing page with clear value proposition\n- Service tier comparison (Standard, Premium, Enterprise)\n- Multi-platform integration showcase (Airbnb, VRBO, Booking.com, etc.)\n- Transparent pricing structure and fee breakdown\n- Property submission and onboarding flow\n- Team and founder profiles for credibility\n- FAQ section addressing common concerns\n- Mobile-responsive design for all devices\n- Professional photography and visual elements\n- Contact and consultation request forms\n\nTechnologies used: HTML, Tailwind CSS, JavaScript\n\nThe final result provides Reborn Host with a professional, conversion-optimized landing page that effectively attracts property owners and communicates the comprehensive benefits of their property management services.",
-        "es": "Reborn Host es una página de aterrizaje integral de gestión de propiedades diseñada para mostrar servicios de optimización de alquileres a corto plazo y soluciones de hosting. La plataforma se dirige a propietarios de propiedades que buscan maximizar sus ingresos por alquiler a través de servicios de gestión profesional en múltiples plataformas de reservas.\n\nConstruida con tecnologías web modernas incluyendo HTML, Tailwind CSS y JavaScript, el sitio ofrece una experiencia limpia y responsiva que comunica efectivamente la propuesta de valor de los servicios de gestión de propiedades de Reborn Host. El diseño enfatiza transparencia, credibilidad profesional y ofertas de servicios claras.\n\nCaracterísticas clave del proyecto:\n- Página de aterrizaje convincente con propuesta de valor clara\n- Comparación de niveles de servicio (Estándar, Premium, Empresarial)\n- Exhibición de integración multi-plataforma (Airbnb, VRBO, Booking.com, etc.)\n- Estructura de precios transparente y desglose de tarifas\n- Flujo de envío de propiedades y onboarding\n- Perfiles del equipo y fundadores para credibilidad\n- Sección de preguntas frecuentes abordando preocupaciones comunes\n- Diseño responsivo para todos los dispositivos\n- Fotografía profesional y elementos visuales\n- Formularios de contacto y solicitud de consulta\n\nTecnologías utilizadas: HTML, Tailwind CSS, JavaScript\n\nEl resultado final proporciona a Reborn Host una página de aterrizaje profesional y optimizada para conversión que atrae efectivamente a propietarios de propiedades y comunica los beneficios integrales de sus servicios de gestión de propiedades."
+        "en": "Reborn Host is a comprehensive property management landing page designed to showcase short-term rental optimization services and hosting solutions. The platform targets property owners looking to maximize their rental income through professional management services across multiple booking platforms.\n\nKey project features:\n- Compelling landing page with clear value proposition\n- Service tier comparison (Standard, Premium, Enterprise)\n- Multi-platform integration showcase (Airbnb, VRBO, Booking.com, etc.)\n- Transparent pricing structure and fee breakdown\n- Property submission and onboarding flow\n- Contact and consultation request forms\n\nTechnologies used: HTML, Tailwind CSS, JavaScript\n\nThe final result provides Reborn Host with a professional, conversion-optimized landing page that effectively attracts property owners and communicates the comprehensive benefits of their property management services.",
+        "es": "Reborn Host es una página de aterrizaje integral de gestión de propiedades diseñada para mostrar servicios de optimización de alquileres a corto plazo y soluciones de hosting.\n\nCaracterísticas clave:\n- Página de aterrizaje convincente con propuesta de valor clara\n- Comparación de niveles de servicio (Estándar, Premium, Empresarial)\n- Integración multi-plataforma (Airbnb, VRBO, Booking.com, etc.)\n- Estructura de precios transparente\n- Flujo de onboarding de propiedades\n\nTecnologías utilizadas: HTML, Tailwind CSS, JavaScript\n\nEl resultado final proporciona a Reborn Host una landing profesional y optimizada para conversión."
       }
     },
     {
       "id": "ecomine",
       "title": {
-        "en": "EcoMine - Sustainable Cryptocurrency Mining Platform",
-        "es": "EcoMine - Plataforma de Minería de Criptomonedas Sostenible"
+        "en": "EcoMine AG - Sustainable Crypto Mining Platform & Reports",
+        "es": "EcoMine AG - Plataforma de Minería Cripto Sostenible y Reportes"
       },
       "description": {
-        "en": "Eco-friendly cryptocurrency mining platform powered by 100% renewable energy with carbon-positive impact",
-        "es": "Plataforma de minería de criptomonedas ecológica alimentada por 100% energía renovable con impacto positivo de carbono"
+        "en": "Eco-friendly crypto mining platform powered by 100% renewable energy plus a client report generator with Excel export",
+        "es": "Plataforma de minería cripto ecológica alimentada por 100% energía renovable más generador de reportes para clientes con exportación a Excel"
       },
-      "link": "https://ecomine.ch/",
+      "links": [
+        {
+          "title": "EcoMine Site",
+          "url": "https://ecomine.ch/"
+        },
+        {
+          "title": "Reports App",
+          "url": "https://reports.ecomine.ch/"
+        }
+      ],
       "image": "ecomine-homepage.jpg",
       "images": [
         "ecomine-homepage.jpg",
         "ecomine-mining.jpg",
-        "ecomine-sustainability.jpg",
-        "ecomine-mobile.jpg"
+        "ecomine-reports-dashboard.jpg",
+        "ecomine-reports-excel.jpg"
       ],
       "technologies": [
         "HTML",
@@ -318,37 +219,8 @@
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "EcoMine AG is a pioneering sustainable cryptocurrency mining platform that combines profitability with environmental responsibility. As one of the world's first providers of cryptocurrency mining services for individuals, EcoMine makes crypto mining accessible while maintaining a strong commitment to sustainability and environmental protection.\n\nThe platform operates mining farms in Scandinavia powered by 100% renewable energy, ensuring a carbon-positive impact. Through a partnership with One Tree Planted, EcoMine plants 10 trees for every mining device deployed, contributing to global reforestation efforts and climate change mitigation.\n\nKey project features:\n- 100% renewable energy-powered mining operations\n- Carbon-positive environmental impact through tree planting\n- Transparent and fair service conditions\n- Latest generation mining technology and equipment\n- Secure locations in Switzerland and Scandinavia\n- Diversified cryptocurrency mining capabilities\n- Expert team with extensive crypto and blockchain experience\n- Individual consultation and customized service offers\n- Annual payouts in cryptocurrency or FIAT currency\n- Multi-language support (German, English)\n\nTechnologies used: HTML, CSS, JavaScript, Blockchain\n\nThe final result provides individuals with an ethical and profitable way to participate in cryptocurrency mining while contributing to environmental sustainability and climate change mitigation through innovative carbon-positive practices.",
-        "es": "EcoMine AG es una plataforma pionera de minería de criptomonedas sostenible que combina rentabilidad con responsabilidad ambiental. Como uno de los primeros proveedores mundiales de servicios de minería de criptomonedas para individuos, EcoMine hace accesible la minería de cripto mientras mantiene un fuerte compromiso con la sostenibilidad y protección ambiental.\n\nLa plataforma opera granjas de minería en Escandinavia alimentadas por 100% energía renovable, asegurando un impacto positivo de carbono. A través de una asociación con One Tree Planted, EcoMine planta 10 árboles por cada dispositivo de minería desplegado, contribuyendo a los esfuerzos globales de reforestación y mitigación del cambio climático.\n\nCaracterísticas clave del proyecto:\n- Operaciones de minería alimentadas por 100% energía renovable\n- Impacto ambiental positivo de carbono a través de plantación de árboles\n- Condiciones de servicio transparentes y justas\n- Tecnología de minería y equipos de última generación\n- Ubicaciones seguras en Suiza y Escandinavia\n- Capacidades diversificadas de minería de criptomonedas\n- Equipo experto con amplia experiencia en cripto y blockchain\n- Consultoría individual y ofertas de servicio personalizadas\n- Pagos anuales en criptomonedas o moneda FIAT\n- Soporte multi-idioma (alemán, inglés)\n\nTecnologías utilizadas: HTML, CSS, JavaScript, Blockchain\n\nEl resultado final proporciona a los individuos una forma ética y rentable de participar en la minería de criptomonedas mientras contribuye a la sostenibilidad ambiental y mitigación del cambio climático a través de prácticas innovadoras positivas de carbono."
-      }
-    },
-    {
-      "id": "ecomine-reports",
-      "title": {
-        "en": "EcoMine Reports - Report Generator",
-        "es": "EcoMine Reports - Generador de Reportes"
-      },
-      "description": {
-        "en": "Report generation system for EcoMine cryptocurrency mining clients with data processing and Excel export",
-        "es": "Sistema de generación de reportes para clientes de minería de criptomonedas EcoMine con procesamiento de datos y exportación a Excel"
-      },
-      "link": "https://reports.ecomine.ch/",
-      "image": "ecomine-reports-dashboard.jpg",
-      "images": [
-        "ecomine-reports-dashboard.jpg",
-        "ecomine-reports-form.jpg",
-        "ecomine-reports-excel.jpg",
-        "ecomine-reports-mobile.jpg"
-      ],
-      "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "pubDate": "2024-01-01",
-      "content": {
-        "en": "EcoMine Reports is a specialized report generation system designed to provide EcoMine clients with comprehensive mining performance reports and financial statements. The platform allows clients to input their personal data, mining account information, and current Bitcoin prices to generate detailed reports in Excel format.\n\nBuilt with HTML, CSS, and JavaScript, the system provides a user-friendly interface for data collection and report generation. The platform ensures data security and privacy while delivering accurate, professional reports that help clients track their mining investments and returns.\n\nKey project features:\n- Client data collection form with secure input validation\n- Bitcoin price integration for real-time calculations\n- Excel report generation and export functionality\n- Account statement processing and analysis\n- Professional report formatting and presentation\n- Data privacy and security measures\n- Responsive design for all devices\n- Multi-language support for international clients\n- Integration with EcoMine mining data\n- Automated report delivery system\n\nTechnologies used: HTML, CSS, JavaScript\n\nThe final result provides EcoMine clients with a powerful, easy-to-use tool for generating professional mining reports, enabling them to track performance, analyze returns, and make informed decisions about their cryptocurrency mining investments.",
-        "es": "EcoMine Reports es un sistema especializado de generación de reportes diseñado para proporcionar a los clientes de EcoMine reportes integrales de rendimiento de minería y estados financieros. La plataforma permite a los clientes ingresar sus datos personales, información de cuenta de minería y precios actuales de Bitcoin para generar reportes detallados en formato Excel.\n\nConstruido con HTML, CSS y JavaScript, el sistema proporciona una interfaz fácil de usar para recolección de datos y generación de reportes. La plataforma asegura seguridad y privacidad de datos mientras entrega reportes precisos y profesionales que ayudan a los clientes a rastrear sus inversiones y retornos de minería.\n\nCaracterísticas clave del proyecto:\n- Formulario de recolección de datos de cliente con validación segura de entrada\n- Integración de precios de Bitcoin para cálculos en tiempo real\n- Generación de reportes Excel y funcionalidad de exportación\n- Procesamiento y análisis de estados de cuenta\n- Formateo profesional de reportes y presentación\n- Medidas de privacidad y seguridad de datos\n- Diseño responsivo para todos los dispositivos\n- Soporte multi-idioma para clientes internacionales\n- Integración con datos de minería de EcoMine\n- Sistema automatizado de entrega de reportes\n\nTecnologías utilizadas: HTML, CSS, JavaScript\n\nEl resultado final proporciona a los clientes de EcoMine una herramienta poderosa y fácil de usar para generar reportes profesionales de minería, permitiéndoles rastrear rendimiento, analizar retornos y tomar decisiones informadas sobre sus inversiones en minería de criptomonedas."
+        "en": "EcoMine AG is a pioneering sustainable cryptocurrency mining platform that combines profitability with environmental responsibility. The platform operates mining farms in Scandinavia powered by 100% renewable energy, ensuring a carbon-positive impact — planting 10 trees per mining device deployed in partnership with One Tree Planted.\n\nThe companion EcoMine Reports system is a specialized tool that allows clients to input their personal data, mining account information, and current Bitcoin prices to generate detailed professional reports in Excel format.\n\nKey project features:\n- 100% renewable energy-powered mining operations\n- Carbon-positive environmental impact through tree planting\n- Individual consultation and customized service offers\n- Annual payouts in cryptocurrency or FIAT currency\n- Client data collection form with secure input validation\n- Bitcoin price integration for real-time calculations\n- Excel report generation and export functionality\n- Multi-language support (German, English)\n\nTechnologies used: HTML, CSS, JavaScript, WordPress\n\nThe combined result provides individuals with an ethical and profitable way to participate in cryptocurrency mining while giving them a professional reporting tool to track their investments.",
+        "es": "EcoMine AG es una plataforma pionera de minería de criptomonedas sostenible que combina rentabilidad con responsabilidad ambiental. Opera granjas de minería en Escandinavia alimentadas por 100% energía renovable, con impacto positivo de carbono — plantando 10 árboles por dispositivo en asociación con One Tree Planted.\n\nEl sistema EcoMine Reports permite a los clientes ingresar sus datos personales, información de cuenta y precios de Bitcoin para generar reportes detallados en formato Excel.\n\nCaracterísticas clave:\n- Operaciones de minería con 100% energía renovable\n- Impacto positivo de carbono mediante plantación de árboles\n- Consultoría individual y ofertas personalizadas\n- Pagos anuales en cripto o moneda FIAT\n- Generación de reportes Excel con datos de cliente\n- Soporte multi-idioma (alemán, inglés)\n\nTecnologías utilizadas: HTML, CSS, JavaScript, WordPress\n\nEl resultado combinado ofrece una forma ética y rentable de participar en minería cripto junto con una herramienta profesional de reportes para rastrear inversiones."
       }
     },
     {
@@ -361,7 +233,12 @@
         "en": "Sustainable construction and solar energy platform specializing in roofing solutions and renewable energy integration",
         "es": "Plataforma de construcción sostenible y energía solar especializada en soluciones de techado e integración de energía renovable"
       },
-      "link": "https://ecokon.ch/",
+      "links": [
+        {
+          "title": "View Site",
+          "url": "https://ecokon.ch/"
+        }
+      ],
       "image": "ecokon-homepage.jpg",
       "images": [
         "ecokon-homepage.jpg",
@@ -376,8 +253,8 @@
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "EcoKon AG is a comprehensive construction and solar energy platform specializing in high-quality roofing solutions and renewable energy integration. The platform showcases the company's expertise in traditional craftsmanship combined with modern solar technology, focusing on sustainable solutions that connect generations through quality workmanship.\n\nBuilt with Astro, JavaScript, and CSS, the platform delivers a modern, responsive experience that effectively communicates EcoKon's commitment to precision, sustainability, and superior craftsmanship. The site emphasizes the company's mission to create buildings that last for generations while integrating renewable energy solutions.\n\nKey project features:\n- Comprehensive service showcase (flat roofs, pitched roofs, photovoltaics)\n- Project portfolio and reference gallery\n- Multi-language support (German, English)\n- Sustainable construction focus and renewable energy integration\n- Professional consultation and project inquiry system\n- Company mission and values presentation\n- Service areas coverage (roofing, solar, renovation, sealing)\n- Contact information and location details\n- Mobile-responsive design for all devices\n- Integration of traditional craftsmanship with modern technology\n\nTechnologies used: Astro, JavaScript, CSS\n\nThe final result provides EcoKon with a professional platform that effectively communicates their expertise in sustainable construction and solar energy solutions, attracting clients who value quality, sustainability, and long-term building solutions.",
-        "es": "EcoKon AG es una plataforma integral de construcción y energía solar especializada en soluciones de techado de alta calidad e integración de energía renovable. La plataforma muestra la experiencia de la empresa en artesanía tradicional combinada con tecnología solar moderna, enfocándose en soluciones sostenibles que conectan generaciones a través de trabajo de calidad.\n\nConstruida con Astro, JavaScript y CSS, la plataforma ofrece una experiencia moderna y responsiva que comunica efectivamente el compromiso de EcoKon con la precisión, sostenibilidad y artesanía superior. El sitio enfatiza la misión de la empresa de crear edificios que duren generaciones mientras integra soluciones de energía renovable.\n\nCaracterísticas clave del proyecto:\n- Exhibición integral de servicios (techos planos, techos inclinados, fotovoltaicos)\n- Portafolio de proyectos y galería de referencias\n- Soporte multi-idioma (alemán, inglés)\n- Enfoque en construcción sostenible e integración de energía renovable\n- Sistema de consultoría profesional y solicitud de proyectos\n- Presentación de misión y valores de la empresa\n- Cobertura de áreas de servicio (techado, solar, renovación, sellado)\n- Información de contacto y detalles de ubicación\n- Diseño responsivo para todos los dispositivos\n- Integración de artesanía tradicional con tecnología moderna\n\nTecnologías utilizadas: Astro, JavaScript, CSS\n\nEl resultado final proporciona a EcoKon una plataforma profesional que comunica efectivamente su experiencia en construcción sostenible y soluciones de energía solar, atrayendo clientes que valoran la calidad, sostenibilidad y soluciones de construcción a largo plazo."
+        "en": "EcoKon AG is a comprehensive construction and solar energy platform specializing in high-quality roofing solutions and renewable energy integration. Built with Astro, JavaScript, and CSS, the platform delivers a modern, responsive experience that communicates EcoKon's commitment to precision, sustainability, and superior craftsmanship.\n\nKey project features:\n- Comprehensive service showcase (flat roofs, pitched roofs, photovoltaics)\n- Project portfolio and reference gallery\n- Multi-language support (German, English)\n- Sustainable construction focus and renewable energy integration\n- Professional consultation and project inquiry system\n- Mobile-responsive design for all devices\n\nTechnologies used: Astro, JavaScript, CSS\n\nThe final result provides EcoKon with a professional platform that attracts clients who value quality, sustainability, and long-term building solutions.",
+        "es": "EcoKon AG es una plataforma integral de construcción y energía solar especializada en soluciones de techado de alta calidad e integración de energía renovable. Construida con Astro, JavaScript y CSS, ofrece una experiencia moderna y responsiva.\n\nCaracterísticas clave:\n- Exhibición de servicios (techos planos, inclinados, fotovoltaicos)\n- Portafolio de proyectos y galería de referencias\n- Soporte multi-idioma (alemán, inglés)\n- Enfoque en construcción sostenible e integración de energía renovable\n- Diseño responsivo para todos los dispositivos\n\nTecnologías utilizadas: Astro, JavaScript, CSS\n\nEl resultado final proporciona a EcoKon una plataforma profesional que atrae clientes que valoran la calidad y sostenibilidad."
       }
     },
     {
@@ -390,7 +267,12 @@
         "en": "Website for the best Peruvian restaurant in Zurich, Switzerland, featuring authentic cuisine and superfoods",
         "es": "Sitio web del mejor restaurante peruano en Zúrich, Suiza, con cocina auténtica y superalimentos"
       },
-      "link": "https://alegria.restaurant/",
+      "links": [
+        {
+          "title": "Visit Restaurant",
+          "url": "https://alegria.restaurant/"
+        }
+      ],
       "image": "alegria-homepage.jpg",
       "images": [
         "alegria-homepage.jpg",
@@ -406,8 +288,8 @@
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "Alegría is a comprehensive restaurant website for the best Peruvian restaurant in Zurich, Switzerland. The platform showcases authentic Peruvian cuisine with a focus on superfoods and organic ingredients sourced directly from the Peruvian Amazon. The restaurant's story began when Mercedes' son Lionel faced health challenges, leading her to explore natural ingredients and superfoods that became the foundation of Alegría's culinary philosophy.\n\nBuilt with HTML, CSS, and JavaScript, the website provides an elegant, user-friendly experience that effectively communicates the restaurant's commitment to healthy, nutritious food that nourishes both body and soul. The site features multiple locations across Zurich and offers online reservations and menu browsing.\n\nKey project features:\n- Restaurant story and family history presentation\n- Comprehensive menu showcase with Peruvian specialties\n- Multiple location information (Wollishofen, Wädenswil, Niederdorf)\n- Online reservation system with table booking\n- Authentic Peruvian cuisine focus with superfoods\n- Organic and locally sourced ingredients emphasis\n- Multi-language support (German, English)\n- Mobile-responsive design for all devices\n- Contact information and opening hours\n- Integration with Pusaq 8 platform\n\nTechnologies used: HTML, CSS, JavaScript\n\nThe final result provides Alegría with a professional website that effectively communicates their unique story, authentic Peruvian cuisine, and commitment to healthy, nutritious food, attracting customers who value quality ingredients and cultural culinary experiences.",
-        "es": "Alegría es un sitio web integral para el mejor restaurante peruano en Zúrich, Suiza. La plataforma muestra cocina peruana auténtica con enfoque en superalimentos e ingredientes orgánicos obtenidos directamente del Amazonas peruano. La historia del restaurante comenzó cuando el hijo de Mercedes, Lionel, enfrentó desafíos de salud, llevándola a explorar ingredientes naturales y superalimentos que se convirtieron en la base de la filosofía culinaria de Alegría.\n\nConstruido con HTML, CSS y JavaScript, el sitio web ofrece una experiencia elegante y fácil de usar que comunica efectivamente el compromiso del restaurante con comida saludable y nutritiva que alimenta tanto el cuerpo como el alma. El sitio cuenta con múltiples ubicaciones en Zúrich y ofrece reservas en línea y navegación de menú.\n\nCaracterísticas clave del proyecto:\n- Presentación de la historia del restaurante y legado familiar\n- Exhibición integral del menú con especialidades peruanas\n- Información de múltiples ubicaciones (Wollishofen, Wädenswil, Niederdorf)\n- Sistema de reservas en línea con reserva de mesas\n- Enfoque en cocina peruana auténtica con superalimentos\n- Énfasis en ingredientes orgánicos y de origen local\n- Soporte multi-idioma (alemán, inglés)\n- Diseño responsivo para todos los dispositivos\n- Información de contacto y horarios de apertura\n- Integración con plataforma Pusaq 8\n\nTecnologías utilizadas: HTML, CSS, JavaScript\n\nEl resultado final proporciona a Alegría un sitio web profesional que comunica efectivamente su historia única, cocina peruana auténtica y compromiso con comida saludable y nutritiva, atrayendo clientes que valoran ingredientes de calidad y experiencias culinarias culturales."
+        "en": "Alegría is a comprehensive restaurant website for the best Peruvian restaurant in Zurich, Switzerland. The platform showcases authentic Peruvian cuisine with a focus on superfoods and organic ingredients sourced directly from the Peruvian Amazon.\n\nKey project features:\n- Restaurant story and family history presentation\n- Comprehensive menu showcase with Peruvian specialties\n- Multiple location information (Wollishofen, Wädenswil, Niederdorf)\n- Online reservation system with table booking\n- Multi-language support (German, English)\n- Mobile-responsive design for all devices\n\nTechnologies used: HTML, CSS, JavaScript, WordPress\n\nThe final result provides Alegría with a professional website that effectively communicates their unique story, authentic Peruvian cuisine, and commitment to healthy, nutritious food.",
+        "es": "Alegría es un sitio web integral para el mejor restaurante peruano en Zúrich, Suiza. La plataforma muestra cocina peruana auténtica con enfoque en superalimentos e ingredientes orgánicos del Amazonas peruano.\n\nCaracterísticas clave:\n- Presentación de historia y legado familiar\n- Exhibición integral del menú con especialidades peruanas\n- Información de múltiples ubicaciones\n- Sistema de reservas en línea\n- Soporte multi-idioma (alemán, inglés)\n- Diseño responsivo\n\nTecnologías utilizadas: HTML, CSS, JavaScript, WordPress\n\nEl resultado final proporciona a Alegría un sitio web profesional que comunica efectivamente su historia única y compromiso con comida saludable y nutritiva."
       }
     },
     {
@@ -420,7 +302,12 @@
         "en": "Website for one of the best coffee shops in Zurich, featuring artisanal pastries and premium chocolate creations",
         "es": "Sitio web de una de las mejores cafeterías de Zúrich, con pasteles artesanales y creaciones de chocolate premium"
       },
-      "link": "https://cafefelix.pusaq8.com/",
+      "links": [
+        {
+          "title": "Visit Café",
+          "url": "https://cafefelix.pusaq8.com/"
+        }
+      ],
       "image": "cafe-felix-homepage.jpg",
       "images": [
         "cafe-felix-homepage.jpg",
@@ -436,194 +323,138 @@
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "Café Felix is a comprehensive website for one of Zurich's premier coffee shops, renowned for its connection to the famous Zürcher Confiserie Teuscher. The platform showcases an elegant café experience where warm vibes meet fresh coffee, artisan pastries, and unforgettable flavors in two prime locations across Zurich.\n\nBuilt with HTML, CSS, and JavaScript, the website provides a sophisticated, user-friendly experience that effectively communicates the café's commitment to quality, tradition, and craftsmanship. The site features an online store, gift vouchers, event bookings, and detailed information about both locations.\n\nKey project features:\n- Elegant café presentation with premium branding\n- Online store with gift voucher system\n- Two location showcase (Bellevue and Bahnhofstrasse)\n- Musical Sunday events and special performances\n- Teuscher chocolate heritage and history presentation\n- Menu and pastry gallery with high-quality imagery\n- Online reservation system for tables\n- Multi-language support (German, English)\n- Mobile-responsive design for all devices\n- Integration with Pusaq 8 platform\n\nTechnologies used: HTML, CSS, JavaScript\n\nThe final result provides Café Felix with a premium website that effectively communicates their commitment to quality coffee, artisanal pastries, and the rich heritage of Swiss chocolate craftsmanship, attracting customers who appreciate fine dining and cultural experiences in Zurich.",
-        "es": "Café Felix es un sitio web integral para una de las cafeterías principales de Zúrich, reconocida por su conexión con la famosa Zürcher Confiserie Teuscher. La plataforma muestra una experiencia de cafetería elegante donde las vibraciones cálidas se encuentran con café fresco, pasteles artesanales y sabores inolvidables en dos ubicaciones principales en Zúrich.\n\nConstruido con HTML, CSS y JavaScript, el sitio web ofrece una experiencia sofisticada y fácil de usar que comunica efectivamente el compromiso de la cafetería con la calidad, tradición y artesanía. El sitio cuenta con una tienda en línea, sistema de vales de regalo, reservas de eventos e información detallada sobre ambas ubicaciones.\n\nCaracterísticas clave del proyecto:\n- Presentación elegante de cafetería con marca premium\n- Tienda en línea con sistema de vales de regalo\n- Exhibición de dos ubicaciones (Bellevue y Bahnhofstrasse)\n- Eventos de Musical Sunday y presentaciones especiales\n- Presentación del patrimonio e historia del chocolate Teuscher\n- Galería de menú y pasteles con imágenes de alta calidad\n- Sistema de reservas en línea para mesas\n- Soporte multi-idioma (alemán, inglés)\n- Diseño responsivo para todos los dispositivos\n- Integración con plataforma Pusaq 8\n\nTecnologías utilizadas: HTML, CSS, JavaScript\n\nEl resultado final proporciona a Café Felix un sitio web premium que comunica efectivamente su compromiso con café de calidad, pasteles artesanales y el rico patrimonio de la artesanía del chocolate suizo, atrayendo clientes que aprecian la gastronomía fina y experiencias culturales en Zúrich."
+        "en": "Café Felix is a comprehensive website for one of Zurich's premier coffee shops, renowned for its connection to the famous Zürcher Confiserie Teuscher. The platform showcases an elegant café experience with warm vibes, fresh coffee, artisan pastries, and unforgettable flavors.\n\nKey project features:\n- Elegant café presentation with premium branding\n- Online store with gift voucher system\n- Two location showcase (Bellevue and Bahnhofstrasse)\n- Musical Sunday events and special performances\n- Online reservation system for tables\n- Multi-language support (German, English)\n\nTechnologies used: HTML, CSS, JavaScript, WordPress\n\nThe final result provides Café Felix with a premium website that communicates their commitment to quality coffee, artisanal pastries, and the rich heritage of Swiss chocolate craftsmanship.",
+        "es": "Café Felix es un sitio web integral para una de las cafeterías principales de Zúrich, reconocida por su conexión con la Zürcher Confiserie Teuscher. La plataforma muestra una experiencia de cafetería elegante.\n\nCaracterísticas clave:\n- Presentación elegante con marca premium\n- Tienda en línea con sistema de vales de regalo\n- Exhibición de dos ubicaciones\n- Eventos de Musical Sunday\n- Sistema de reservas en línea\n- Soporte multi-idioma (alemán, inglés)\n\nTecnologías utilizadas: HTML, CSS, JavaScript, WordPress\n\nEl resultado final proporciona a Café Felix un sitio web premium que comunica su compromiso con la calidad del café y artesanía del chocolate suizo."
       }
     },
     {
-      "id": "profunded-landing",
+      "id": "profunded",
       "title": {
-        "en": "ProFunded - Trading Funding Platform Landing",
-        "es": "ProFunded - Landing de Plataforma de Financiación para Trading"
+        "en": "ProFunded - Trading Funding Platform",
+        "es": "ProFunded - Plataforma de Financiación para Trading"
       },
       "description": {
-        "en": "Landing page for proprietary trading funding platform offering up to $2M capital for forex, crypto, and indices trading",
-        "es": "Página de aterrizaje para plataforma de financiación de trading propietario que ofrece hasta $2M de capital para trading de forex, cripto e índices"
+        "en": "Proprietary trading funding platform: public landing offering up to $2M capital plus the full trader dashboard application",
+        "es": "Plataforma de financiación de trading propietario: landing pública con hasta $2M de capital más la aplicación de dashboard para traders"
       },
-      "link": "http://profunded.com/",
+      "links": [
+        {
+          "title": "ProFunded Site",
+          "url": "http://profunded.com/"
+        },
+        {
+          "title": "Trader App",
+          "url": "https://app.profunded.com/"
+        }
+      ],
       "image": "profunded-homepage.jpg",
       "images": [
         "profunded-homepage.jpg",
+        "profunded-system-dashboard.jpg",
         "profunded-evaluation.jpg",
-        "profunded-pricing.jpg",
-        "profunded-mobile.jpg"
+        "profunded-system-trading.jpg"
       ],
       "technologies": [
+        "Astro",
         "HTML",
         "Tailwind CSS",
         "TypeScript",
-        "Astro"
-      ],
-      "pubDate": "2024-01-01",
-      "content": {
-        "en": "ProFunded is a comprehensive landing page for a proprietary trading funding platform that provides traders with access to institutional-grade capital for forex, crypto, gold, and indices trading. The platform offers up to $2M in funding, allowing traders to keep up to 95% of their profits while trading with the firm's capital instead of their own funds.\n\nBuilt with HTML, CSS, and JavaScript, the landing page effectively communicates the platform's value proposition, evaluation process, and funding opportunities. The site features detailed pricing tiers, trader testimonials, and comprehensive information about the evaluation and verification process.\n\nKey project features:\n- Clear value proposition and funding benefits presentation\n- Multi-tier evaluation process (2-phase, 1-phase, instant funding)\n- Detailed pricing structure from $2.5K to $500K accounts\n- Trader testimonials and success stories\n- Comprehensive FAQ section addressing common concerns\n- Evaluation process explanation with profit targets and rules\n- ScaleUp program for account growth up to $2M\n- 24/7 market access and institutional liquidity\n- Mobile-responsive design for all devices\n- Integration with trading platforms (MT5, ProFunded Terminal)\n\nTechnologies used: HTML, CSS, JavaScript\n\nThe final result provides ProFunded with a professional landing page that effectively attracts traders looking for funding opportunities, clearly communicates the platform's benefits, and guides users through the evaluation process to become funded traders.",
-        "es": "ProFunded es una página de aterrizaje integral para una plataforma de financiación de trading propietario que proporciona a los traders acceso a capital de grado institucional para trading de forex, cripto, oro e índices. La plataforma ofrece hasta $2M en financiación, permitiendo a los traders mantener hasta 95% de sus ganancias mientras operan con el capital de la empresa en lugar de sus propios fondos.\n\nConstruida con HTML, CSS y JavaScript, la página de aterrizaje comunica efectivamente la propuesta de valor de la plataforma, proceso de evaluación y oportunidades de financiación. El sitio cuenta con niveles de precios detallados, testimonios de traders e información integral sobre el proceso de evaluación y verificación.\n\nCaracterísticas clave del proyecto:\n- Presentación clara de propuesta de valor y beneficios de financiación\n- Proceso de evaluación multi-nivel (2 fases, 1 fase, financiación instantánea)\n- Estructura de precios detallada desde cuentas de $2.5K a $500K\n- Testimonios de traders e historias de éxito\n- Sección de preguntas frecuentes integral abordando preocupaciones comunes\n- Explicación del proceso de evaluación con objetivos de ganancia y reglas\n- Programa ScaleUp para crecimiento de cuenta hasta $2M\n- Acceso 24/7 al mercado y liquidez institucional\n- Diseño responsivo para todos los dispositivos\n- Integración con plataformas de trading (MT5, Terminal ProFunded)\n\nTecnologías utilizadas: HTML, CSS, JavaScript\n\nEl resultado final proporciona a ProFunded una página de aterrizaje profesional que atrae efectivamente a traders buscando oportunidades de financiación, comunica claramente los beneficios de la plataforma y guía a los usuarios a través del proceso de evaluación para convertirse en traders financiados."
-      }
-    },
-    {
-      "id": "profunded-system",
-      "title": {
-        "en": "ProFunded System - Trading Platform Application",
-        "es": "ProFunded System - Aplicación de Plataforma de Trading"
-      },
-      "description": {
-        "en": "Trading platform application and dashboard system for ProFunded funded traders with account management and trading tools",
-        "es": "Aplicación de plataforma de trading y sistema de dashboard para traders financiados de ProFunded con gestión de cuentas y herramientas de trading"
-      },
-      "link": "https://app.profunded.com/",
-      "image": "profunded-system-dashboard.jpg",
-      "images": [
-        "profunded-system-dashboard.jpg",
-        "profunded-system-trading.jpg",
-        "profunded-system-account.jpg",
-        "profunded-system-mobile.jpg"
-      ],
-      "technologies": [
         "React",
-        "JavaScript",
-        "CSS",
-        "API",
         "Laravel",
         "MySQL",
-        "PHP"
+        "PHP",
+        "API"
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "ProFunded System is the core trading platform application that powers the ProFunded funding ecosystem. This comprehensive dashboard and trading system provides funded traders with access to their accounts, trading tools, performance analytics, and payout management. The system serves as the central hub for all trading activities and account management functions.\n\nBuilt with modern web technologies including React, JavaScript, and CSS, the application delivers a professional, responsive trading experience. The platform integrates with institutional liquidity providers and offers advanced trading features, risk management tools, and real-time performance tracking for funded traders.\n\nKey project features:\n- Secure trader authentication and account login system\n- Comprehensive trading dashboard with real-time data\n- Account management and funding status tracking\n- Performance analytics and profit/loss monitoring\n- Payout request and withdrawal management\n- Integration with MT5 and ProFunded Terminal\n- Risk management tools and position monitoring\n- Multi-language support for global traders\n- Mobile-responsive design for trading on-the-go\n- Real-time market data and execution\n\nTechnologies used: React, JavaScript, CSS, API\n\nThe final result provides ProFunded traders with a powerful, user-friendly platform that enables them to manage their funded accounts, execute trades, monitor performance, and access all necessary tools for successful proprietary trading.",
-        "es": "ProFunded System es la aplicación central de plataforma de trading que impulsa el ecosistema de financiación de ProFunded. Este dashboard integral y sistema de trading proporciona a los traders financiados acceso a sus cuentas, herramientas de trading, análisis de rendimiento y gestión de pagos. El sistema sirve como centro de control para todas las actividades de trading y funciones de gestión de cuentas.\n\nConstruida con tecnologías web modernas incluyendo React, JavaScript y CSS, la aplicación ofrece una experiencia de trading profesional y responsiva. La plataforma se integra con proveedores de liquidez institucional y ofrece características de trading avanzadas, herramientas de gestión de riesgo y seguimiento de rendimiento en tiempo real para traders financiados.\n\nCaracterísticas clave del proyecto:\n- Sistema seguro de autenticación de traders y login de cuentas\n- Dashboard de trading integral con datos en tiempo real\n- Gestión de cuentas y seguimiento de estado de financiación\n- Análisis de rendimiento y monitoreo de ganancias/pérdidas\n- Gestión de solicitudes de pago y retiros\n- Integración con MT5 y Terminal ProFunded\n- Herramientas de gestión de riesgo y monitoreo de posiciones\n- Soporte multi-idioma para traders globales\n- Diseño responsivo para trading móvil\n- Datos de mercado en tiempo real y ejecución\n\nTecnologías utilizadas: React, JavaScript, CSS, API\n\nEl resultado final proporciona a los traders de ProFunded una plataforma poderosa y fácil de usar que les permite gestionar sus cuentas financiadas, ejecutar trades, monitorear rendimiento y acceder a todas las herramientas necesarias para trading propietario exitoso."
+        "en": "ProFunded is a complete proprietary trading funding ecosystem built across two platforms. The public landing page communicates the platform's value proposition: up to $2M in institutional capital for forex, crypto, gold, and indices trading — with traders keeping up to 95% of profits. It features detailed pricing tiers, a multi-phase evaluation process explanation, and a ScaleUp program.\n\nThe ProFunded System is the core trader dashboard application where funded traders manage their accounts, monitor performance, request payouts, and access all trading tools. Integrated with MT5 and the ProFunded Terminal, it delivers a professional, responsive trading experience.\n\nKey features:\n- Landing with multi-tier evaluation process (2-phase, 1-phase, instant funding)\n- Pricing from $2.5K to $500K evaluation accounts\n- ScaleUp program up to $2M in funding\n- Secure trader authentication and account management\n- Real-time performance analytics and P&L monitoring\n- Payout request and withdrawal management\n- MT5 and ProFunded Terminal integration\n- Multi-language support for global traders\n\nTechnologies used: Astro, HTML, Tailwind CSS, TypeScript, React, Laravel, MySQL, PHP\n\nThe combined result gives ProFunded a professional public presence that converts visitors into funded traders, backed by a powerful internal platform for account management and trading operations.",
+        "es": "ProFunded es un ecosistema completo de financiación de trading propietario construido en dos plataformas. La landing pública comunica la propuesta de valor: hasta $2M en capital institucional para forex, cripto, oro e índices, con los traders manteniendo hasta 95% de ganancias.\n\nEl ProFunded System es el dashboard central para traders financiados: gestión de cuentas, análisis de rendimiento, solicitudes de pago y acceso a todas las herramientas de trading, integrado con MT5 y el Terminal ProFunded.\n\nCaracterísticas clave:\n- Landing con proceso de evaluación multi-nivel\n- Precios desde cuentas de $2.5K a $500K\n- Programa ScaleUp hasta $2M\n- Autenticación segura y gestión de cuentas\n- Analíticas de rendimiento en tiempo real\n- Gestión de solicitudes de pago\n- Soporte multi-idioma\n\nTecnologías utilizadas: Astro, HTML, Tailwind CSS, TypeScript, React, Laravel, MySQL, PHP\n\nEl resultado combinado proporciona a ProFunded una presencia pública profesional respaldada por una plataforma interna poderosa para operaciones de trading."
       }
     },
     {
       "id": "inter-protect",
       "title": {
-        "en": "Inter Protect - Security Company Website",
-        "es": "Inter Protect - Sitio Web de Empresa de Seguridad"
+        "en": "Inter Protect - Security Company Ecosystem",
+        "es": "Inter Protect - Ecosistema de Empresa de Seguridad"
       },
       "description": {
-        "en": "Professional security company website offering comprehensive security solutions and industry-specific protection services",
-        "es": "Sitio web de empresa de seguridad profesional que ofrece soluciones de seguridad integrales y servicios de protección específicos por industria"
+        "en": "Professional security company website plus role-based reports and documentation management portal for employees",
+        "es": "Sitio web de empresa de seguridad profesional más portal de reportes y documentación basado en roles para empleados"
       },
-      "link": "https://inter-protect.ch/",
+      "links": [
+        {
+          "title": "Corporate Site",
+          "url": "https://inter-protect.ch/"
+        },
+        {
+          "title": "Employee Portal",
+          "url": "http://system.inter-protect.ch/"
+        }
+      ],
       "image": "inter-protect-homepage.jpg",
       "images": [
         "inter-protect-homepage.jpg",
         "inter-protect-services.jpg",
-        "inter-protect-solutions.jpg",
-        "inter-protect-mobile.jpg"
+        "interprotect-system-dashboard.jpg",
+        "interprotect-system-reports.jpg"
       ],
       "technologies": [
         "HTML",
         "CSS",
         "JavaScript",
-        "WordPress"
-      ],
-      "pubDate": "2024-01-01",
-      "content": {
-        "en": "Inter Protect GmbH is a comprehensive security company website showcasing professional security solutions and industry-specific protection services. The platform represents a global security partner with an established presence in Switzerland and a worldwide network, offering tailored security services designed to meet individual client needs and guarantee maximum protection.\n\nBuilt with HTML, CSS, and JavaScript, the website delivers a professional, trustworthy experience that effectively communicates the company's commitment to reliability, discretion, and highest professionalism. The site emphasizes the company's expertise in developing industry-specific security solutions and comprehensive protection concepts.\n\nKey project features:\n- Professional security company presentation and branding\n- Industry-specific security solutions showcase\n- Comprehensive service portfolio presentation\n- Company expertise and team information\n- Global network and Swiss headquarters emphasis\n- Contact forms for consultation and job applications\n- Multi-language support (German, English)\n- Mobile-responsive design for all devices\n- Professional consultation booking system\n- Integration with Pusaq Innovations design\n\nTechnologies used: HTML, CSS, JavaScript\n\nThe final result provides Inter Protect with a professional website that effectively communicates their expertise in comprehensive security solutions, attracts clients seeking professional security services, and establishes trust through clear presentation of their capabilities and global reach.",
-        "es": "Inter Protect GmbH es un sitio web integral de empresa de seguridad que muestra soluciones de seguridad profesionales y servicios de protección específicos por industria. La plataforma representa un socio de seguridad global con presencia establecida en Suiza y una red mundial, ofreciendo servicios de seguridad personalizados diseñados para satisfacer las necesidades individuales del cliente y garantizar máxima protección.\n\nConstruido con HTML, CSS y JavaScript, el sitio web ofrece una experiencia profesional y confiable que comunica efectivamente el compromiso de la empresa con la confiabilidad, discreción y más alta profesionalidad. El sitio enfatiza la experiencia de la empresa en desarrollar soluciones de seguridad específicas por industria y conceptos de protección integrales.\n\nCaracterísticas clave del proyecto:\n- Presentación profesional de empresa de seguridad y marca\n- Exhibición de soluciones de seguridad específicas por industria\n- Presentación integral del portafolio de servicios\n- Información de experiencia de la empresa y equipo\n- Énfasis en red global y sede suiza\n- Formularios de contacto para consultoría y aplicaciones de trabajo\n- Soporte multi-idioma (alemán, inglés)\n- Diseño responsivo para todos los dispositivos\n- Sistema de reserva de consultoría profesional\n- Integración con diseño de Pusaq Innovations\n\nTecnologías utilizadas: HTML, CSS, JavaScript\n\nEl resultado final proporciona a Inter Protect un sitio web profesional que comunica efectivamente su experiencia en soluciones de seguridad integrales, atrae clientes buscando servicios de seguridad profesionales y establece confianza a través de presentación clara de sus capacidades y alcance global."
-      }
-    },
-    {
-      "id": "interprotect-system",
-      "title": {
-        "en": "InterProtect System - Security Reports & Documentation Portal",
-        "es": "InterProtect System - Portal de Reportes de Seguridad y Documentación"
-      },
-      "description": {
-        "en": "Role-based security reports and documentation management system for Inter Protect employees and stakeholders",
-        "es": "Sistema de gestión de reportes de seguridad y documentación basado en roles para empleados y partes interesadas de Inter Protect"
-      },
-      "link": "http://system.inter-protect.ch/",
-      "image": "interprotect-system-login.jpg",
-      "images": [
-        "interprotect-system-login.jpg",
-        "interprotect-system-dashboard.jpg",
-        "interprotect-system-reports.jpg",
-        "interprotect-system-mobile.jpg"
-      ],
-      "technologies": [
-        "HTML",
+        "WordPress",
+        "Laravel",
         "Tailwind CSS",
-        "JavaScript",
         "PHP",
-        "MySQL",
-        "Laravel"
+        "MySQL"
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "InterProtect System is a comprehensive role-based security reports and documentation management portal designed for Inter Protect employees and stakeholders. The system provides secure access to security reports, documentation, and operational data based on user roles and permissions, ensuring proper information security and controlled access to sensitive materials.\n\nBuilt with HTML, CSS, JavaScript, and PHP, the portal delivers a secure, user-friendly experience for managing security documentation and reports. The system emphasizes data protection, role-based access control, and professional presentation of security information for internal use.\n\nKey project features:\n- Secure employee authentication and role-based access control\n- Comprehensive security reports management system\n- Documentation portal with organized file structure\n- Multi-language support (German, English)\n- Role-based permissions and user management\n- Secure data storage and access controls\n- Professional reporting interface\n- Mobile-responsive design for field access\n- Integration with Inter Protect security operations\n- Audit trail and access logging\n\nTechnologies used: HTML, CSS, JavaScript, PHP\n\nThe final result provides Inter Protect with a secure, professional portal that enables employees and stakeholders to access security reports and documentation based on their roles, ensuring proper information security while maintaining operational efficiency.",
-        "es": "InterProtect System es un portal integral de gestión de reportes de seguridad y documentación basado en roles diseñado para empleados y partes interesadas de Inter Protect. El sistema proporciona acceso seguro a reportes de seguridad, documentación y datos operacionales basados en roles y permisos de usuario, asegurando seguridad de información adecuada y acceso controlado a materiales sensibles.\n\nConstruido con HTML, CSS, JavaScript y PHP, el portal ofrece una experiencia segura y fácil de usar para gestionar documentación de seguridad y reportes. El sistema enfatiza protección de datos, control de acceso basado en roles y presentación profesional de información de seguridad para uso interno.\n\nCaracterísticas clave del proyecto:\n- Autenticación segura de empleados y control de acceso basado en roles\n- Sistema integral de gestión de reportes de seguridad\n- Portal de documentación con estructura de archivos organizada\n- Soporte multi-idioma (alemán, inglés)\n- Permisos basados en roles y gestión de usuarios\n- Controles seguros de almacenamiento y acceso de datos\n- Interfaz profesional de reportes\n- Diseño responsivo para acceso en campo\n- Integración con operaciones de seguridad de Inter Protect\n- Pista de auditoría y registro de accesos\n\nTecnologías utilizadas: HTML, CSS, JavaScript, PHP\n\nEl resultado final proporciona a Inter Protect un portal seguro y profesional que permite a empleados y partes interesadas acceder a reportes de seguridad y documentación basados en sus roles, asegurando seguridad de información adecuada mientras mantiene eficiencia operacional."
+        "en": "Inter Protect GmbH is a comprehensive security company digital ecosystem. The corporate website showcases professional security solutions and industry-specific protection services, representing a global security partner with an established presence in Switzerland and a worldwide network.\n\nThe InterProtect System is a role-based security reports and documentation management portal designed for Inter Protect employees and stakeholders, providing secure access to security reports, documentation, and operational data based on user roles and permissions.\n\nKey features:\n- Professional security company presentation and branding\n- Industry-specific security solutions showcase\n- Multi-language support (German, English)\n- Secure employee authentication and role-based access control\n- Comprehensive security reports management\n- Audit trail and access logging\n- Mobile-responsive design for all devices\n\nTechnologies used: HTML, CSS, JavaScript, WordPress, Laravel, Tailwind CSS, PHP, MySQL\n\nThe combined result provides Inter Protect with a professional external presence that establishes trust, backed by a secure internal system for operational documentation management.",
+        "es": "Inter Protect GmbH es un ecosistema digital integral para empresa de seguridad. El sitio corporativo muestra soluciones de seguridad profesionales y servicios de protección, representando a un socio global de seguridad con sede en Suiza.\n\nEl InterProtect System es un portal de gestión de reportes y documentación basado en roles para empleados, proporcionando acceso seguro a reportes de seguridad y datos operacionales según roles y permisos de usuario.\n\nCaracterísticas clave:\n- Presentación profesional y marca de empresa de seguridad\n- Soporte multi-idioma (alemán, inglés)\n- Autenticación segura y control de acceso basado en roles\n- Gestión integral de reportes de seguridad\n- Pista de auditoría y registro de accesos\n- Diseño responsivo para todos los dispositivos\n\nTecnologías utilizadas: HTML, CSS, JavaScript, WordPress, Laravel, Tailwind CSS, PHP, MySQL\n\nEl resultado combinado proporciona a Inter Protect una presencia externa profesional respaldada por un sistema interno seguro para gestión de documentación operacional."
       }
     },
     {
-      "id": "pusaq-website",
+      "id": "pusaq",
       "title": {
-        "en": "Pusaq 8 Innovations - Digital Marketing Agency Website",
-        "es": "Pusaq 8 Innovations - Sitio Web de Agencia de Marketing Digital"
+        "en": "Pusaq 8 Innovations - Digital Agency Ecosystem",
+        "es": "Pusaq 8 Innovations - Ecosistema de Agencia Digital"
       },
       "description": {
-        "en": "Professional landing page for digital marketing and social media agency based in Zurich, Switzerland",
-        "es": "Página de aterrizaje profesional para agencia de marketing digital y redes sociales con sede en Zúrich, Suiza"
+        "en": "Digital marketing agency website plus comprehensive internal task manager and employee management system",
+        "es": "Sitio web de agencia de marketing digital más sistema integral interno de gestión de tareas y empleados"
       },
-      "link": "http://pusaq8.com/",
+      "links": [
+        {
+          "title": "Agency Website",
+          "url": "http://pusaq8.com/"
+        },
+        {
+          "title": "Admin System",
+          "url": "http://demo.pusaq8.com/"
+        }
+      ],
       "image": "pusaq-website-homepage.jpg",
       "images": [
         "pusaq-website-homepage.jpg",
         "pusaq-website-services.jpg",
-        "pusaq-website-projects.jpg",
-        "pusaq-website-mobile.jpg"
+        "pusaq-admin-dashboard.jpg",
+        "pusaq-admin-tasks.jpg"
       ],
       "technologies": [
         "HTML",
         "CSS",
         "JavaScript",
-        "UI/UX Design"
-      ],
-      "pubDate": "2025-01-01",
-      "content": {
-        "en": "Pusaq 8 Innovations is a comprehensive digital marketing agency website showcasing professional services in brand identity, web development, and digital marketing. The platform represents a forward-thinking digital agency based in Zurich, Switzerland, offering comprehensive solutions for businesses seeking to establish and enhance their digital presence.\n\nBuilt with HTML, CSS, and JavaScript, the website delivers a modern, professional experience that effectively communicates the agency's expertise in digital empowerment and comprehensive marketing solutions. The site emphasizes the company's ability to create memorable brand identities, user-friendly websites, and effective digital marketing campaigns.\n\nKey project features:\n- Professional agency presentation and branding\n- Comprehensive service portfolio showcase (branding, web development, digital marketing)\n- Client testimonials and project gallery\n- Contact information and consultation booking\n- Modern, clean design with intuitive navigation\n- Mobile-responsive design for all devices\n- SEO-optimized content structure\n- Social media integration\n- Professional photography and videography showcase\n- Clear value proposition and service differentiation\n\nTechnologies used: HTML, CSS, JavaScript, UI/UX Design\n\nThe final result provides Pusaq 8 Innovations with a professional website that effectively communicates their expertise in digital marketing and web development, attracts clients seeking comprehensive digital solutions, and establishes trust through clear presentation of their services and client success stories.",
-        "es": "Pusaq 8 Innovations es un sitio web integral de agencia de marketing digital que muestra servicios profesionales en identidad de marca, desarrollo web y marketing digital. La plataforma representa una agencia digital visionaria con sede en Zúrich, Suiza, ofreciendo soluciones integrales para empresas que buscan establecer y mejorar su presencia digital.\n\nConstruido con HTML, CSS y JavaScript, el sitio web ofrece una experiencia moderna y profesional que comunica efectivamente la experiencia de la agencia en empoderamiento digital y soluciones de marketing integrales. El sitio enfatiza la capacidad de la empresa para crear identidades de marca memorables, sitios web fáciles de usar y campañas de marketing digital efectivas.\n\nCaracterísticas clave del proyecto:\n- Presentación profesional de agencia y marca\n- Exhibición integral del portafolio de servicios (branding, desarrollo web, marketing digital)\n- Testimonios de clientes y galería de proyectos\n- Información de contacto y reserva de consultoría\n- Diseño moderno y limpio con navegación intuitiva\n- Diseño responsivo para todos los dispositivos\n- Estructura de contenido optimizada para SEO\n- Integración de redes sociales\n- Exhibición de fotografía y videografía profesional\n- Propuesta de valor clara y diferenciación de servicios\n\nTecnologías utilizadas: HTML, CSS, JavaScript, UI/UX Design\n\nEl resultado final proporciona a Pusaq 8 Innovations un sitio web profesional que comunica efectivamente su experiencia en marketing digital y desarrollo web, atrae clientes buscando soluciones digitales integrales y establece confianza a través de presentación clara de sus servicios e historias de éxito de clientes."
-      }
-    },
-    {
-      "id": "pusaq-admin",
-      "title": {
-        "en": "Pusaq Admin - Task Manager & Employee Management System",
-        "es": "Pusaq Admin - Sistema de Gestión de Tareas y Empleados"
-      },
-      "description": {
-        "en": "Comprehensive task manager and employee management system for Pusaq 8 Innovations digital agency operations",
-        "es": "Sistema integral de gestión de tareas y empleados para las operaciones de la agencia digital Pusaq 8 Innovations"
-      },
-      "link": "http://demo.pusaq8.com/",
-      "image": "pusaq-admin-dashboard.jpg",
-      "images": [
-        "pusaq-admin-dashboard.jpg",
-        "pusaq-admin-tasks.jpg",
-        "pusaq-admin-employees.jpg",
-        "pusaq-admin-mobile.jpg"
-      ],
-      "technologies": [
+        "UI/UX Design",
         "Laravel",
         "Tailwind CSS",
-        "JavaScript",
         "MySQL",
         "React"
       ],
       "pubDate": "2025-01-01",
       "content": {
-        "en": "Pusaq Admin is a comprehensive task manager and employee management system designed specifically for Pusaq 8 Innovations digital agency operations. The platform provides efficient project management, employee tracking, and task coordination tools to streamline internal operations and improve productivity across all agency departments.\n\nBuilt with Laravel, Tailwind CSS, JavaScript, and MySQL, the system delivers a robust, user-friendly experience for managing complex agency workflows. The platform emphasizes real-time collaboration, project tracking, and comprehensive employee management features tailored to the needs of a growing digital marketing agency.\n\nKey project features:\n- Comprehensive task management and project tracking system\n- Employee management with role-based access control\n- Real-time collaboration and communication tools\n- Project timeline and milestone tracking\n- Resource allocation and workload management\n- Performance monitoring and reporting\n- Client project integration and tracking\n- Time tracking and billing integration\n- Mobile-responsive design for remote work\n- Integration with agency workflow processes\n\nTechnologies used: Laravel, Tailwind CSS, JavaScript, MySQL\n\nThe final result provides Pusaq 8 Innovations with a powerful internal management system that enhances team productivity, improves project delivery, and streamlines employee management processes, ultimately supporting the agency's growth and operational efficiency.",
-        "es": "Pusaq Admin es un sistema integral de gestión de tareas y empleados diseñado específicamente para las operaciones de la agencia digital Pusaq 8 Innovations. La plataforma proporciona herramientas eficientes de gestión de proyectos, seguimiento de empleados y coordinación de tareas para optimizar las operaciones internas y mejorar la productividad en todos los departamentos de la agencia.\n\nConstruido con Laravel, Tailwind CSS, JavaScript y MySQL, el sistema ofrece una experiencia robusta y fácil de usar para gestionar flujos de trabajo complejos de agencia. La plataforma enfatiza colaboración en tiempo real, seguimiento de proyectos y características integrales de gestión de empleados adaptadas a las necesidades de una agencia de marketing digital en crecimiento.\n\nCaracterísticas clave del proyecto:\n- Sistema integral de gestión de tareas y seguimiento de proyectos\n- Gestión de empleados con control de acceso basado en roles\n- Herramientas de colaboración y comunicación en tiempo real\n- Seguimiento de cronograma de proyectos y hitos\n- Asignación de recursos y gestión de carga de trabajo\n- Monitoreo de rendimiento y reportes\n- Integración y seguimiento de proyectos de clientes\n- Integración de seguimiento de tiempo y facturación\n- Diseño responsivo para trabajo remoto\n- Integración con procesos de flujo de trabajo de la agencia\n\nTecnologías utilizadas: Laravel, Tailwind CSS, JavaScript, MySQL\n\nEl resultado final proporciona a Pusaq 8 Innovations un sistema de gestión interna poderoso que mejora la productividad del equipo, mejora la entrega de proyectos y optimiza los procesos de gestión de empleados, apoyando en última instancia el crecimiento y eficiencia operacional de la agencia."
+        "en": "Pusaq 8 Innovations is a complete digital marketing agency ecosystem built across two platforms. The agency website is a professional landing page showcasing services in brand identity, web development, and digital marketing — representing a forward-thinking agency based in Zurich, Switzerland.\n\nThe Pusaq Admin system is a comprehensive task manager and employee management system designed specifically for the agency's internal operations. It provides efficient project management, employee tracking, and task coordination tools to streamline workflows and improve productivity.\n\nKey features:\n- Professional agency presentation with service portfolio (branding, web development, digital marketing)\n- Client testimonials and project gallery\n- Real-time collaboration and communication tools\n- Project timeline and milestone tracking\n- Employee management with role-based access control\n- Performance monitoring and reporting\n- Mobile-responsive design for both platforms\n\nTechnologies used: HTML, CSS, JavaScript, UI/UX Design, Laravel, Tailwind CSS, MySQL, React\n\nThe combined result provides Pusaq 8 Innovations with a strong external presence for attracting clients, backed by a powerful internal system that enhances team productivity and streamlines agency operations.",
+        "es": "Pusaq 8 Innovations es un ecosistema completo de agencia de marketing digital construido en dos plataformas. El sitio web de la agencia es una landing profesional que muestra servicios en identidad de marca, desarrollo web y marketing digital, representando a una agencia visionaria con sede en Zúrich, Suiza.\n\nEl sistema Pusaq Admin es un gestor integral de tareas y empleados diseñado para las operaciones internas de la agencia, proporcionando herramientas para gestión de proyectos, seguimiento de empleados y coordinación de tareas.\n\nCaracterísticas clave:\n- Presentación profesional de agencia con portafolio de servicios\n- Galería de proyectos y testimonios de clientes\n- Colaboración y comunicación en tiempo real\n- Seguimiento de cronogramas y hitos de proyectos\n- Gestión de empleados con control de acceso basado en roles\n- Diseño responsivo para ambas plataformas\n\nTecnologías utilizadas: HTML, CSS, JavaScript, UI/UX Design, Laravel, Tailwind CSS, MySQL, React\n\nEl resultado combinado proporciona a Pusaq 8 Innovations una presencia externa sólida para atraer clientes, respaldada por un sistema interno poderoso que mejora la productividad del equipo."
       }
     },
     {
@@ -636,7 +467,12 @@
         "en": "Elegant photography portfolio website showcasing professional model photography and artistic expressions",
         "es": "Sitio web de portafolio de fotografía elegante que muestra fotografía profesional de modelos y expresiones artísticas"
       },
-      "link": "https://model-template.pages.dev/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://model-template.pages.dev/"
+        }
+      ],
       "image": "model-template-homepage.jpg",
       "images": [
         "model-template-homepage.jpg",
@@ -666,7 +502,12 @@
         "en": "High-calibre, sophisticated data-driven real estate, hospitality, construction, and financial management toolkits powered by artificial intelligence",
         "es": "Herramientas de gestión inmobiliaria, hotelera, construcción y financiera sofisticadas y de alta calidad, impulsadas por inteligencia artificial"
       },
-      "link": "https://rekaliber.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://rekaliber.com/"
+        }
+      ],
       "image": "rekaliber-homepage.jpg",
       "images": [
         "rekaliber-homepage.jpg",
@@ -697,7 +538,12 @@
         "en": "Informational website for Reborn Alpha Limited, an international real estate investment company operating across four continents",
         "es": "Sitio web informativo para Reborn Alpha Limited, una empresa internacional de inversiones inmobiliarias que opera en cuatro continentes"
       },
-      "link": "https://reborn-alpha.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://reborn-alpha.com/"
+        }
+      ],
       "image": "reborn-alpha-homepage.jpg",
       "images": [
         "reborn-alpha-homepage.jpg",
@@ -726,7 +572,12 @@
         "en": "Comprehensive heavy machinery and construction equipment rental and management platform for construction projects",
         "es": "Plataforma integral de alquiler y gestión de maquinaria pesada y equipos de construcción para proyectos de construcción"
       },
-      "link": "https://reborn-rentals.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://reborn-rentals.com/"
+        }
+      ],
       "image": "reborn-rentals-homepage.jpg",
       "images": [
         "reborn-rentals-homepage.jpg",
@@ -756,7 +607,12 @@
         "en": "Luxury hotel website showcasing premium accommodations, facilities, and services in the beautiful Swedish countryside",
         "es": "Sitio web de hotel de lujo que muestra alojamientos premium, instalaciones y servicios en la hermosa campiña sueca"
       },
-      "link": "https://svaneholmhotel.se/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://svaneholmhotel.se/"
+        }
+      ],
       "image": "svaneholmhotel-homepage.jpg",
       "images": [
         "svaneholmhotel-homepage.jpg",
@@ -778,14 +634,14 @@
       }
     },
     {
-      "id": "bloem-app",
+      "id": "bloem-platform",
       "title": {
-        "en": "Bloem App - QR-Based Clothing Marketplace for Fleamarkets",
-        "es": "Bloem App - Mercado de Ropa Basado en QR para Mercadillos"
+        "en": "Bloem - QR-Based Clothing Marketplace & Admin Ecosystem",
+        "es": "Bloem - Ecosistema de Mercado de Ropa con QR y Panel de Administración"
       },
       "description": {
-        "en": "Swiss startup mobile application for buying and selling clothing using QR codes at fleamarkets and second-hand markets",
-        "es": "Aplicación móvil de startup suiza para compra y venta de ropa usando códigos QR en mercadillos y mercados de segunda mano"
+        "en": "Comprehensive Swiss startup solution featuring a mobile app for QR-based clothing trading at fleamarkets and a robust administrative dashboard for marketplace operations.",
+        "es": "Solución integral de startup suiza que incluye una aplicación móvil para el comercio de ropa mediante QR en mercadillos y un panel administrativo robusto para la gestión de operaciones."
       },
       "link": null,
       "image": "bloem-app-homepage.jpg",
@@ -793,48 +649,27 @@
         "bloem-app-homepage.jpg",
         "bloem-app-qr-scan.jpg",
         "bloem-app-marketplace.jpg",
-        "bloem-app-mobile.jpg"
-      ],
-      "technologies": [
-        "flutter",
-        "dart",
-        "firebase",
-        "stripe"
-      ],
-      "pubDate": "2024-01-01",
-      "content": {
-        "en": "Bloem App is an innovative Swiss startup mobile application revolutionizing the second-hand clothing market through QR code technology at fleamarkets. The platform enables seamless buying and selling of clothing items by scanning QR codes, creating a digital marketplace that bridges physical fleamarkets with modern e-commerce convenience.\n\nBuilt with React Native, Node.js, and MongoDB, the app delivers a user-friendly mobile experience that simplifies the process of discovering, purchasing, and selling pre-owned clothing. The platform emphasizes QR code integration, real-time marketplace functionality, and community-driven trading at local fleamarkets across Switzerland.\n\nKey project features:\n- QR code scanning for instant item identification and pricing\n- Mobile marketplace for buying and selling clothing\n- Integration with local fleamarkets and second-hand markets\n- User profiles and transaction history\n- Real-time chat and negotiation features\n- Location-based market discovery\n- Payment integration and secure transactions\n- Item condition and authenticity verification\n- Community features and user reviews\n- Offline functionality for market environments\n\nTechnologies used: React Native, Node.js, MongoDB, QR Code API\n\nThe final result provides Swiss consumers with an innovative platform that modernizes the traditional fleamarket experience, making second-hand clothing trading more accessible, efficient, and engaging through cutting-edge QR technology.",
-        "es": "Bloem App es una aplicación móvil innovadora de startup suiza que revoluciona el mercado de ropa de segunda mano a través de tecnología de códigos QR en mercadillos. La plataforma permite compra y venta fluida de artículos de ropa escaneando códigos QR, creando un mercado digital que conecta mercadillos físicos con la conveniencia del comercio electrónico moderno.\n\nConstruida con React Native, Node.js y MongoDB, la aplicación ofrece una experiencia móvil fácil de usar que simplifica el proceso de descubrir, comprar y vender ropa de segunda mano. La plataforma enfatiza integración de códigos QR, funcionalidad de mercado en tiempo real y comercio impulsado por la comunidad en mercadillos locales en toda Suiza.\n\nCaracterísticas clave del proyecto:\n- Escaneo de códigos QR para identificación instantánea de artículos y precios\n- Mercado móvil para compra y venta de ropa\n- Integración con mercadillos locales y mercados de segunda mano\n- Perfiles de usuario e historial de transacciones\n- Características de chat en tiempo real y negociación\n- Descubrimiento de mercados basado en ubicación\n- Integración de pagos y transacciones seguras\n- Verificación de condición y autenticidad de artículos\n- Características de comunidad y reseñas de usuarios\n- Funcionalidad offline para entornos de mercado\n\nTecnologías utilizadas: React Native, Node.js, MongoDB, QR Code API\n\nEl resultado final proporciona a los consumidores suizos una plataforma innovadora que moderniza la experiencia tradicional de mercadillos, haciendo el comercio de ropa de segunda mano más accesible, eficiente y atractivo a través de tecnología QR de vanguardia."
-      }
-    },
-    {
-      "id": "bloem-dashboard",
-      "title": {
-        "en": "Bloem Dashboard - Admin Panel for QR Clothing Marketplace",
-        "es": "Bloem Dashboard - Panel de Administración para Mercado de Ropa con QR"
-      },
-      "description": {
-        "en": "Administrative dashboard for managing the Bloem App QR-based clothing marketplace platform and user operations",
-        "es": "Panel administrativo para gestionar la plataforma de mercado de ropa basado en QR de Bloem App y operaciones de usuarios"
-      },
-      "link": null,
-      "image": "bloem-dashboard-homepage.jpg",
-      "images": [
+        "bloem-app-mobile.jpg",
         "bloem-dashboard-homepage.jpg",
         "bloem-dashboard-analytics.jpg",
-        "bloem-dashboard-users.jpg",
-        "bloem-dashboard-mobile.jpg"
+        "bloem-dashboard-users.jpg"
       ],
       "technologies": [
         "flutter",
         "dart",
         "firebase",
-        "stripe"
+        "stripe",
+        "laravel",
+        "tailwind-css",
+        "mongodb",
+        "mysql",
+        "react-native",
+        "node-js"
       ],
       "pubDate": "2024-01-01",
       "content": {
-        "en": "Bloem Dashboard is a comprehensive administrative panel designed to manage the Bloem App QR-based clothing marketplace platform. The dashboard provides administrators with powerful tools to monitor user activity, manage marketplace operations, track transactions, and oversee the overall health of the second-hand clothing trading ecosystem.\n\nBuilt with Laravel, Tailwind CSS, JavaScript, and MySQL, the system delivers a robust, user-friendly experience for managing complex marketplace operations. The platform emphasizes real-time analytics, user management, transaction monitoring, and comprehensive reporting capabilities for the QR-based clothing marketplace.\n\nKey project features:\n- Comprehensive user management and profile administration\n- Real-time marketplace analytics and transaction monitoring\n- QR code generation and management system\n- Fleamarket location and event management\n- Transaction history and financial reporting\n- User verification and authentication management\n- Item listing moderation and quality control\n- Payment processing and financial oversight\n- Community management and user support tools\n- Mobile-responsive design for on-the-go administration\n\nTechnologies used: Laravel, Tailwind CSS, JavaScript, MySQL\n\nThe final result provides Bloem App administrators with a powerful management system that ensures smooth marketplace operations, maintains platform quality, and supports the growth of the QR-based clothing trading community across Swiss fleamarkets.",
-        "es": "Bloem Dashboard es un panel administrativo integral diseñado para gestionar la plataforma de mercado de ropa basado en QR de Bloem App. El dashboard proporciona a los administradores herramientas poderosas para monitorear actividad de usuarios, gestionar operaciones del mercado, rastrear transacciones y supervisar la salud general del ecosistema de comercio de ropa de segunda mano.\n\nConstruido con Laravel, Tailwind CSS, JavaScript y MySQL, el sistema ofrece una experiencia robusta y fácil de usar para gestionar operaciones complejas del mercado. La plataforma enfatiza analíticas en tiempo real, gestión de usuarios, monitoreo de transacciones y capacidades integrales de reportes para el mercado de ropa basado en QR.\n\nCaracterísticas clave del proyecto:\n- Gestión integral de usuarios y administración de perfiles\n- Analíticas de mercado en tiempo real y monitoreo de transacciones\n- Sistema de generación y gestión de códigos QR\n- Gestión de ubicaciones de mercadillos y eventos\n- Historial de transacciones y reportes financieros\n- Gestión de verificación y autenticación de usuarios\n- Moderación de listados de artículos y control de calidad\n- Procesamiento de pagos y supervisión financiera\n- Herramientas de gestión de comunidad y soporte al usuario\n- Diseño responsivo para administración móvil\n\nTecnologías utilizadas: Laravel, Tailwind CSS, JavaScript, MySQL\n\nEl resultado final proporciona a los administradores de Bloem App un sistema de gestión poderoso que asegura operaciones fluidas del mercado, mantiene la calidad de la plataforma y apoya el crecimiento de la comunidad de comercio de ropa basado en QR en mercadillos suizos."
+        "en": "Bloem is an innovative Swiss startup ecosystem revolutionizing the second-hand clothing market. The platform consists of two main components: a mobile application for seamless peer-to-peer trading at fleamarkets and a comprehensive administrative dashboard for operational oversight.\n\nThe mobile experience allows users to buy and sell items instantly by scanning QR codes, bridging the gap between physical markets and digital convenience. Meanwhile, the dashboard provides administrators with powerful tools for user management, real-time analytics, transaction monitoring, and fleamarket event coordination.\n\nKey project features:\n- QR code system for instant item identification, pricing, and generation\n- Mobile marketplace with real-time chat, negotiations, and secure payments\n- Location-based discovery for local fleamarkets and events\n- Comprehensive admin panel for user verification and content moderation\n- Advanced financial reporting and transaction history tracking\n- Offline functionality designed for market environments\n- Community features, including reviews and user profiles\n\nTechnologies used: Flutter, Firebase, Stripe, Laravel, React Native, Node.js, MongoDB, and MySQL.\n\nThe final result provides a complete end-to-end solution that modernizes the traditional fleamarket experience, making second-hand clothing trading more accessible, efficient, and secure for the Swiss community.",
+        "es": "Bloem es un ecosistema innovador de una startup suiza que revoluciona el mercado de ropa de segunda mano. La plataforma consta de dos componentes principales: una aplicación móvil para el comercio fluido entre usuarios en mercadillos y un panel administrativo integral para la supervisión operativa.\n\nLa experiencia móvil permite a los usuarios comprar y vender artículos al instante escaneando códigos QR, conectando los mercados físicos con la conveniencia digital. Por otro lado, el dashboard proporciona a los administradores herramientas poderosas para la gestión de usuarios, analíticas en tiempo real, monitoreo de transacciones y coordinación de eventos en mercadillos.\n\nCaracterísticas clave del proyecto:\n- Sistema de códigos QR para identificación instantánea, fijación de precios y generación de etiquetas\n- Mercado móvil con chat en tiempo real, negociaciones y pagos seguros\n- Descubrimiento basado en ubicación para mercadillos locales y eventos\n- Panel de administración integral para verificación de usuarios y moderación de contenido\n- Informes financieros avanzados y seguimiento del historial de transacciones\n- Funcionalidad offline diseñada para entornos de mercado\n- Funciones de comunidad, incluyendo reseñas y perfiles de usuario\n\nTecnologías utilizadas: Flutter, Firebase, Stripe, Laravel, React Native, Node.js, MongoDB y MySQL.\n\nEl resultado final ofrece una solución completa de extremo a extremo que moderniza la experiencia tradicional de los mercadillos, haciendo que el comercio de ropa de segunda mano sea más accesible, eficiente y seguro para la comunidad suiza."
       }
     },
     {
@@ -1027,7 +862,12 @@
         "en": "Advanced AI system for generating images and videos using artificial intelligence technology, developed starting from version 1",
         "es": "Sistema avanzado de IA para generar imágenes y videos usando tecnología de inteligencia artificial, desarrollado desde la versión 1"
       },
-      "link": "https://grazia-ai.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://grazia-ai.com/"
+        }
+      ],
       "image": "grazia-homepage.jpg",
       "images": [
         "grazia-homepage.jpg",
@@ -1056,7 +896,12 @@
         "en": "Professional landing page and comprehensive sales system for international cosmetics company Flume",
         "es": "Landing page profesional y sistema integral de ventas para la empresa internacional de cosméticos Flume"
       },
-      "link": "https://flumestore.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://flumestore.com/"
+        }
+      ],
       "image": "flume-homepage.jpg",
       "images": [
         "flume-homepage.jpg",
@@ -1242,7 +1087,12 @@
         "en": "Booking platform for wellness experiences and locations designed to help people disconnect from the digital world and find peace",
         "es": "Plataforma de reservas para experiencias de bienestar y lugares diseñados para ayudar a las personas a desconectar del mundo digital y encontrar paz"
       },
-      "link": null,
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://zenbooking.com/"
+        }
+      ],
       "image": "zenbooking-homepage.jpg",
       "images": [
         "zenbooking-homepage.jpg",
@@ -1273,7 +1123,12 @@
         "en": "Educational platform for continuing education and postgraduate courses in Bolivia using web portals for course delivery",
         "es": "Plataforma educativa para formación continua y cursos de posgrado en Bolivia utilizando portales web para la entrega de cursos"
       },
-      "link": "https://certificate-bolivia.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://certificate-bolivia.com/"
+        }
+      ],
       "image": "certificate-bolivia-homepage.jpg",
       "images": [
         "certificate-bolivia-homepage.jpg",
@@ -1304,7 +1159,12 @@
         "en": "Industrial automation and electrical equipment company specializing in automation solutions and electrical components",
         "es": "Empresa de automatización industrial y equipos eléctricos especializada en soluciones de automatización y componentes eléctricos"
       },
-      "link": "https://soelecmv.com/",
+      "links": [
+        {
+          "title": "Website",
+          "url": "https://soelecmv.com/"
+        }
+      ],
       "image": "soelecmv-homepage.jpg",
       "images": [
         "soelecmv-homepage.jpg",
