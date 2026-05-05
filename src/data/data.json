@@ -247,7 +247,7 @@
         }
     ],
     "skills": {
-        "technical": "JavaScript (ES6+), TypeScript, PHP 8.3, Dart, Rust, Python, Java, C, C++, SQL (MySQL, PostgreSQL, SQLite), MongoDB",
+        "technical": "JavaScript (ES6+), TypeScript, PHP 8.3, Dart, Rust, Python, Java, C, C++, SQL (MySQL, PostgreSQL, SQLite), MongoDB, ODOO, Wordpress, nocode tools",
         "frameworks": "Laravel, Flutter, Spring Boot, Astro, Django, Flask, FastAPI, Firebase",
         "languages": {
             "en": "Spanish (Native), English (Professional Working Proficiency C1), Portuguese (Elementary)",
